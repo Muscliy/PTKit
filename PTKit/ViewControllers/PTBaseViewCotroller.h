@@ -10,4 +10,5 @@
 
 @interface PTBaseViewCotroller : UIViewController
 
+@property (nonatomic, strong) UITableView *tableView;
 @end
