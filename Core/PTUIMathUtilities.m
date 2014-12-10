@@ -8,11 +8,13 @@
 
 #import "PTUIMathUtilities.h"
 
-CGFloat PTRoundPixelValueForScale(CGFloat f, CGFloat scale) {
-	// Round to the nearest device pixel (.5 on retina)
-	return roundf(f * scale) / scale;
+CGFloat PTRoundPixelValueForScale(CGFloat f, CGFloat scale)
+{
+    // Round to the nearest device pixel (.5 on retina)
+    return roundf(f * scale) / scale;
 }
 
-CGFloat PTRoundPixelValue(CGFloat f) {
-	return PTRoundPixelValueForScale(f, [PTScreen scale]);
+CGFloat PTRoundPixelValue(CGFloat f)
+{
+    return PTRoundPixelValueForScale(f, [PTScreen scale]);
 }

@@ -27,7 +27,6 @@ CGPoint PTRectGetMid(CGRect rect);
  */
 CGRect PTRectMakeWithOrigin(CGPoint origin, CGSize size);
 
-
 /**
  *  Creates a rectangle of a given size with a centerpoint coincident with the given rect.
  *  Uses add a view to superview's center
@@ -40,7 +39,8 @@ CGRect PTRectMakeWithOrigin(CGPoint origin, CGSize size);
 CGRect PTRectMakeWithSizeCenteredInRect(CGSize size, CGRect rect);
 
 /**
- *  Creates the largest rectangle with a centerpoint coincident with the given rect, and with the specified aspect ratio that fits within the given rect.
+ *  Creates the largest rectangle with a centerpoint coincident with the given rect, and with the
+ *specified aspect ratio that fits within the given rect.
  *
  *	创一个比例为aspect的rectangle，rectangle的center要在rect的center上
  *
@@ -127,7 +127,6 @@ CGPoint PTRectGetMidMaxX(CGRect rect);
  */
 CGPoint PTRectGetMidMaxY(CGRect rect);
 
-
 /**
  *  rectangle 上边界中点
  *
@@ -136,7 +135,6 @@ CGPoint PTRectGetMidMaxY(CGRect rect);
  *  @return
  */
 CGPoint PTRectGetMidMinY(CGRect rect);
-
 
 /**
  *  宽高比
@@ -156,7 +154,6 @@ CGFloat PTSizeGetAspectRatio(CGSize size);
  *  @return
  */
 CGSize PTSizeFillWithAspectRatio(CGFloat aspectRatio, CGSize constraints);
-
 
 CGSize PTSizeFitWithAspectRatio(CGFloat aspectRatio, CGSize constraints);
 

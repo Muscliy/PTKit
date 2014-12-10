@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
-
 @interface PTScreen : NSObject
 
 /*
@@ -26,7 +24,6 @@
  */
 + (CGSize)size;
 
-
 /**
  * The overall screen height
  *
@@ -40,7 +37,5 @@
  * Only safe to call from Main thread.
  */
 + (CGSize)sizeInOrientation;
-
-
 
 @end

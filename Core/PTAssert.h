@@ -12,39 +12,46 @@
 
 BOOL IsInDebug(void);
 
-
 #if DEBUG
 
 #if TARGET_IPHONE_SIMULATOR
 
-#define PTASSERT(xx) {											\
-						if (!(xx)) {							\
-							PTLog(@"PTASSERT failed: %s",#xx);	\
-							if (IsInDebug()) {			\
-								__asm__("int $3\n" : :);		\
-							}									\
-						}										\
-					}((void) 0)								\
+#define PTASSERT(xx)                                                           \
+  {                                                                            \
+    if (!(xx)) {                                                               \
+      PTLog(@"PTASSERT failed: %s", #xx);                                      \
+      if (IsInDebug()) {			\
+								__asm__("int $3\n" : :);                                               \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
+  ((void)0)
 
 #else
 
-#define PTASSERT(xx) {											\
-						if (!(xx)) {						\
-							PTLog(@"PTASSERT failed: %s",#xx);	\
-							if (IsInDebug()) {			\
-								[[NSException exceptionWithName:NSInternalInconsistencyException reason:nil userInfo:nil] raise];		\
-								}									\
-							}										\
-						}((void) 0)								\
+#define PTASSERT(xx)                                                           \
+  {                                                                            \
+    if (!(xx)) {                                                               \
+      PTLog(@"PTASSERT failed: %s", #xx);                                      \
+      if (IsInDebug()) {                                                       \
+        [[NSException exceptionWithName:NSInternalInconsistencyException       \
+                                 reason:nil                                    \
+                               userInfo:nil] raise];                           \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
+  ((void)0)
 
 #endif
 
 #else
 
-#define PTASSERT(xx) {											\
-						if (!(xx)) {						\
-							PTLogError(@"PTASSERT error: %s",#xx);	\
-						}										\
-					}((void) 0)								\
+#define PTASSERT(xx)                                                           \
+  {                                                                            \
+    if (!(xx)) {                                                               \
+      PTLogError(@"PTASSERT error: %s", #xx);                                  \
+    }                                                                          \
+  }                                                                            \
+  ((void)0)
 
 #endif

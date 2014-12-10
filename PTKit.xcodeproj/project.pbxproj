@@ -24,6 +24,8 @@
 		59F228061A235E8B00AFF494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F228051A235E8B00AFF494 /* Images.xcassets */; };
 		59F228091A235E8B00AFF494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F228071A235E8B00AFF494 /* LaunchScreen.xib */; };
 		59F228151A235E8B00AFF494 /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228141A235E8B00AFF494 /* PTKitTests.m */; };
+		59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D421A384A30002A7ECA /* PTWebViewProgress.m */; };
+		59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F228131A235E8B00AFF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F228141A235E8B00AFF494 /* PTKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitTests.m; sourceTree = "<group>"; };
+		59F66D411A384A30002A7ECA /* PTWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgress.h; sourceTree = "<group>"; };
+		59F66D421A384A30002A7ECA /* PTWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgress.m; sourceTree = "<group>"; };
+		59F66D431A384A30002A7ECA /* PTWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgressView.h; sourceTree = "<group>"; };
+		59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgressView.m; sourceTree = "<group>"; };
 		BB352D162419A5E89FCEB3C7 /* libPods-PTKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PTKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +119,7 @@
 		59F227EC1A235E8B00AFF494 = {
 			isa = PBXGroup;
 			children = (
+				59F66D3F1A38496F002A7ECA /* Tool */,
 				59B3915D1A247D380092837C /* Category */,
 				59F2281E1A235E9D00AFF494 /* Core */,
 				59F227F71A235E8B00AFF494 /* PTKit */,
@@ -193,6 +200,25 @@
 				5969DAC21A2DA7ED00509FB7 /* PTBaseDefines.h */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		59F66D3F1A38496F002A7ECA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				59F66D401A384A24002A7ECA /* WebViewProgress */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		59F66D401A384A24002A7ECA /* WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				59F66D411A384A30002A7ECA /* PTWebViewProgress.h */,
+				59F66D421A384A30002A7ECA /* PTWebViewProgress.m */,
+				59F66D431A384A30002A7ECA /* PTWebViewProgressView.h */,
+				59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */,
+			);
+			path = WebViewProgress;
 			sourceTree = "<group>";
 		};
 		AF22F5E9B577143CB02946BF /* Frameworks */ = {
@@ -351,10 +377,12 @@
 			files = (
 				59F228011A235E8B00AFF494 /* ViewController.m in Sources */,
 				59B391661A2488D30092837C /* PTAssert.m in Sources */,
+				59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */,
 				59F227FE1A235E8B00AFF494 /* AppDelegate.m in Sources */,
 				59B391691A24899B0092837C /* PTScreen.m in Sources */,
 				5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */,
 				59E34A551A24609700D9C6F0 /* PTDDFormatter.m in Sources */,
+				59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */,
 				59B391631A24816D0092837C /* PTLogger.m in Sources */,
 				59B391751A2571370092837C /* PTRect.m in Sources */,
 				59B3916C1A2489D80092837C /* PTUIMathUtilities.m in Sources */,
