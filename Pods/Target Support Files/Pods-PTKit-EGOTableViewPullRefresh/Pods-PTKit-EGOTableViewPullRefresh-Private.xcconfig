@@ -1,0 +1,5 @@
+#include "Pods-PTKit-EGOTableViewPullRefresh.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/EGOTableViewPullRefresh" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/EGOTableViewPullRefresh" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Nimbus"
+OTHER_LDFLAGS = ${PODS_PTKIT_EGOTABLEVIEWPULLREFRESH_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
