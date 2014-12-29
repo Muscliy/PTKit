@@ -1,17 +1,20 @@
 //
 //  PTLogger.h
-//  PTKit
+//  xmLife
 //
-//  Created by LeeHu on 14/11/25.
-//  Copyright (c) 2014年 LeeHu. All rights reserved.
+//  Created by leehu on 14-9-24.
+//  Copyright (c) 2014年 PaiTao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "DDLog.h"
 #import "DDLegacy.h"
 
+
+//==============================================================================
 #define PTLOG_MACRO(async, lvl, flg, ctx, fmt, ...)         \
 LOG_OBJC_MAYBE(async, lvl, flg, ctx, fmt, ##__VA_ARGS__);
+
 #define	PT_LOG_LEVEL			[PTLogger ddLogLevel]
 
 #if defined(DEBUG) && TARGET_IPHONE_SIMULATOR
@@ -31,7 +34,6 @@ LOG_OBJC_MAYBE(async, lvl, flg, ctx, fmt, ##__VA_ARGS__);
 #define PTLOG_ASYNC_VERBOSE	LOG_ASYNC_VERBOSE
 
 #endif
-
 
 //==============================================================================
 
@@ -53,26 +55,20 @@ LOG_OBJC_MAYBE(async, lvl, flg, ctx, fmt, ##__VA_ARGS__);
 //发布版本不会上报
 #define PTLogVerbose(fmt, ...)	PTLOG_MACRO(PTLOG_ASYNC_VERBOSE, PT_LOG_LEVEL, LOG_FLAG_VERBOSE, 0, fmt, ##__VA_ARGS__)
 
-
-
-#if DEBUG
-
-#define PTLOG(fmt, ...) PTLOG_MACRO(NO, PTLOG_ASYNC_VERBOSE, PTLOG_ASYNC_VERBOSE, 0, fmt, ##__VA_ARGS__)
-
+//==============================================================================
+//只能在调试时使用--发布时啥也不会打印
+#ifdef	DEBUG
+#define PTLog(fmt, ...)			PTLOG_MACRO(NO, PT_LOG_LEVEL, LOG_FLAG_VERBOSE, 0, fmt, ##__VA_ARGS__)
 #else
-
-#define PTLOG(fmt, ...) while(0){}
-
+#define PTLog(fmt, ...)			while(0){}
 #endif
+//==============================================================================
 
 
 
-@interface PTLogger : NSObject<DDRegisteredDynamicLogging>
+@interface PTLogger : NSObject <DDRegisteredDynamicLogging>
 
 + (DDLogLevel)ddLogLevel;
-+ (void)ddSetLogLevel:(DDLogLevel)level;
++ (void)ddSetLogLevel:(DDLogLevel)logLevel;
+
 @end
-
-
-
-

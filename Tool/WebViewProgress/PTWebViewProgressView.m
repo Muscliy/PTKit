@@ -8,6 +8,7 @@
 
 #import "PTWebViewProgressView.h"
 #import "PTWebViewProgress.h"
+#import "PTBaseDefines.h"
 
 @implementation PTWebViewProgressView
 
@@ -49,7 +50,6 @@
 {
     BOOL isLoadding = progress > PTInitialProgressValue && progress < PTFinalProgressValue;
     _progress = progress;
-    PTWeakSelf;
     [UIView animateWithDuration:isLoadding ? _barAnimationDuration : 0.27f
         delay:_fadeOutDelay
         options:UIViewAnimationOptionCurveEaseInOut
@@ -61,7 +61,6 @@
 
         }
         completion:^(BOOL completed) {
-            PTStrongSelf;
             if (_progress < PTFinalProgressValue) {
                 self.progress = PTFinalProgressValue;
                 [UIView animateWithDuration:_barSlowAnimationDuration

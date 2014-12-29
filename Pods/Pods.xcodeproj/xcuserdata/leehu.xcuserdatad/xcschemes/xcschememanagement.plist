@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PTKit-libextobjc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PTKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,77 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12E2038BDD2E311CEC7BEC3D</key>
+		<key>02F41B341C154D017E61FFA4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13B7F55D5D8B0DC9D83AB6C6</key>
+		<key>0DA32635DE787EBC9E32218A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16ECF0E38D7D93721E53D5D0</key>
+		<key>2787903A8708B951B7C05DA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77883F06DD6F0C8122360DDA</key>
+		<key>2A1AC69A5FB1B178F317D8A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A01D43F1BE68DF038D43A10</key>
+		<key>2F29E9045F19B440E52D4061</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3154B033ED6D7220C6885475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57FBC91F1C29156BB5D3AFAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A34B5570CEE12F010761348</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CA35909633806A7B2EA9EE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>867FA539CB79B5AE908FEC6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A09B569C52D246D814D369F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1F94B42CCD96C51FC4D022F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE59D4E57EE0F552867A954F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E38CD77B08415454EE46E1EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDD862DA75E8F57370EF85F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

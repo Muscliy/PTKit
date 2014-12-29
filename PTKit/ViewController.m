@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PTInfiniteScrollView.h"
+#import "PTSystemInfo.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,12 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    PTInfiniteScrollView *scrollView = [[PTInfiniteScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    scrollView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:scrollView];
+    
+    NSString *macAddress = macaddress();
+    NSLog(@"%@",macAddress);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

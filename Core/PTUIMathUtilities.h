@@ -16,3 +16,4 @@
 //------------------------
 CGFloat PTRoundPixelValueForScale(CGFloat f, CGFloat scale);
 CGFloat PTRoundPixelValue(CGFloat f);
+NSInteger PTRoundPixIntValue(CGFloat f);

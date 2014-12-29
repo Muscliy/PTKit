@@ -18,3 +18,8 @@ CGFloat PTRoundPixelValue(CGFloat f)
 {
     return PTRoundPixelValueForScale(f, [PTScreen scale]);
 }
+
+NSInteger PTRoundPixIntValue(CGFloat f)
+{
+	return roundf(f);
+}

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 LeeHu. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #ifndef PTKit_PTBaseDefines_h
 #define PTKit_PTBaseDefines_h
 
@@ -81,10 +83,6 @@
 #  define PT_DEPRECATED
 # endif
 #endif
-
-
-
-
 
 #endif
 
