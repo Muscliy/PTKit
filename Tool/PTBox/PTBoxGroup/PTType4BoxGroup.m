@@ -8,6 +8,7 @@
 
 #import "PTType4BoxGroup.h"
 #import "PTUIMathUtilities.h"
+#import "PTOSMacro.h"
 
 @implementation PTType4BoxGroup
 

@@ -116,6 +116,10 @@
 		5903E4691A3EFEDD007ADC7D /* PTNetworkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNetworkImageView.m; sourceTree = "<group>"; };
 		5903E46C1A3FD411007ADC7D /* NSTimer+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extents.h"; sourceTree = "<group>"; };
 		5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extents.m"; sourceTree = "<group>"; };
+		591101C31A51446500261162 /* PTColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTColorMacro.h; sourceTree = "<group>"; };
+		591101C41A51446500261162 /* PTFontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFontMacro.h; sourceTree = "<group>"; };
+		591101C51A51446500261162 /* PTOSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOSMacro.h; sourceTree = "<group>"; };
+		591101C61A51446500261162 /* PTRectMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRectMacro.h; sourceTree = "<group>"; };
 		5969DAB31A2C1D0400509FB7 /* PTBaseViewCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTBaseViewCotroller.h; sourceTree = "<group>"; };
 		5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTBaseViewCotroller.m; sourceTree = "<group>"; };
 		5969DAC21A2DA7ED00509FB7 /* PTBaseDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTBaseDefines.h; sourceTree = "<group>"; };
@@ -138,10 +142,6 @@
 		59D7455D1A4005400058016D /* PTDebugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDebugListViewController.m; sourceTree = "<group>"; };
 		59D745621A400CC40058016D /* PTModuleDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTModuleDecorationView.h; sourceTree = "<group>"; };
 		59D745631A400CC40058016D /* PTModuleDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTModuleDecorationView.m; sourceTree = "<group>"; };
-		59D745661A400D3E0058016D /* PTColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTColorMacro.h; sourceTree = "<group>"; };
-		59D745671A400D3E0058016D /* PTFontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFontMacro.h; sourceTree = "<group>"; };
-		59D745691A400D3E0058016D /* PTOSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOSMacro.h; sourceTree = "<group>"; };
-		59D7456A1A400D3E0058016D /* PTRectMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRectMacro.h; sourceTree = "<group>"; };
 		59D7456C1A401A170058016D /* PTModuleHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTModuleHeaderCollectionCell.h; sourceTree = "<group>"; };
 		59D7456D1A401A170058016D /* PTModuleHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTModuleHeaderCollectionCell.m; sourceTree = "<group>"; };
 		59D7456F1A401ECF0058016D /* PTType13BoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTType13BoxGroup.h; sourceTree = "<group>"; };
@@ -324,6 +324,10 @@
 		59D745651A400D2E0058016D /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				591101C31A51446500261162 /* PTColorMacro.h */,
+				591101C41A51446500261162 /* PTFontMacro.h */,
+				591101C51A51446500261162 /* PTOSMacro.h */,
+				591101C61A51446500261162 /* PTRectMacro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -343,10 +347,6 @@
 			isa = PBXGroup;
 			children = (
 				59D745651A400D2E0058016D /* Macro */,
-				59D745661A400D3E0058016D /* PTColorMacro.h */,
-				59D745671A400D3E0058016D /* PTFontMacro.h */,
-				59D745691A400D3E0058016D /* PTOSMacro.h */,
-				59D7456A1A400D3E0058016D /* PTRectMacro.h */,
 				5903E46B1A3FD3F8007ADC7D /* Category */,
 				59F66D3F1A38496F002A7ECA /* Tool */,
 				59F2281E1A235E9D00AFF494 /* Core */,
