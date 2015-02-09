@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "PTDebugListViewController.h"
+#import "PTNavigationController.h"
+#import "PTNavigationBar.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,7 @@
 {
     
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    PTNavigationController *nav = [[PTNavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

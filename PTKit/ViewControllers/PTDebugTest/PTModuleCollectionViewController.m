@@ -13,6 +13,7 @@
 #import "PTModuleDecorationView.h"
 #import "PTModuleHeaderCollectionCell.h"
 #import "PTModuleTitleCollectionViewCell.h"
+#import "PTNavigationBar.h"
 
 #define kType10Image0 @"http://ts1.mm.bing.net/th?id=R5z%2bkJqXg4TidPayWUdL48QjJYIY%2fVdw8%2bIxQreiWsqXQ&w=272&h=135&c=7&rs=1&qlt=90&pid=1.9"
 
@@ -42,6 +43,9 @@
     [super viewDidLoad];
     
     self.collectionView.backgroundColor = [UIColor blueColor];
+    UIColor * color = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.5];
+    PTNavigationBar *navBar = (PTNavigationBar *)self.navigationController.navigationBar;
+    [navBar setNavigationBarWithColor:color];
     
     NSArray *collectionContents = @[
                                     @"TYPE10",

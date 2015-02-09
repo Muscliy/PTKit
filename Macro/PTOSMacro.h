@@ -10,6 +10,7 @@
 #define PTKit_PTOSMacro_h
 
 #import <Foundation/Foundation.h>
+#import "extobjc.h"
 
 #ifndef kCFCoreFoundationVersionNumber_iOS_6_0
 #define kCFCoreFoundationVersionNumber_iOS_6_0 793.00
