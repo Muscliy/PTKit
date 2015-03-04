@@ -10,22 +10,25 @@
 
 @interface PTQRCodeReaderOverlayView : UIView
 {
-    UIView *tipView;
-    UILabel *analyLabel;
-    UIActivityIndicatorView *activityIndicatorView;
+    BOOL flag;
+    BOOL isStopAnimation;
+    CGRect lineRectTop ;
+    CGRect lineRectBottom ;
+    
+    UIView  *bgView;
+    UILabel  *analyLabel;
+    UIActivityIndicatorView  *activityIndicatorView;
 }
 
-@property (nonatomic, assign) BOOL isCameraAvailable;
-@property (nonatomic, strong) UIImageView *scanLine;
 
-- (void)beginAnimation;
+@property (nonatomic,assign) BOOL isCameraAvailable;
+
 - (void)stopAnimation;
+- (void)beginAnimation;
+
 - (void)addAnalyingView;
 - (void)removeAnalyingView;
 
-@end
-
-@interface PTQRCodeReaderOverlayer : CALayer
 
 @end
 

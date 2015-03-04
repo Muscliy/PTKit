@@ -1,0 +1,1 @@
+../../../../LocalCocoaPod/ZBar/iphone/include/ZBarSDK/ZBarImageScanner.h

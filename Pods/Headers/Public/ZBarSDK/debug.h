@@ -1,0 +1,1 @@
+../../../../LocalCocoaPod/ZBar/iphone/debug.h

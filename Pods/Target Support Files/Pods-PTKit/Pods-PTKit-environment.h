@@ -90,6 +90,18 @@
 #define COCOAPODS_VERSION_MINOR_WebViewJavascriptBridge 1
 #define COCOAPODS_VERSION_PATCH_WebViewJavascriptBridge 4
 
+// ZBarSDK
+#define COCOAPODS_POD_AVAILABLE_ZBarSDK
+#define COCOAPODS_VERSION_MAJOR_ZBarSDK 1
+#define COCOAPODS_VERSION_MINOR_ZBarSDK 1
+#define COCOAPODS_VERSION_PATCH_ZBarSDK 0
+
+// ZXing
+#define COCOAPODS_POD_AVAILABLE_ZXing
+#define COCOAPODS_VERSION_MAJOR_ZXing 2
+#define COCOAPODS_VERSION_MINOR_ZXing 3
+#define COCOAPODS_VERSION_PATCH_ZXing 0
+
 // libextobjc
 #define COCOAPODS_POD_AVAILABLE_libextobjc
 #define COCOAPODS_VERSION_MAJOR_libextobjc 0
@@ -167,4 +179,10 @@
 #define COCOAPODS_VERSION_MAJOR_libextobjc_UmbrellaHeader 0
 #define COCOAPODS_VERSION_MINOR_libextobjc_UmbrellaHeader 4
 #define COCOAPODS_VERSION_PATCH_libextobjc_UmbrellaHeader 1
+
+// libqrencode
+#define COCOAPODS_POD_AVAILABLE_libqrencode
+#define COCOAPODS_VERSION_MAJOR_libqrencode 3
+#define COCOAPODS_VERSION_MINOR_libqrencode 4
+#define COCOAPODS_VERSION_PATCH_libqrencode 2
 

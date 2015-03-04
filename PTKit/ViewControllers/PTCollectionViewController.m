@@ -36,6 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     CGRect rect = self.view.bounds;
     _collectionView =
     [[PTCollectionView alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height)

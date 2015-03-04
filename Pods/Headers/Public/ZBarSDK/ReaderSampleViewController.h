@@ -1,0 +1,1 @@
+../../../../LocalCocoaPod/ZBar/iphone/examples/ReaderSample/ReaderSample/ReaderSampleViewController.h

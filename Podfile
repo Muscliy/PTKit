@@ -13,4 +13,8 @@ target :PTKit do
     pod 'SDWebImage'
     pod 'WebViewJavascriptBridge'
     pod 'UICKeyChainStore'
+    pod 'ZBarSDK', :path => 'LocalCocoaPod/ZBar'
+    pod 'ZXing'
+    pod 'libqrencode'
+    pod 'libextobjc'
 end

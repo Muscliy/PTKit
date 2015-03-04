@@ -1,0 +1,1 @@
+../../../../LocalCocoaPod/ZBar/zbar/svg.h

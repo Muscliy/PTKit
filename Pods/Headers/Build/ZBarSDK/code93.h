@@ -1,0 +1,1 @@
+../../../../LocalCocoaPod/ZBar/zbar/decoder/code93.h
