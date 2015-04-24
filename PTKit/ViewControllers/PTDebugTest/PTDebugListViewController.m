@@ -12,6 +12,10 @@
 #import "PTQRCodeReaderViewController.h"
 #import "PTTransitionsDebugListViewController.h"
 #import "PTFontListViewController.h"
+#import "PTImageSizeDebugViewController.h"
+#import "PTTagListViewController.h"
+#import "PTSegmentedControlViewController.h"
+#import "PTFloatingHeaderViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -45,7 +49,11 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"扫一扫"] navigationBlock:codeBlock],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"过场动画"] navigationBlock:NIPushControllerAction([PTTransitionsDebugListViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"系统字体"] navigationBlock:NIPushControllerAction([PTFontListViewController class])]
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"系统字体"] navigationBlock:NIPushControllerAction([PTFontListViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片尺寸"] navigationBlock:NIPushControllerAction([PTImageSizeDebugViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Tag List"] navigationBlock:NIPushControllerAction([PTTagListViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"segmented control"] navigationBlock:NIPushControllerAction([PTSegmentedControlViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"头部浮动控件"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])]
                                ];
     
     
@@ -67,7 +75,5 @@
 - (void)QRCodeReaderView:(UIViewController *)vc relsutCode:(NSString *)code
 {
 }
-
-
 
 @end

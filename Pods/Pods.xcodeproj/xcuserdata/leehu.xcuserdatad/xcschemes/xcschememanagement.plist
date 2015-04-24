@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-PTKit-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PTKit-CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PTKit-DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PTKit-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PTKit-Nimbus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PTKit-PSTCollectionView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,6 +79,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PTKit-libwebp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PTKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,62 +92,87 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F3AD78BE541D1538AE2BD4D</key>
+		<key>2E8FD60C1BEA95751406D0D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10A528ECDC59B810BCA69C63</key>
+		<key>30E6B9776D299D36E16876B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22738C54D90C5FFAFCA1006B</key>
+		<key>43BA422C58CE7F7B7495E71A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E4E6B33EB6DF7406D0673E9</key>
+		<key>4E5AF15F19A99812AC351CCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E4B48817A5B4A819F079F7A</key>
+		<key>52C748A76024B0CFC3FC205A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F372182E9DA981FFA930EAB</key>
+		<key>6D55C7E11532AF8845B9A9FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>474B60D8100909239AD8E1AA</key>
+		<key>7C50069CE6573EC6238F78B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>479779A7A142771851C59A95</key>
+		<key>7DE3588912CF243B31308D2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FD5D940A416736C4EF6E40D</key>
+		<key>A95C7BEDFB2039BF92099EE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4368718872762995F7C5CB1</key>
+		<key>BBE811C8E0C917EF1F759613</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5F8684546C5CDD6D72C7FAC</key>
+		<key>BDDD5B257AA892B3C0CA9D9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3A9F967A85C8F899ED161DA</key>
+		<key>BF856C14AD1760E31CC7F62B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BFCC565A16C9CC52A12ABF12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C602ADBAC0206FEE518FE336</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E16ABAE88D9BBC7B3F88A40A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB8EF2FB1CD932FBF81A509E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC34442876474FAEB2DDDB84</key>
 		<dict>
 			<key>primary</key>
 			<true/>

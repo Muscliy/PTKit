@@ -55,6 +55,7 @@ install_resource()
                     install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"
                     install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow.png"
                     install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow@2x.png"
+                    install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
                     install_resource "WebViewJavascriptBridge/WebViewJavascriptBridge/WebViewJavascriptBridge.js.txt"
                     install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-back.png"
                     install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-help.html"
