@@ -104,10 +104,16 @@
 		59D745771A402D9E0058016D /* PTModuleTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D745761A402D9E0058016D /* PTModuleTitleCollectionViewCell.m */; };
 		59D7457A1A40365F0058016D /* PTType12BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D745791A40365F0058016D /* PTType12BoxGroup.m */; };
 		59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7457C1A411EF40058016D /* PTType11BoxGroup.m */; };
+		59DABF9A1AF0BA3F0090A5EB /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF991AF0BA3F0090A5EB /* AMapSearchKit.framework */; };
+		59DABF9C1AF0BD4A0090A5EB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9B1AF0BD4A0090A5EB /* CoreTelephony.framework */; };
+		59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9D1AF0BD5E0090A5EB /* libz.dylib */; };
+		59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */; };
+		59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */; };
 		59E34A551A24609700D9C6F0 /* PTDDFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E34A541A24609700D9C6F0 /* PTDDFormatter.m */; };
 		59E41A611A8B466C0021B1A7 /* PTCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A601A8B466C0021B1A7 /* PTCodeScanViewController.m */; };
 		59E41A651A8B4E8A0021B1A7 /* UIDevice+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */; };
 		59E41A681A8B531E0021B1A7 /* PTCodeReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A671A8B531E0021B1A7 /* PTCodeReaderUtil.m */; };
+		59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */; };
 		59EFDBF71A3B475100E0C16F /* PTInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EFDBF61A3B475100E0C16F /* PTInfiniteScrollView.m */; };
 		59EFDC011A3C8F5B00E0C16F /* PTInfinitePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EFDC001A3C8F5B00E0C16F /* PTInfinitePageView.m */; };
 		59EFDC041A3C911600E0C16F /* PTTestCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EFDC031A3C911600E0C16F /* PTTestCore.m */; };
@@ -302,6 +308,12 @@
 		59D745791A40365F0058016D /* PTType12BoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTType12BoxGroup.m; sourceTree = "<group>"; };
 		59D7457B1A411EF40058016D /* PTType11BoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTType11BoxGroup.h; sourceTree = "<group>"; };
 		59D7457C1A411EF40058016D /* PTType11BoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTType11BoxGroup.m; sourceTree = "<group>"; };
+		59DABF991AF0BA3F0090A5EB /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		59DABF9B1AF0BD4A0090A5EB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		59DABF9D1AF0BD5E0090A5EB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		59DABFA11AF0BDDE0090A5EB /* PTAMapDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAMapDebugViewController.h; sourceTree = "<group>"; };
+		59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAMapDebugViewController.m; sourceTree = "<group>"; };
 		59E34A531A24609700D9C6F0 /* PTDDFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDDFormatter.h; sourceTree = "<group>"; };
 		59E34A541A24609700D9C6F0 /* PTDDFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDDFormatter.m; sourceTree = "<group>"; };
 		59E41A5F1A8B466C0021B1A7 /* PTCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeScanViewController.h; sourceTree = "<group>"; };
@@ -310,6 +322,8 @@
 		59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extents.m"; sourceTree = "<group>"; };
 		59E41A661A8B531E0021B1A7 /* PTCodeReaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeReaderUtil.h; sourceTree = "<group>"; };
 		59E41A671A8B531E0021B1A7 /* PTCodeReaderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCodeReaderUtil.m; sourceTree = "<group>"; };
+		59EC76621AEA2DE0006F257A /* UINavigationBar+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extents.h"; sourceTree = "<group>"; };
+		59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extents.m"; sourceTree = "<group>"; };
 		59EFDBF51A3B475100E0C16F /* PTInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTInfiniteScrollView.h; sourceTree = "<group>"; };
 		59EFDBF61A3B475100E0C16F /* PTInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTInfiniteScrollView.m; sourceTree = "<group>"; };
 		59EFDBFF1A3C8F5B00E0C16F /* PTInfinitePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTInfinitePageView.h; sourceTree = "<group>"; };
@@ -346,6 +360,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */,
+				59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */,
+				59DABF9C1AF0BD4A0090A5EB /* CoreTelephony.framework in Frameworks */,
+				59DABF9A1AF0BA3F0090A5EB /* AMapSearchKit.framework in Frameworks */,
 				59676D6B1ADF884100C9934E /* CFNetwork.framework in Frameworks */,
 				595BCB731A8B41A900A3CD28 /* SystemConfiguration.framework in Frameworks */,
 				595BCB711A8B419E00A3CD28 /* Security.framework in Frameworks */,
@@ -468,6 +486,8 @@
 				59676D471ADF84CC00C9934E /* PTSegmentedControlViewController.m */,
 				599F85A81AE89F6A00D3C49E /* PTFloatingHeaderViewController.h */,
 				599F85A91AE89F6A00D3C49E /* PTFloatingHeaderViewController.m */,
+				59DABFA11AF0BDDE0090A5EB /* PTAMapDebugViewController.h */,
+				59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */,
 			);
 			path = PTDebugTest;
 			sourceTree = "<group>";
@@ -485,6 +505,8 @@
 				599E4D2A1A88866000DDBD88 /* NSMutableAttributedString+Extents.m */,
 				59E41A631A8B4E8A0021B1A7 /* UIDevice+Extents.h */,
 				59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */,
+				59EC76621AEA2DE0006F257A /* UINavigationBar+Extents.h */,
+				59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -812,6 +834,10 @@
 		AF22F5E9B577143CB02946BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */,
+				59DABF9D1AF0BD5E0090A5EB /* libz.dylib */,
+				59DABF9B1AF0BD4A0090A5EB /* CoreTelephony.framework */,
+				59DABF991AF0BA3F0090A5EB /* AMapSearchKit.framework */,
 				59676D6A1ADF884100C9934E /* CFNetwork.framework */,
 				595BCB721A8B41A900A3CD28 /* SystemConfiguration.framework */,
 				595BCB701A8B419E00A3CD28 /* Security.framework */,
@@ -996,6 +1022,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */,
 				59D745641A400CC40058016D /* PTModuleDecorationView.m in Sources */,
 				5903E45C1A3ECA56007ADC7D /* PTCollectionView.m in Sources */,
 				59F228011A235E8B00AFF494 /* ViewController.m in Sources */,
@@ -1025,6 +1052,7 @@
 				59B391691A24899B0092837C /* PTScreen.m in Sources */,
 				59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */,
 				595DA3B21AA55D38002FA051 /* PTFontListViewController.m in Sources */,
+				59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */,
 				59277C5B1AC53453008823B6 /* PTImageSizeDebugViewController.m in Sources */,
 				595DA3A11AA2E4AF002FA051 /* PTViewControllerPushAnimatedTransitioning.m in Sources */,
 				595DA39E1AA2E491002FA051 /* PTViewControllerPopAnimatedTransitioning.m in Sources */,
@@ -1193,6 +1221,10 @@
 			baseConfigurationReference = 29BBB9589E1097EE002AE6AD /* Pods-PTKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = PTKit/PrefixHeader.pch;
 				INFOPLIST_FILE = PTKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -1207,6 +1239,10 @@
 			baseConfigurationReference = 569B109F2E9A669103EC65D6 /* Pods-PTKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = PTKit/PrefixHeader.pch;
 				INFOPLIST_FILE = PTKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;

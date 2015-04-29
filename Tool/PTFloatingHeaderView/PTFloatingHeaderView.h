@@ -10,6 +10,7 @@
 
 @interface PTFloatingHeaderView : UIView
 
+@property (nonatomic, assign) BOOL viewIsFullScreen;
 @property (nonatomic, assign) CGFloat floatingHeight;
 
 - (void)updateScrollViewInsets:(UIScrollView *)scrollView;
@@ -21,6 +22,5 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 - (void)hideFloatView:(BOOL)animated;
 - (void)showFloadView:(BOOL)animated;
-
 
 @end

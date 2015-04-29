@@ -16,6 +16,8 @@
 #import "PTTagListViewController.h"
 #import "PTSegmentedControlViewController.h"
 #import "PTFloatingHeaderViewController.h"
+#import "extobjc.h"
+#import "PTAMapDebugViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -34,18 +36,21 @@
     
     _actions = [[NITableViewActions alloc] initWithTarget:self];
     NIActionBlock codeBlock = ^(id object, id target, NSIndexPath *indexPath) {
-       
-        PTQRCodeReaderViewController *vc = [[PTQRCodeReaderViewController alloc] init];
-        vc.title = @"扫一扫";
-        vc.delegate = self;
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-        
+//       
+//        PTQRCodeReaderViewController *vc = [[PTQRCodeReaderViewController alloc] init];
+//        vc.title = @"扫一扫";
+//        vc.delegate = self;
+//        vc.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:vc animated:YES];
+//        
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
         return YES;
     };
 
     
     NSArray *tableContents = @[
+                               
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"高德搜索"] navigationBlock:NIPushControllerAction([PTAMapDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"扫一扫"] navigationBlock:codeBlock],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"过场动画"] navigationBlock:NIPushControllerAction([PTTransitionsDebugListViewController class])],
@@ -60,6 +65,12 @@
     
     self.tableView.delegate = [self.actions forwardingTo:self];
     [self setTableData:tableContents];
+    //[self extobjcTest];
+}
+
+- (void)extobjcTest
+{
+    
 }
 
 - (void)qrcodeReadResult:(BOOL)isOK readStrResult:(NSString *)result

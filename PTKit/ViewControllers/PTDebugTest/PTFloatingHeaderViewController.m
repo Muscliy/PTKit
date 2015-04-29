@@ -9,6 +9,8 @@
 
 #import "PTFloatingHeaderViewController.h"
 #import "PTFloatingHeaderView.h"
+#import "UINavigationBar+Extents.h"
+#import "PTRectMacro.h"
 
 @interface PTFloatingHeaderViewController ()
 
@@ -21,13 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+//    }
     
     _floatingView = [[PTFloatingHeaderView alloc]
-                     initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 60)];
-    _floatingView.floatingHeight = 40;
+                     initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 88)];
+    _floatingView.floatingHeight = 44;
     _floatingView.backgroundColor = [UIColor yellowColor];
     [_floatingView updateScrollViewInsets:self.tableView];
     [self.view addSubview:_floatingView];
@@ -52,11 +54,31 @@
     [self setTableData:tableContents];
 }
 
+- (void)setNavigationBarTransformProgress:(CGFloat)progress
+{
+    [self.navigationController.navigationBar pt_setTranslationY:(-44 * progress)];
+    [self.navigationController.navigationBar pt_setContentAlpha:1 - progress];
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
     [self.floatingView scrollViewDidScroll:scrollView];
+    
+    CGFloat offsetHeight = (CGRectGetHeight(self.floatingView.frame) + kTopBarHeight + kPTStatusBarHeight);
+    if (scrollView.contentOffset.y > -offsetHeight) {
+        if (scrollView.contentOffset.y >=
+            (44 - offsetHeight)) {
+            [self setNavigationBarTransformProgress:1];
+        } else {
+            [self setNavigationBarTransformProgress:((offsetHeight +
+                                                      scrollView.contentOffset.y) /
+                                                     44)];
+        }
+    } else {
+        [self setNavigationBarTransformProgress:0];
+    }
+
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

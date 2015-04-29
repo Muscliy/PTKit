@@ -8,6 +8,7 @@
 
 #import "PTFloatingHeaderView.h"
 #import "PTLogger.h"
+#import "PTRectMacro.h"
 #define FLOATTING_HEIGHT 44
 
 @interface PTFloatingHeaderView ()
@@ -15,6 +16,7 @@
 @property (nonatomic) CGFloat height;
 @property (nonatomic) CGFloat startPointY;
 @property (nonatomic) CGFloat lastScrollPosition;
+@property (nonatomic, assign) CGFloat originY;
 
 @end
 
@@ -22,11 +24,13 @@
     BOOL _isBeingDragged;
 }
 
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame])) {
         self.backgroundColor = [UIColor whiteColor];
         self.floatingHeight = FLOATTING_HEIGHT;
+        self.originY = CGRectGetMinY(self.frame);
         [self initialize];
     }
     return self;
@@ -73,7 +77,7 @@
 {
     UIEdgeInsets originalInset = scrollView.contentInset;
     UIEdgeInsets updatedInset =
-        UIEdgeInsetsMake(0, originalInset.left, originalInset.bottom, originalInset.right);
+    UIEdgeInsetsMake(0, originalInset.left, originalInset.bottom, originalInset.right);
     scrollView.contentInset = updatedInset;
     scrollView.scrollIndicatorInsets = updatedInset;
 }
@@ -82,14 +86,15 @@
 {
     PTLogDebug(@"scrollViewWillBeginDragging %lf", scrollView.contentOffset.y);
     CGRect oriFrame = self.frame;
-    if (scrollView.contentOffset.y <= -self.height) {
+    CGFloat offsetHeight = self.originY + CGRectGetHeight(self.frame);
+    if (scrollView.contentOffset.y <= - (offsetHeight)) {
         PTLogDebug(@"scrollView.contentOffset.y <= -self.floatingHeight");
-        oriFrame.origin.y = 0;
+        oriFrame.origin.y = self.originY;
         self.frame = oriFrame;
         self.lastScrollPosition = -self.floatingHeight;
         return;
     }
-
+    
     CGFloat scrollViewOffset = scrollView.contentOffset.y - self.lastScrollPosition;
     self.lastScrollPosition = scrollView.contentOffset.y;
     if (scrollViewOffset > 0) {
@@ -104,8 +109,8 @@
         PTLogDebug(@"scrollViewWillBeginDragging");
     } else {
         CGRect desFrame = CGRectOffset(oriFrame, 0, -scrollViewOffset);
-        if (desFrame.origin.y > 0) {
-            desFrame.origin.y = 0;
+        if (desFrame.origin.y > self.originY) {
+            desFrame.origin.y = self.originY;
         }
         if (!CGRectEqualToRect(oriFrame, desFrame)) {
             self.frame = desFrame;
@@ -166,7 +171,7 @@
     if (animated) {
         [UIView animateWithDuration:0.2
                          animations:^{
-                           self.frame = oriFrame;
+                             self.frame = oriFrame;
                          }];
     } else {
         self.frame = oriFrame;
@@ -180,11 +185,10 @@
     if (animated) {
         [UIView animateWithDuration:0.2
                          animations:^{
-                           self.frame = oriFrame;
+                             self.frame = oriFrame;
                          }];
     } else {
         self.frame = oriFrame;
     }
 }
-
 @end
