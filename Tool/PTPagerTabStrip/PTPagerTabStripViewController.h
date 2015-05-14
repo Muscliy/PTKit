@@ -67,7 +67,7 @@ typedef NS_ENUM(NSUInteger, PTPagerTabStripDirection) {
 @property (nonatomic, assign) BOOL skipIntermediateViewControllers;
 @property (nonatomic, assign) BOOL isProgressiveIndicator;
 @property (nonatomic, assign) BOOL isElasticIndicatorLimit;
-
+f
 /**
  *
  *
