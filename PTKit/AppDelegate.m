@@ -10,8 +10,12 @@
 #import "PTDebugListViewController.h"
 #import "PTNavigationController.h"
 #import "PTNavigationBar.h"
+#import <BaiduMapAPI/BMapKit.h>
 
-@interface AppDelegate ()
+
+@interface AppDelegate ()<BMKGeneralDelegate>
+
+@property (nonatomic, strong) BMKMapManager *baiduMapManager;
 
 @end
 
@@ -20,10 +24,10 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
     PTNavigationController *nav = [[PTNavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
+    [self configrationApiInfo];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -46,6 +50,25 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+}
+
+- (void)configrationApiInfo
+{
+    _baiduMapManager = [[BMKMapManager alloc] init];
+    BOOL ret = [_baiduMapManager start:@"89WVu7Bn6pVitioygTFudGgB" generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
+
+- (void)onGetPermissionState:(int)iError
+{
+
+}
+
+- (void)onGetNetworkState:(int)iError
+{
+
 }
 
 @end

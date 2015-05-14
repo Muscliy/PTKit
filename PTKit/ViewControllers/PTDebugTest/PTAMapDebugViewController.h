@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 LeeHu. All rights reserved.
 //
 
-#import "PTBaseViewCotroller.h"
+#import "PTTableViewController.h"
 
-@interface PTAMapDebugViewController : PTBaseViewCotroller
+@interface PTAMapDebugViewController : PTTableViewController
 
 @end

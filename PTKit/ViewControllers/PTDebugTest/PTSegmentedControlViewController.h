@@ -7,7 +7,6 @@
 //
 
 #import "PTBaseViewCotroller.h"
-
 @interface PTSegmentedControlViewController : PTBaseViewCotroller
 
 @end

@@ -8,8 +8,10 @@
 
 #import "PTSegmentedControlViewController.h"
 #import "PTSegmentedControl.h"
+#import "PTPagerTabStripViewController.h"
 
-@interface PTSegmentedControlViewController ()<UIScrollViewDelegate>
+
+@interface PTSegmentedControlViewController ()<UIScrollViewDelegate, PTPagerTabStripChildItem>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) PTSegmentedControl *segmentedControl4;
@@ -151,6 +153,16 @@
     NSInteger page = scrollView.contentOffset.x / pageWidth;
     
     [self.segmentedControl4 setSelectedSegmentIndex:page animated:YES];
+}
+
+-(NSString *)titleForPagerTabStripViewController:(PTPagerTabStripViewController *)pagerTabStripViewController
+{
+    return @"segment View";
+}
+
+-(UIColor *)colorForPagerTabStripViewController:(PTPagerTabStripViewController *)pagerTabStripViewController
+{
+    return [UIColor whiteColor];
 }
 
 

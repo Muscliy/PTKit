@@ -17,6 +17,7 @@
 #import "PTSegmentedControlViewController.h"
 #import "PTFloatingHeaderViewController.h"
 #import "extobjc.h"
+#import "PTButtonBarPagerTabStripExampleViewController.h"
 #import "PTAMapDebugViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
@@ -49,7 +50,7 @@
 
     
     NSArray *tableContents = @[
-                               
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"pagestrip"] navigationBlock:NIPushControllerAction([PTButtonBarPagerTabStripExampleViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"高德搜索"] navigationBlock:NIPushControllerAction([PTAMapDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"扫一扫"] navigationBlock:codeBlock],

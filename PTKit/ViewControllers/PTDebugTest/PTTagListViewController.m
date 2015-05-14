@@ -8,8 +8,9 @@
 
 #import "PTTagListViewController.h"
 #import "PTTagView.h"
+#import "PTPagerTabStripViewController.h"
 
-@interface PTTagListViewController ()<PTTagViewDelegate>
+@interface PTTagListViewController ()<PTTagViewDelegate,PTPagerTabStripChildItem>
 
 @end
 
@@ -43,6 +44,16 @@
                                           cancelButtonTitle:@"Ok"
                                           otherButtonTitles:nil];
     [alert show];
+}
+
+-(NSString *)titleForPagerTabStripViewController:(PTPagerTabStripViewController *)pagerTabStripViewController
+{
+    return @"tag View";
+}
+
+-(UIColor *)colorForPagerTabStripViewController:(PTPagerTabStripViewController *)pagerTabStripViewController
+{
+    return [UIColor whiteColor];
 }
 
 @end

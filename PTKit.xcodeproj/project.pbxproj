@@ -32,6 +32,16 @@
 		595126A61A85EE23003AEE1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595126A51A85EE23003AEE1B /* AVFoundation.framework */; };
 		595126A91A85F312003AEE1B /* PTQRCodeReaderOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */; };
 		595126AC1A85F876003AEE1B /* PTMediaDeviceAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 595126AB1A85F876003AEE1B /* PTMediaDeviceAuthorize.m */; };
+		595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */; };
+		595733281AFA2C2E006474CB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595733271AFA2C2E006474CB /* BaiduMapAPI.framework */; };
+		5957332A1AFA2CF5006474CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595733291AFA2CF5006474CB /* CoreLocation.framework */; };
+		5957332C1AFA2D04006474CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5957332B1AFA2D04006474CB /* QuartzCore.framework */; };
+		5957332E1AFA2D0E006474CB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5957332D1AFA2D0E006474CB /* OpenGLES.framework */; };
+		595733361AFA3DF5006474CB /* UIViewController+POPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733351AFA3DF5006474CB /* UIViewController+POPHUD.m */; };
+		595733391AFB1393006474CB /* PTPagerTabStripButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733381AFB1393006474CB /* PTPagerTabStripButtonBarView.m */; };
+		5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957333B1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m */; };
+		595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */; };
+		595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */; };
 		595BCB481A88F16400A3CD28 /* PTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BCB471A88F16400A3CD28 /* PTCameraView.m */; };
 		595BCB4B1A88F17900A3CD28 /* PTCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BCB4A1A88F17900A3CD28 /* PTCameraManager.m */; };
 		595BCB631A8B40A400A3CD28 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB621A8B40A400A3CD28 /* libiconv.dylib */; };
@@ -195,6 +205,22 @@
 		595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTQRCodeReaderOverlayView.m; sourceTree = "<group>"; };
 		595126AA1A85F876003AEE1B /* PTMediaDeviceAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMediaDeviceAuthorize.h; sourceTree = "<group>"; };
 		595126AB1A85F876003AEE1B /* PTMediaDeviceAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMediaDeviceAuthorize.m; sourceTree = "<group>"; };
+		595733241AFA03CC006474CB /* PTPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPagerTabStripViewController.h; sourceTree = "<group>"; };
+		595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPagerTabStripViewController.m; sourceTree = "<group>"; };
+		595733271AFA2C2E006474CB /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		595733291AFA2CF5006474CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5957332B1AFA2D04006474CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5957332D1AFA2D0E006474CB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		595733341AFA3DF5006474CB /* UIViewController+POPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+POPHUD.h"; sourceTree = "<group>"; };
+		595733351AFA3DF5006474CB /* UIViewController+POPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+POPHUD.m"; sourceTree = "<group>"; };
+		595733371AFB1393006474CB /* PTPagerTabStripButtonBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPagerTabStripButtonBarView.h; sourceTree = "<group>"; };
+		595733381AFB1393006474CB /* PTPagerTabStripButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPagerTabStripButtonBarView.m; sourceTree = "<group>"; };
+		5957333A1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTButtonBarPagerTabStripViewController.h; sourceTree = "<group>"; };
+		5957333B1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTButtonBarPagerTabStripViewController.m; sourceTree = "<group>"; };
+		595733501AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPagerTabStripButtonBarViewCell.h; sourceTree = "<group>"; };
+		595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPagerTabStripButtonBarViewCell.m; sourceTree = "<group>"; };
+		595733531AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTButtonBarPagerTabStripExampleViewController.h; sourceTree = "<group>"; };
+		595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTButtonBarPagerTabStripExampleViewController.m; sourceTree = "<group>"; };
 		595BCB461A88F16400A3CD28 /* PTCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraView.h; sourceTree = "<group>"; };
 		595BCB471A88F16400A3CD28 /* PTCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraView.m; sourceTree = "<group>"; };
 		595BCB491A88F17900A3CD28 /* PTCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraManager.h; sourceTree = "<group>"; };
@@ -360,6 +386,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5957332E1AFA2D0E006474CB /* OpenGLES.framework in Frameworks */,
+				5957332C1AFA2D04006474CB /* QuartzCore.framework in Frameworks */,
+				5957332A1AFA2CF5006474CB /* CoreLocation.framework in Frameworks */,
+				595733281AFA2C2E006474CB /* BaiduMapAPI.framework in Frameworks */,
 				59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */,
 				59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */,
 				59DABF9C1AF0BD4A0090A5EB /* CoreTelephony.framework in Frameworks */,
@@ -488,6 +518,8 @@
 				599F85A91AE89F6A00D3C49E /* PTFloatingHeaderViewController.m */,
 				59DABFA11AF0BDDE0090A5EB /* PTAMapDebugViewController.h */,
 				59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */,
+				595733531AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.h */,
+				595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */,
 			);
 			path = PTDebugTest;
 			sourceTree = "<group>";
@@ -507,6 +539,8 @@
 				59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */,
 				59EC76621AEA2DE0006F257A /* UINavigationBar+Extents.h */,
 				59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */,
+				595733341AFA3DF5006474CB /* UIViewController+POPHUD.h */,
+				595733351AFA3DF5006474CB /* UIViewController+POPHUD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -518,6 +552,21 @@
 				59277C5A1AC53453008823B6 /* PTImageSizeDebugViewController.m */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		595733231AFA02E1006474CB /* PTPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				595733241AFA03CC006474CB /* PTPagerTabStripViewController.h */,
+				595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */,
+				595733371AFB1393006474CB /* PTPagerTabStripButtonBarView.h */,
+				595733381AFB1393006474CB /* PTPagerTabStripButtonBarView.m */,
+				5957333A1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.h */,
+				5957333B1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m */,
+				595733501AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.h */,
+				595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */,
+			);
+			path = PTPagerTabStrip;
 			sourceTree = "<group>";
 		};
 		595DA3891AA2B2F4002FA051 /* Resource */ = {
@@ -806,6 +855,7 @@
 		59F66D3F1A38496F002A7ECA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				595733231AFA02E1006474CB /* PTPagerTabStrip */,
 				599F85A41AE89D3200D3C49E /* PTFloatingHeaderView */,
 				59676D3E1ADF5A1400C9934E /* PTSegmentedControl */,
 				59676D271ADE5D1400C9934E /* PTTagView */,
@@ -834,6 +884,10 @@
 		AF22F5E9B577143CB02946BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5957332D1AFA2D0E006474CB /* OpenGLES.framework */,
+				5957332B1AFA2D04006474CB /* QuartzCore.framework */,
+				595733291AFA2CF5006474CB /* CoreLocation.framework */,
+				595733271AFA2C2E006474CB /* BaiduMapAPI.framework */,
 				59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */,
 				59DABF9D1AF0BD5E0090A5EB /* libz.dylib */,
 				59DABF9B1AF0BD4A0090A5EB /* CoreTelephony.framework */,
@@ -1022,7 +1076,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595733361AFA3DF5006474CB /* UIViewController+POPHUD.m in Sources */,
+				595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */,
 				59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */,
+				595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */,
 				59D745641A400CC40058016D /* PTModuleDecorationView.m in Sources */,
 				5903E45C1A3ECA56007ADC7D /* PTCollectionView.m in Sources */,
 				59F228011A235E8B00AFF494 /* ViewController.m in Sources */,
@@ -1038,6 +1095,7 @@
 				595126AC1A85F876003AEE1B /* PTMediaDeviceAuthorize.m in Sources */,
 				5903E4501A3EC987007ADC7D /* PTType4BoxGroup.m in Sources */,
 				5903E44B1A3EC987007ADC7D /* PTCategoryBoxGroup.m in Sources */,
+				5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */,
 				59E41A651A8B4E8A0021B1A7 /* UIDevice+Extents.m in Sources */,
 				599E4D281A8884C300DDBD88 /* UIImage+Extents.m in Sources */,
 				599F85A71AE89DD900D3C49E /* PTFloatingHeaderView.m in Sources */,
@@ -1054,6 +1112,7 @@
 				595DA3B21AA55D38002FA051 /* PTFontListViewController.m in Sources */,
 				59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */,
 				59277C5B1AC53453008823B6 /* PTImageSizeDebugViewController.m in Sources */,
+				595733391AFB1393006474CB /* PTPagerTabStripButtonBarView.m in Sources */,
 				595DA3A11AA2E4AF002FA051 /* PTViewControllerPushAnimatedTransitioning.m in Sources */,
 				595DA39E1AA2E491002FA051 /* PTViewControllerPopAnimatedTransitioning.m in Sources */,
 				595126A91A85F312003AEE1B /* PTQRCodeReaderOverlayView.m in Sources */,
@@ -1063,6 +1122,7 @@
 				59D745771A402D9E0058016D /* PTModuleTitleCollectionViewCell.m in Sources */,
 				5903E44E1A3EC987007ADC7D /* PTType2BoxGroup.m in Sources */,
 				5903E4461A3EC987007ADC7D /* PTBoxGroup.m in Sources */,
+				595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */,
 				5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */,
 				59D7455E1A4005400058016D /* PTDebugListViewController.m in Sources */,
 				59E34A551A24609700D9C6F0 /* PTDDFormatter.m in Sources */,
