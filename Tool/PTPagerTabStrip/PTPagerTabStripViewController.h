@@ -68,6 +68,11 @@ typedef NS_ENUM(NSUInteger, PTPagerTabStripDirection) {
 @property (nonatomic, assign) BOOL isProgressiveIndicator;
 @property (nonatomic, assign) BOOL isElasticIndicatorLimit;
 
+/**
+ *
+ *
+ *  @param index 
+ */
 -(void)moveToViewControllerAtIndex:(NSUInteger)index;
 -(void)moveToViewController:(UIViewController *)viewController;
 -(void)reloadPagerTabStripView;
