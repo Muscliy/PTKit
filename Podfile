@@ -20,4 +20,5 @@ target :PTKit do
     pod 'libextobjc'
     pod 'MWPhotoBrowser'
     pod 'AFNetworking'
+    pod 'ReactiveCocoa'
 end

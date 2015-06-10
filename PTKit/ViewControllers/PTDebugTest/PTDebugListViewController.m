@@ -19,6 +19,9 @@
 #import "extobjc.h"
 #import "PTButtonBarPagerTabStripExampleViewController.h"
 #import "PTAMapDebugViewController.h"
+#import "PTReactiveCocoaDemoViewController.h"
+#import "PTAlertView.h"
+#import "PTUIKitCategoryViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -37,20 +40,14 @@
     
     _actions = [[NITableViewActions alloc] initWithTarget:self];
     NIActionBlock codeBlock = ^(id object, id target, NSIndexPath *indexPath) {
-//       
-//        PTQRCodeReaderViewController *vc = [[PTQRCodeReaderViewController alloc] init];
-//        vc.title = @"扫一扫";
-//        vc.delegate = self;
-//        vc.hidesBottomBarWhenPushed = YES;
-//        [self.navigationController pushViewController:vc animated:YES];
-//        
-        [self.navigationController setNavigationBarHidden:YES animated:YES];
+       
         return YES;
     };
 
     
     NSArray *tableContents = @[
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"pagestrip"] navigationBlock:NIPushControllerAction([PTButtonBarPagerTabStripExampleViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"UIKit"] navigationBlock:NIPushControllerAction([PTUIKitCategoryViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"网易首页类目切换"] navigationBlock:NIPushControllerAction([PTButtonBarPagerTabStripExampleViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"高德搜索"] navigationBlock:NIPushControllerAction([PTAMapDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"扫一扫"] navigationBlock:codeBlock],
@@ -59,13 +56,15 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片尺寸"] navigationBlock:NIPushControllerAction([PTImageSizeDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Tag List"] navigationBlock:NIPushControllerAction([PTTagListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"segmented control"] navigationBlock:NIPushControllerAction([PTSegmentedControlViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"头部浮动控件"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])]
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"头部浮动控件"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])]
                                ];
     
     
     
     self.tableView.delegate = [self.actions forwardingTo:self];
     [self setTableData:tableContents];
+    
     //[self extobjcTest];
 }
 

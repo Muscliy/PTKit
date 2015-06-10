@@ -55,11 +55,11 @@
 
 // singleton
 
-#undef MMSingletonInterface
-#define MMSingletonInterface +(instancetype)sharedInstance;
+#undef PTSingletonInterface
+#define PTSingletonInterface +(instancetype)sharedInstance;
 
-#undef MMSingletonImplementation
-#define MMSingletonImplementation                                                                  \
+#undef PTSingletonImplementation
+#define PTSingletonImplementation                                                                  \
     +(instancetype)sharedInstance                                                                  \
     {                                                                                              \
         static dispatch_once_t once;                                                               \
@@ -68,8 +68,8 @@
         return __singleton__;                                                                      \
     }
 
-#undef MMInstance
-#define MMInstance(CLASSNAME) [CLASSNAME sharedInstance]
+#undef PTInstance
+#define PTInstance(CLASSNAME) [CLASSNAME sharedInstance]
 
 #undef PTWeak
 #define PTWeak(...) @weakify(__VA_ARGS__)

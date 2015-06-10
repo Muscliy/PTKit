@@ -19,7 +19,7 @@
     
     UIView *containView = [transitionContext containerView];
     NSTimeInterval duration = [self transitionDuration:transitionContext];
-    
+    NSLog(@"durantion :%zd",duration);
     UIView *imageSnapShot = [fromVC.imageView snapshotViewAfterScreenUpdates:NO];
     imageSnapShot.frame = [containView convertRect:fromVC.imageView.frame fromView:fromVC.imageView.superview];
     fromVC.imageView.hidden = YES;

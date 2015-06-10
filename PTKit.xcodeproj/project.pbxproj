@@ -28,6 +28,12 @@
 		5903E4641A3EFDE2007ADC7D /* PTModuleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E4631A3EFDE2007ADC7D /* PTModuleCollectionViewController.m */; };
 		5903E46A1A3EFEDD007ADC7D /* PTNetworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E4691A3EFEDD007ADC7D /* PTNetworkImageView.m */; };
 		5903E46E1A3FD411007ADC7D /* NSTimer+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */; };
+		590C3FAC1B16BD8C00A0CC7A /* PTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */; };
+		590C3FB01B16DA2400A0CC7A /* UIColor+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FAF1B16DA2400A0CC7A /* UIColor+Extents.m */; };
+		590C3FCE1B19588D00A0CC7A /* PTUIKitCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FCD1B19588D00A0CC7A /* PTUIKitCategoryViewController.m */; };
+		590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */; };
+		590C3FEA1B1D5CB700A0CC7A /* UISearchBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */; };
+		590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */; };
 		59277C5B1AC53453008823B6 /* PTImageSizeDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59277C5A1AC53453008823B6 /* PTImageSizeDebugViewController.m */; };
 		595126A61A85EE23003AEE1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595126A51A85EE23003AEE1B /* AVFoundation.framework */; };
 		595126A91A85F312003AEE1B /* PTQRCodeReaderOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */; };
@@ -134,6 +140,7 @@
 		59F228061A235E8B00AFF494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F228051A235E8B00AFF494 /* Images.xcassets */; };
 		59F228091A235E8B00AFF494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F228071A235E8B00AFF494 /* LaunchScreen.xib */; };
 		59F228151A235E8B00AFF494 /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228141A235E8B00AFF494 /* PTKitTests.m */; };
+		59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */; };
 		59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D421A384A30002A7ECA /* PTWebViewProgress.m */; };
 		59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */; };
 		59F66D551A39B232002A7ECA /* PTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D541A39B232002A7ECA /* PTSystemInfo.m */; };
@@ -194,6 +201,18 @@
 		5903E4691A3EFEDD007ADC7D /* PTNetworkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNetworkImageView.m; sourceTree = "<group>"; };
 		5903E46C1A3FD411007ADC7D /* NSTimer+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extents.h"; sourceTree = "<group>"; };
 		5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extents.m"; sourceTree = "<group>"; };
+		590C3FAA1B16BD8C00A0CC7A /* PTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAlertView.h; sourceTree = "<group>"; };
+		590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAlertView.m; sourceTree = "<group>"; };
+		590C3FAE1B16DA2400A0CC7A /* UIColor+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extents.h"; sourceTree = "<group>"; };
+		590C3FAF1B16DA2400A0CC7A /* UIColor+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extents.m"; sourceTree = "<group>"; };
+		590C3FCC1B19588D00A0CC7A /* PTUIKitCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUIKitCategoryViewController.h; sourceTree = "<group>"; };
+		590C3FCD1B19588D00A0CC7A /* PTUIKitCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUIKitCategoryViewController.m; sourceTree = "<group>"; };
+		590C3FCF1B19592600A0CC7A /* PTAlertViewDemoViewCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAlertViewDemoViewCotroller.h; sourceTree = "<group>"; };
+		590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAlertViewDemoViewCotroller.m; sourceTree = "<group>"; };
+		590C3FE81B1D5CB700A0CC7A /* UISearchBar+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Extents.h"; sourceTree = "<group>"; };
+		590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Extents.m"; sourceTree = "<group>"; };
+		590C3FEB1B1D7DA200A0CC7A /* NSString+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extents.h"; sourceTree = "<group>"; };
+		590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extents.m"; sourceTree = "<group>"; };
 		591101C31A51446500261162 /* PTColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTColorMacro.h; sourceTree = "<group>"; };
 		591101C41A51446500261162 /* PTFontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFontMacro.h; sourceTree = "<group>"; };
 		591101C51A51446500261162 /* PTOSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOSMacro.h; sourceTree = "<group>"; };
@@ -369,6 +388,8 @@
 		59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F228131A235E8B00AFF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F228141A235E8B00AFF494 /* PTKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitTests.m; sourceTree = "<group>"; };
+		59F3A60F1B131232002E2241 /* PTReactiveCocoaDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTReactiveCocoaDemoViewController.h; sourceTree = "<group>"; };
+		59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTReactiveCocoaDemoViewController.m; sourceTree = "<group>"; };
 		59F66D411A384A30002A7ECA /* PTWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgress.h; sourceTree = "<group>"; };
 		59F66D421A384A30002A7ECA /* PTWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgress.m; sourceTree = "<group>"; };
 		59F66D431A384A30002A7ECA /* PTWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgressView.h; sourceTree = "<group>"; };
@@ -520,6 +541,8 @@
 				59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */,
 				595733531AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.h */,
 				595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */,
+				59F3A60F1B131232002E2241 /* PTReactiveCocoaDemoViewController.h */,
+				59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */,
 			);
 			path = PTDebugTest;
 			sourceTree = "<group>";
@@ -541,8 +564,25 @@
 				59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */,
 				595733341AFA3DF5006474CB /* UIViewController+POPHUD.h */,
 				595733351AFA3DF5006474CB /* UIViewController+POPHUD.m */,
+				590C3FAE1B16DA2400A0CC7A /* UIColor+Extents.h */,
+				590C3FAF1B16DA2400A0CC7A /* UIColor+Extents.m */,
+				590C3FE81B1D5CB700A0CC7A /* UISearchBar+Extents.h */,
+				590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */,
+				590C3FEB1B1D7DA200A0CC7A /* NSString+Extents.h */,
+				590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		590C3FCB1B19588D00A0CC7A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				590C3FCC1B19588D00A0CC7A /* PTUIKitCategoryViewController.h */,
+				590C3FCD1B19588D00A0CC7A /* PTUIKitCategoryViewController.m */,
+				590C3FCF1B19592600A0CC7A /* PTAlertViewDemoViewCotroller.h */,
+				590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		59277C581AC53429008823B6 /* Debug */ = {
@@ -636,6 +676,7 @@
 		5969DAB21A2C1C9800509FB7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				590C3FCB1B19588D00A0CC7A /* UIKit */,
 				5903E45E1A3EDC5A007ADC7D /* PTDebugTest */,
 				5969DAB31A2C1D0400509FB7 /* PTBaseViewCotroller.h */,
 				5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */,
@@ -866,6 +907,8 @@
 				5903E4261A3EC987007ADC7D /* PTBox */,
 				59EFDBF41A3B473000E0C16F /* PTInfiniteScrollView */,
 				59F66D401A384A24002A7ECA /* WebViewProgress */,
+				590C3FAA1B16BD8C00A0CC7A /* PTAlertView.h */,
+				590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1078,6 +1121,7 @@
 			files = (
 				595733361AFA3DF5006474CB /* UIViewController+POPHUD.m in Sources */,
 				595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */,
+				59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */,
 				59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */,
 				595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */,
 				59D745641A400CC40058016D /* PTModuleDecorationView.m in Sources */,
@@ -1089,6 +1133,7 @@
 				595DA39A1AA2B42B002FA051 /* PTTransitionsDebugListViewController.m in Sources */,
 				5903E4471A3EC987007ADC7D /* PTBoxManager.m in Sources */,
 				59676D411ADF5A3600C9934E /* PTSegmentedControl.m in Sources */,
+				590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */,
 				599A9B1F1A84946900AA302C /* PTNavigationController.m in Sources */,
 				59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */,
 				59E41A611A8B466C0021B1A7 /* PTCodeScanViewController.m in Sources */,
@@ -1123,7 +1168,9 @@
 				5903E44E1A3EC987007ADC7D /* PTType2BoxGroup.m in Sources */,
 				5903E4461A3EC987007ADC7D /* PTBoxGroup.m in Sources */,
 				595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */,
+				590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */,
 				5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */,
+				590C3FB01B16DA2400A0CC7A /* UIColor+Extents.m in Sources */,
 				59D7455E1A4005400058016D /* PTDebugListViewController.m in Sources */,
 				59E34A551A24609700D9C6F0 /* PTDDFormatter.m in Sources */,
 				595DA3821AA2A82D002FA051 /* PTInteractiveCollectionViewController.m in Sources */,
@@ -1132,10 +1179,13 @@
 				59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */,
 				5903E46E1A3FD411007ADC7D /* NSTimer+Extents.m in Sources */,
 				5903E44C1A3EC987007ADC7D /* PTType10BoxGroup.m in Sources */,
+				590C3FCE1B19588D00A0CC7A /* PTUIKitCategoryViewController.m in Sources */,
 				59D7457A1A40365F0058016D /* PTType12BoxGroup.m in Sources */,
 				5903E44D1A3EC987007ADC7D /* PTType1BoxGroup.m in Sources */,
 				599E4D7F1A888A4E00DDBD88 /* PTCameraViewController.m in Sources */,
+				590C3FAC1B16BD8C00A0CC7A /* PTAlertView.m in Sources */,
 				59D7455B1A3FE81B0058016D /* PTTableView.m in Sources */,
+				590C3FEA1B1D5CB700A0CC7A /* UISearchBar+Extents.m in Sources */,
 				59D745711A401ECF0058016D /* PTType13BoxGroup.m in Sources */,
 				59D745741A4028180058016D /* PTType14BoxGroup.m in Sources */,
 				5975AD201A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm in Sources */,
