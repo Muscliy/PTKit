@@ -82,6 +82,22 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark - UIScrollViewDelegate
+-(void)scrollViewDidScroll:(UIScrollView *)sender
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    //ensure that the end of scroll is fired.
+    [self performSelector:@selector(scrollViewDidEndScrollingAnimation:) withObject:nil afterDelay:0.3];
+    
+}
+
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+ 
+    NSLog(@"scrollViewDidEndScrollingAnimation");
+}
+
 #pragma mark - PTQRCodeReaderViewControllerDelegate
 - (void)QRCodeReaderView:(UIViewController *)vc relsutCode:(NSString *)code
 {

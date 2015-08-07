@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A2A2B3AD-54C8-42C3-BA4F-903C1D7F8937</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PTKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2D7990DBA6B8A4C7AEBACAA270590E6B4AC7894E</key>
+		<string>https://github.com/Muscliy/PTKit</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PTKit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2D7990DBA6B8A4C7AEBACAA270590E6B4AC7894E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Muscliy/PTKit</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2D7990DBA6B8A4C7AEBACAA270590E6B4AC7894E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2D7990DBA6B8A4C7AEBACAA270590E6B4AC7894E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PTKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -21,4 +21,5 @@ target :PTKit do
     pod 'MWPhotoBrowser'
     pod 'AFNetworking'
     pod 'ReactiveCocoa'
+    pod 'Masonry'
 end
