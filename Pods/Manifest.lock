@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - CocoaLumberjack (2.0.0-beta4):
     - CocoaLumberjack/Default (= 2.0.0-beta4)
     - CocoaLumberjack/Extensions (= 2.0.0-beta4)
@@ -30,6 +31,8 @@ PODS:
     - CocoaLumberjack/Default
   - DACircularProgress (2.2.0)
   - EGOTableViewPullRefresh (0.1.0)
+  - GPUImage (0.1.7)
+  - JSONKit-NoWarning (1.2)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -90,6 +93,7 @@ PODS:
   - libwebp/utils (0.4.3):
     - libwebp/core
   - libwebp/webp (0.4.3)
+  - Masonry (0.6.2)
   - MBProgressHUD (0.9)
   - MWPhotoBrowser (1.4.1):
     - DACircularProgress
@@ -124,10 +128,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Aspects
   - CocoaLumberjack (~> 2.0.0-beta4)
   - EGOTableViewPullRefresh
+  - GPUImage
+  - JSONKit-NoWarning
   - libextobjc
   - libqrencode
+  - Masonry
   - MBProgressHUD
   - MWPhotoBrowser
   - Nimbus/AttributedLabel
@@ -148,12 +156,16 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 44fc4ab64ee7cb9703df5de6d5012cf917775938
   DACircularProgress: 0f92b77239d5f3c612fc66185e2998391ac8e054
   EGOTableViewPullRefresh: d4c15be51914f4168d6fd7529b6ad3a4ab01e5f4
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
   libwebp: 360ed8bc4ec8da413f07f84071e7f5a5c67a285d
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
   MWPhotoBrowser: 2531e682860d62b8a7ba8659de02eb9040e431e5
   Nimbus: 3d6dfdeabf548ba4eb43be24e74fd202fb8c4e22
@@ -162,7 +174,7 @@ SPEC CHECKSUMS:
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   UICKeyChainStore: 4a061e4e26bd5a69b3ec7e08e0fe471e6f7c0068
   WebViewJavascriptBridge: f10ac16f2cd3adf2b941bd79477c55a8f6e01044
-  ZBarSDK: f5f22e4cbbdd2214b40a683a6e0f0ea5181fcbfe
+  ZBarSDK: 54b4a463b40778e936bc156cc664ac959a2e441c
   ZXing: 2becd5a04af246acb8d4d4c627fb17a218db9074
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.2

@@ -21,4 +21,8 @@
 
 #endif
 
+#import "PTRectMacro.h"
+#import "PTOSMacro.h"
+#import "PTColorMacro.h"
+
 #endif

@@ -11,7 +11,7 @@
 #import "UIBarButtonItem+Extents.h"
 #import "UIViewController+POPHUD.h"
 
-@interface PTAMapDebugViewController ()<BMKPoiSearchDelegate>
+@interface PTAMapDebugViewController () <BMKPoiSearchDelegate>
 
 @property (nonatomic, strong) NSString *cityName;
 @property (nonatomic, strong) BMKPoiSearch *poisearch;
@@ -22,15 +22,23 @@
 
 @implementation PTAMapDebugViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     _poisearch = [[BMKPoiSearch alloc] init];
     _poisearch.delegate = self;
-    
+
     self.searchDC = nil;
     self.cityName = @"杭州";
     self.title = @"杭州";
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rightAttriTitleItemTarget:self action:@selector(clearRecord) text:@"清空" withSpace:1 color:[UIColor whiteColor] font:[UIFont systemFontOfSize:14.0f] fontSize:14.0f];
+    self.navigationItem.rightBarButtonItem =
+        [UIBarButtonItem ex_rightAttriTitleItemTarget:self
+                                               action:@selector(clearRecord)
+                                                 text:@"清空"
+                                            withSpace:1
+                                                color:[UIColor whiteColor]
+                                                 font:[UIFont systemFontOfSize:14.0f]
+                                             fontSize:14.0f];
 
     [self showCityList];
 }
@@ -43,7 +51,10 @@
 
 - (void)showCityList
 {
-    NSArray *tableContents = @[[NITitleCellObject objectWithTitle:@"杭州"],[NITitleCellObject objectWithTitle:@"上海"]];
+    NSArray *tableContents = @[
+        [NITitleCellObject objectWithTitle:@"杭州"],
+        [NITitleCellObject objectWithTitle:@"上海"]
+    ];
     [self setTableData:tableContents];
 }
 
@@ -63,7 +74,6 @@
     citySearchOption.city = self.cityName;
     citySearchOption.keyword = self.searchBar.text;
     if (![_poisearch poiSearchInCity:citySearchOption]) {
-        
     }
 }
 
@@ -72,7 +82,6 @@
     BMKPoiDetailSearchOption *option = [[BMKPoiDetailSearchOption alloc] init];
     option.poiUid = info.uid;
     if (![_poisearch poiDetailSearch:option]) {
-        
     }
 }
 
@@ -81,7 +90,7 @@
     NITitleCellObject *cellObject = [self.model objectAtIndexPath:indexPath];
     self.cityName = cellObject.title;
     self.title = self.cityName;
-    self.searchBar.placeholder = [NSString stringWithFormat:@"在%@下搜索",self.cityName];
+    self.searchBar.placeholder = [NSString stringWithFormat:@"在%@下搜索", self.cityName];
     [self.searchBar becomeFirstResponder];
 }
 
@@ -101,12 +110,16 @@
     }
 }
 
-- (void)onGetPoiDetailResult:(BMKPoiSearch *)searcher result:(BMKPoiDetailResult *)poiDetailResult errorCode:(BMKSearchErrorCode)errorCode
+- (void)onGetPoiDetailResult:(BMKPoiSearch *)searcher
+                      result:(BMKPoiDetailResult *)poiDetailResult
+                   errorCode:(BMKSearchErrorCode)errorCode
 {
-    self.searchCount ++;
-    NSLog(@"%@",poiDetailResult.description);
-    NITitleCellObject *cellObject = [NITitleCellObject objectWithTitle:[NSString stringWithFormat:@"%@(%@) %zd",poiDetailResult.name, poiDetailResult.type, self.searchCount]];
-    [self appendTableData:@[cellObject]];
+    self.searchCount++;
+    NSLog(@"%@", poiDetailResult.description);
+    NITitleCellObject *cellObject = [NITitleCellObject
+        objectWithTitle:[NSString stringWithFormat:@"%@(%@) %zd", poiDetailResult.name,
+                                                   poiDetailResult.type, self.searchCount]];
+    [self appendTableData:@[ cellObject ]];
     if (self.searchCount == [self.poiList count] - 1) {
         return;
     }

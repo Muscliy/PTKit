@@ -10,84 +10,31 @@
 #import <objc/runtime.h>
 
 @implementation UINavigationBar (Extents)
-static char overlayKey;
-static char emptyImageKey;
 
-- (UIView *)overlay
+- (void)setEx_colorLayer:(UIView *)ex_colorLayer
 {
-    return objc_getAssociatedObject(self, &overlayKey);
+    SEL key = @selector(ex_colorLayer);
+    objc_setAssociatedObject(self, key, ex_colorLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)setOverlay:(UIView *)overlay
+- (UIView *)ex_colorLayer
 {
-    objc_setAssociatedObject(self, &overlayKey, overlay, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    UIView *__v__ = objc_getAssociatedObject(self, _cmd);
+    return __v__;
 }
 
-- (UIImage *)emptyImage
+- (void)ex_setBackgroundColor:(UIColor *)backgroundColor
 {
-    return objc_getAssociatedObject(self, &emptyImageKey);
-}
-
-- (void)setEmptyImage:(UIImage *)image
-{
-    objc_setAssociatedObject(self, &emptyImageKey, image, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (void)pt_setTranslationY:(CGFloat)translationY
-{
-    self.transform = CGAffineTransformMakeTranslation(0, translationY);
-}
-
-- (void)pt_setContentAlpha:(CGFloat)alpha
-{
-    if (!self.overlay) {
-        [self pt_setBackgroundColor:[UIColor blueColor]];
-    }
-    [self setAlpha:alpha forSubviewsOfView:self];
-    if (alpha == 1) {
-        if (!self.emptyImage) {
-            self.emptyImage = [UIImage new];
-        }
-        self.backIndicatorImage = self.emptyImage;
-    }
-    
-}
-
-- (void)pt_setBackgroundColor:(UIColor *)backgroundColor
-{
-    if (!self.overlay) {
+    if (!self.ex_colorLayer) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        self.overlay = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
-        self.overlay.userInteractionEnabled = NO;
-        self.overlay.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        [self insertSubview:self.overlay atIndex:0];
+        self.ex_colorLayer = [[UIView alloc]
+                              initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
+        self.ex_colorLayer.userInteractionEnabled = NO;
+        self.ex_colorLayer.autoresizingMask =
+        UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self insertSubview:self.ex_colorLayer atIndex:0];
     }
-    self.overlay.backgroundColor = backgroundColor;
-}
-
-- (void)setAlpha:(CGFloat)alpha forSubviewsOfView:(UIView *)view
-{
-    for (UIView *subview in view.subviews) {
-        if (subview == self.overlay) {
-            continue;
-        }
-        subview.alpha = alpha;
-        [self setAlpha:alpha forSubviewsOfView:subview];
-    }
-}
-
-- (void)pt_reset
-{
-    [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [self setShadowImage:nil];
-    
-    [self.overlay removeFromSuperview];
-    self.overlay = nil;
-}
-
-- (void)pt_scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    
+    self.ex_colorLayer.backgroundColor = backgroundColor;
 }
 
 @end

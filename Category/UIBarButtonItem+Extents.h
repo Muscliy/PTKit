@@ -9,26 +9,26 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (Extents)
-+ (UIBarButtonItem *)leftIconItemTarget:(id)target
-                                 action:(SEL)action
-                             normalIcon:(NSString *)nPath
-                          highlightIcon:(NSString *)hPath;
++ (UIBarButtonItem *)ex_leftIconItemTarget:(id)target
+                                    action:(SEL)action
+                                normalIcon:(NSString *)nPath
+                             highlightIcon:(NSString *)hPath;
 
-+ (UIBarButtonItem *)rightIconItemTarget:(id)target
-                                  action:(SEL)action
-                              normalIcon:(NSString *)nPath
-                           highlightIcon:(NSString *)hPath;
++ (UIBarButtonItem *)ex_rightIconItemTarget:(id)target
+                                     action:(SEL)action
+                                 normalIcon:(NSString *)nPath
+                              highlightIcon:(NSString *)hPath;
 
-+ (UIBarButtonItem *)leftTitleItemTarget:(id)target action:(SEL)action text:(NSString *)text;
++ (UIBarButtonItem *)ex_leftTitleItemTarget:(id)target action:(SEL)action text:(NSString *)text;
 
-+ (UIBarButtonItem *)rightAttriTitleItemTarget:(id)target
-                                        action:(SEL)action
-                                          text:(NSString *)text
-                                     withSpace:(NSInteger)space
-                                         color:(UIColor *)color
-                                          font:(UIFont *)font
-                                      fontSize:(CGFloat)fontSize;
++ (UIBarButtonItem *)ex_rightAttriTitleItemTarget:(id)target
+                                           action:(SEL)action
+                                             text:(NSString *)text
+                                        withSpace:(NSInteger)space
+                                            color:(UIColor *)color
+                                             font:(UIFont *)font
+                                         fontSize:(CGFloat)fontSize;
 
-+ (UIBarButtonItem *)backButtonItemTarget:(id)target action:(SEL)action;
++ (UIBarButtonItem *)ex_backButtonItemTarget:(id)target action:(SEL)action;
 
 @end

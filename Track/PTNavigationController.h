@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@interface UINavigationController (leftBarButtonItem)
+
+- (BOOL)topVCIsInModal;
+- (UIBarButtonItem *)ex_leftBarButtonItem:(id)target action:(SEL)action;
+
+@end
+
 @interface PTNavigationController : UINavigationController
 
 @end

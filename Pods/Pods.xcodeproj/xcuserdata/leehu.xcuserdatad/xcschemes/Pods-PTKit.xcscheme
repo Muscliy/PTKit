@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "431AD5C3038C8CCE484BB861"
+               BlueprintIdentifier = "3E38088A6F1966A14D16049E"
                BuildableName = "libPods-PTKit.a"
                BlueprintName = "Pods-PTKit"
                ReferencedContainer = "container:Pods.xcodeproj">

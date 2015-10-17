@@ -11,7 +11,7 @@
 #import "PTNavigationController.h"
 #import "PTNavigationBar.h"
 #import <BaiduMapAPI/BMapKit.h>
-
+#import "Aspects.h"
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 
@@ -21,15 +21,31 @@
 
 @implementation AppDelegate
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    
+}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
+{
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+   
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
-    PTNavigationController *nav = [[PTNavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self configrationApiInfo];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -41,10 +57,6 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
-{
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
 {
 }
 

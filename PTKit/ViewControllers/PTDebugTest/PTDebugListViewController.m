@@ -22,6 +22,10 @@
 #import "PTReactiveCocoaDemoViewController.h"
 #import "PTAlertView.h"
 #import "PTUIKitCategoryViewController.h"
+#import "PTLayoutDebugTableViewController.h"
+#import "PTFoundationDebugListTableViewController.h"
+#import "JSONKit.h"
+#import "NSObject+Extents.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -34,9 +38,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIColor * color = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
-    PTNavigationBar *navBar = (PTNavigationBar *)self.navigationController.navigationBar;
-    [navBar setNavigationBarWithColor:color];
     
     _actions = [[NITableViewActions alloc] initWithTarget:self];
     NIActionBlock codeBlock = ^(id object, id target, NSIndexPath *indexPath) {
@@ -47,6 +48,8 @@
     
     NSArray *tableContents = @[
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"UIKit"] navigationBlock:NIPushControllerAction([PTUIKitCategoryViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"NSFoundation"] navigationBlock:NIPushControllerAction([PTFoundationDebugListTableViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Layout"] navigationBlock:NIPushControllerAction([PTLayoutDebugTableViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"网易首页类目切换"] navigationBlock:NIPushControllerAction([PTButtonBarPagerTabStripExampleViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"高德搜索"] navigationBlock:NIPushControllerAction([PTAMapDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
@@ -66,6 +69,17 @@
     [self setTableData:tableContents];
     
     //[self extobjcTest];
+    [self parseJosnString];
+    
+    NSArray *property = [UITableView instanceVariables];
+  
+    NSLog(@"%@",property);
+}
+
+
+- (void)parseJosnString
+{
+
 }
 
 - (void)extobjcTest

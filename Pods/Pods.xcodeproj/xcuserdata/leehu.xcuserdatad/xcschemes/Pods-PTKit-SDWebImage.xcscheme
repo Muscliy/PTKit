@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DBAC6EFE98BB60E053CC72CB"
+               BlueprintIdentifier = "442BBA7812100BBFF3C8D8A5"
                BuildableName = "libPods-PTKit-SDWebImage.a"
                BlueprintName = "Pods-PTKit-SDWebImage"
                ReferencedContainer = "container:Pods.xcodeproj">

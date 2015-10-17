@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 2
 
+// Aspects
+#define COCOAPODS_POD_AVAILABLE_Aspects
+#define COCOAPODS_VERSION_MAJOR_Aspects 1
+#define COCOAPODS_VERSION_MINOR_Aspects 4
+#define COCOAPODS_VERSION_PATCH_Aspects 1
+
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack 2
@@ -84,6 +90,18 @@
 #define COCOAPODS_VERSION_MINOR_EGOTableViewPullRefresh 1
 #define COCOAPODS_VERSION_PATCH_EGOTableViewPullRefresh 0
 
+// GPUImage
+#define COCOAPODS_POD_AVAILABLE_GPUImage
+#define COCOAPODS_VERSION_MAJOR_GPUImage 0
+#define COCOAPODS_VERSION_MINOR_GPUImage 1
+#define COCOAPODS_VERSION_PATCH_GPUImage 7
+
+// JSONKit-NoWarning
+#define COCOAPODS_POD_AVAILABLE_JSONKit_NoWarning
+#define COCOAPODS_VERSION_MAJOR_JSONKit_NoWarning 1
+#define COCOAPODS_VERSION_MINOR_JSONKit_NoWarning 2
+#define COCOAPODS_VERSION_PATCH_JSONKit_NoWarning 0
+
 // MBProgressHUD
 #define COCOAPODS_POD_AVAILABLE_MBProgressHUD
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
@@ -95,6 +113,12 @@
 #define COCOAPODS_VERSION_MAJOR_MWPhotoBrowser 1
 #define COCOAPODS_VERSION_MINOR_MWPhotoBrowser 4
 #define COCOAPODS_VERSION_PATCH_MWPhotoBrowser 1
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 2
 
 // Nimbus/AttributedLabel
 #define COCOAPODS_POD_AVAILABLE_Nimbus_AttributedLabel

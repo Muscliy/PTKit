@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "64C0A5AEEDEB9BE9C108D012"
+               BlueprintIdentifier = "81B2E8AB39AA7BAFBEE48F05"
                BuildableName = "libPods-PTKit-MBProgressHUD.a"
                BlueprintName = "Pods-PTKit-MBProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">

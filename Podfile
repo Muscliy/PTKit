@@ -22,4 +22,7 @@ target :PTKit do
     pod 'AFNetworking'
     pod 'ReactiveCocoa'
     pod 'Masonry'
+    pod 'GPUImage'
+    pod 'JSONKit-NoWarning'
+    pod 'Aspects'
 end

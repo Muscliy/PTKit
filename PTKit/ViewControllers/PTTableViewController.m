@@ -9,7 +9,6 @@
 #import "PTTableViewController.h"
 #import "PTUIMathUtilities.h"
 
-
 @implementation PTTableViewController
 @synthesize tableView = _tableView;
 
@@ -32,18 +31,20 @@
     [super viewDidLoad];
     CGRect bounds = self.view.frame;
     CGFloat width = bounds.size.width;
-    self.tableView = [[PTTableView alloc] initWithFrame:CGRectMake(0, 0, width, bounds.size.height)
-                                                  style:[self getTableStyle]];
+    self.tableView = [[PTTableView alloc]
+        initWithFrame:CGRectMake(0, 0, width,
+                                 bounds.size.height - (kPTStatusBarHeight + kTopBarHeight))
+                style:[self getTableStyle]];
     _tableView.autoresizingMask =
-    UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _tableView.separatorStyle = [self getSeparatorStyle];
     _tableView.separatorColor = [self getSeparatorColor];
     _tableView.delegate = self;
     _tableView.guidedDelegate = self;
     _tableView.backgroundColor = [self getTableViewBackgroundColor];
-    
+
     [self.view addSubview:_tableView];
-    
+
     if ([self hasSearchBar]) {
         self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, width, 44)];
         _searchBar.delegate = self;
@@ -53,28 +54,28 @@
         _searchBar.tintColor = [UIColor lightGrayColor];
         self.searchBar.backgroundImage = [UIImage new];
         _tableView.tableHeaderView = self.searchBar;
-        
+
         _searchDC =
-        [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
-                                          contentsController:[self getSearchBarController]];
+            [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
+                                              contentsController:[self getSearchBarController]];
         _searchDC.searchResultsDelegate = self;
         _searchDC.delegate = self;
     }
-    
+
     if ([self hasLoadingHead]) {
         CGRect loadHeadFrame = CGRectMake(0, -self.tableView.frame.size.height, width,
                                           self.tableView.frame.size.height);
         self.loadingHead =
-        [[EGORefreshTableHeaderView alloc] initWithFrame:loadHeadFrame
-                                          arrowImageName:@"uikit_f52"
-                                               textColor:[UIColor lightGrayColor]];
+            [[EGORefreshTableHeaderView alloc] initWithFrame:loadHeadFrame
+                                              arrowImageName:@"uikit_f52"
+                                                   textColor:[UIColor lightGrayColor]];
         self.loadingHead.delegate = self;
         [self.tableView addSubview:self.loadingHead];
         [self.loadingHead refreshLastUpdatedDate];
     }
-    
+
     if ([self loadByPage]) {
-        //TODO:
+        // TODO:
     }
 }
 
@@ -149,19 +150,19 @@
 - (void)setTableData:(NSArray *)tableCells
 {
     NIDASSERT([NSThread isMainThread]);
-    
+
     self.model = [[NIMutableTableViewModel alloc] initWithSectionedArray:tableCells delegate:self];
-    
+
     if ([self showIndex]) {
         [_model setSectionIndexType:NITableViewModelSectionIndexDynamic
                         showsSearch:YES
                        showsSummary:NO];
     }
-    
+
     if (!_model) {
         return;
     }
-    
+
     _tableView.dataSource = _model;
     [_tableView reloadData];
     [_tableView checkAndShowEmptyView];
@@ -225,8 +226,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView
-  willDisplayCell:(UITableViewCell *)cell
-forRowAtIndexPath:(NSIndexPath *)indexPath
+      willDisplayCell:(UITableViewCell *)cell
+    forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 }
 
@@ -258,11 +259,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             break;
         }
     }
-    
+
     if (!searchText || [searchText isEqualToString:@""]) {
         return;
     }
-    
+
     NSMutableArray *searchData = [@[] mutableCopy];
     NSUInteger sectionCount = [_tableView numberOfSections];
     NIMutableTableViewModel *m = (NIMutableTableViewModel *)_tableView.dataSource;
@@ -275,10 +276,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
                 [searchData addObject:obj];
         }
     }
-    
+
     self.searchModel =
-    [[NITableViewModel alloc] initWithListArray:searchData delegate:(id)[NICellFactory class]];
-    
+        [[NITableViewModel alloc] initWithListArray:searchData delegate:(id)[NICellFactory class]];
+
     _searchDC.searchResultsDataSource = _searchModel;
     _searchDC.searchResultsDelegate = self;
     _searchDC.searchResultsTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -354,7 +355,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (_tableView == scrollView && [self loadByPage] &&
         scrollView.contentOffset.y + CGRectGetHeight(scrollView.frame) >=
-        scrollView.contentSize.height - 5 &&
+            scrollView.contentSize.height - 5 &&
         self.hasMoreData) {
         _tableView.tableFooterView.hidden = NO;
         [self onLoadNextPage];
@@ -403,7 +404,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIView *guideView = [[UIView alloc] initWithFrame:self.view.bounds];
     UIImageView *guideIconView = [[UIImageView alloc] initWithImage:icon];
-    guideIconView.center = CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.view.bounds) / 2);
+    guideIconView.center =
+        CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.view.bounds) / 2);
     [guideView addSubview:guideIconView];
     return guideView;
 }
@@ -412,9 +414,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIView *guideView = [[UIView alloc] initWithFrame:self.view.bounds];
     UIImageView *guideIconView = [[UIImageView alloc] initWithImage:icon];
-    guideIconView.center = CGPointMake(CGRectGetWidth(self.view.bounds) / 4, CGRectGetHeight(self.view.bounds) / 2);
-    UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 20)];
-    tipLabel.center = CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.view.bounds) / 2);
+    guideIconView.center =
+        CGPointMake(CGRectGetWidth(self.view.bounds) / 4, CGRectGetHeight(self.view.bounds) / 2);
+    UILabel *tipLabel =
+        [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 20)];
+    tipLabel.center =
+        CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.view.bounds) / 2);
     tipLabel.text = title;
     tipLabel.font = [UIFont systemFontOfSize:12];
     tipLabel.textColor = [UIColor blackColor];
@@ -429,21 +434,24 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
                          action:(SEL)action
 {
     UIView *guideView = [[UIView alloc]
-                         initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.height)];
+        initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.height)];
     guideView.userInteractionEnabled = YES;
     UIImageView *guideIconView = [[UIImageView alloc] initWithImage:icon];
-    guideIconView.frame = CGRectMake(PTRoundPixelValue((CGRectGetWidth(self.view.bounds) - icon.size.width) / 2.0),
-                                     0, icon.size.width, icon.size.height);
-    
-    UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 20)];
+    guideIconView.frame =
+        CGRectMake(PTRoundPixelValue((CGRectGetWidth(self.view.bounds) - icon.size.width) / 2.0), 0,
+                   icon.size.width, icon.size.height);
+
+    UILabel *tipLabel =
+        [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 20)];
     tipLabel.text = title;
     tipLabel.font = [UIFont systemFontOfSize:12.0];
     tipLabel.textColor = [UIColor blackColor];
     [tipLabel sizeToFit];
-    tipLabel.frame =
-    CGRectMake(PTRoundPixelValue((CGRectGetWidth(self.view.bounds) - CGRectGetWidth(tipLabel.frame)) / 2),
-               CGRectGetMaxY(guideIconView.frame) + 15, CGRectGetWidth(tipLabel.frame), CGRectGetHeight(tipLabel.frame));
-    
+    tipLabel.frame = CGRectMake(
+        PTRoundPixelValue((CGRectGetWidth(self.view.bounds) - CGRectGetWidth(tipLabel.frame)) / 2),
+        CGRectGetMaxY(guideIconView.frame) + 15, CGRectGetWidth(tipLabel.frame),
+        CGRectGetHeight(tipLabel.frame));
+
     return guideView;
 }
 
@@ -456,7 +464,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return
-    [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"null"];
+        [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"null"];
 }
 
 

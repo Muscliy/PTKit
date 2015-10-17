@@ -56,8 +56,8 @@
 
 - (void)setNavigationBarTransformProgress:(CGFloat)progress
 {
-    [self.navigationController.navigationBar pt_setTranslationY:(-44 * progress)];
-    [self.navigationController.navigationBar pt_setContentAlpha:1 - progress];
+//    [self.navigationController.navigationBar pt_setTranslationY:(-44 * progress)];
+//    [self.navigationController.navigationBar pt_setContentAlpha:1 - progress];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

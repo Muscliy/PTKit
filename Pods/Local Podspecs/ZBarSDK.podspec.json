@@ -1,0 +1,47 @@
+{
+  "name": "ZBarSDK",
+  "version": "1.1",
+  "license": {
+    "type": "BSD / Apache License, Version 2.0",
+    "file": "LICENCE"
+  },
+  "summary": "A Very High Performance Objective-C JSON Library.",
+  "homepage": "http://zbar.sourceforge.net/",
+  "authors": "John Engelhart",
+  "source": {
+    "svn": "svn://202.91.251.204/cici/trunk/ios-cocoapods/ZBar",
+    "tag": "1.1",
+    "commit": "35360aeb577f58a49cdf4ce58dbf286e2fab39e0"
+  },
+  "public_header_files": [
+    "iphone/**/**/*.h",
+    "include/*.h"
+  ],
+  "source_files": [
+    "include/zbar.h",
+    "zbar/**/*.h",
+    "iphone/*.h",
+    "iphone/include/**/*.h",
+    "zbar/{config,decoder,error,image,img_scanner,refcnt,scanner,symbol}.c",
+    "zbar/decoder/{codabar,code39,code93,code128,databar,ean,i25,qr_finder}.c",
+    "zbar/qrcode/*.c",
+    "iphone/*.m"
+  ],
+  "resources": "iphone/res/{zbar-*.png,zbar-help.html}",
+  "frameworks": [
+    "AVFoundation",
+    "CoreGraphics",
+    "CoreMedia",
+    "CoreVideo",
+    "QuartzCore"
+  ],
+  "libraries": "iconv",
+  "prefix_header_file": "iphone/include/prefix.pch",
+  "compiler_flags": "-w",
+  "requires_arc": false,
+  "xcconfig": {
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]": "ZBarReaderViewImpl_Simulator.m",
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]": "ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m",
+    "GCC_PREPROCESSOR_DEFINITIONS": "NDEBUG=1"
+  }
+}

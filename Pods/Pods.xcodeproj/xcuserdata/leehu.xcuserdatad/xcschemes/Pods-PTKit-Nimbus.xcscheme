@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E70C41847586F4C2351ADA6C"
+               BlueprintIdentifier = "6A83C00F0E5507ECC17AEDBF"
                BuildableName = "libPods-PTKit-Nimbus.a"
                BlueprintName = "Pods-PTKit-Nimbus"
                ReferencedContainer = "container:Pods.xcodeproj">

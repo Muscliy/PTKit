@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "39E4726CEB9F7FD84042A101"
+               BlueprintIdentifier = "E08C74E2210D6D912BA7BE3A"
                BuildableName = "libPods-PTKit-EGOTableViewPullRefresh.a"
                BlueprintName = "Pods-PTKit-EGOTableViewPullRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">

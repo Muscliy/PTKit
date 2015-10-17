@@ -43,9 +43,6 @@
     [super viewDidLoad];
     
     self.collectionView.backgroundColor = [UIColor blueColor];
-    UIColor * color = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.5];
-    PTNavigationBar *navBar = (PTNavigationBar *)self.navigationController.navigationBar;
-    [navBar setNavigationBarWithColor:color];
     
     NSArray *collectionContents = @[
                                     @"TYPE10",

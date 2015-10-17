@@ -8,6 +8,7 @@
 
 #import "PTTransitionsDebugListViewController.h"
 #import "PTInteractiveCollectionViewController.h"
+#import "PTPushViewController.h"
 
 @interface PTTransitionsDebugListViewController ()
 
@@ -23,6 +24,7 @@
 
     NSArray *tableContents = @[
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片交互"] navigationBlock:NIPushControllerAction([PTInteractiveCollectionViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ViewController切换"] navigationBlock:NIPushControllerAction([PTPushViewController class])],
                                ];
     self.tableView.delegate = [self.actions forwardingTo:self];
     [self setTableData:tableContents];

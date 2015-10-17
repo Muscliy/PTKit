@@ -10,10 +10,7 @@
 
 @interface UINavigationBar (Extents)
 
-- (void)pt_setTranslationY:(CGFloat)translationY;
-- (void)pt_setContentAlpha:(CGFloat)alpha;
-- (void)pt_setBackgroundColor:(UIColor *)backgroundColor;
-- (void)pt_reset;
-- (void)pt_scrollViewDidScroll:(UIScrollView *)scrollView;
+@property (nonatomic, strong) UIView *ex_colorLayer;
+- (void)ex_setBackgroundColor:(UIColor *)backgroundColor;
 
 @end
