@@ -14,6 +14,7 @@
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
+	NSLog(@"trasn");
     PTInteractiveDetailViewController *fromVC = (PTInteractiveDetailViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     PTInteractiveCollectionViewController *toVC = (PTInteractiveCollectionViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     

@@ -13,6 +13,8 @@
 #import "UIView+Extents.h"
 
 #define TAG_TITLELABEL_NAVIGATIONBAR 50000
+#define kLeftBarButtomItemMargin 10
+#define kBarButtonItemContainerViewHeight 40
 
 @interface PTNavigationBar ()
 
@@ -90,15 +92,18 @@
         initWithFrame:CGRectMake(0, 5, 200, CGRectGetHeight(_titleView.frame) - 10)];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.text = _title;
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
     titleLabel.minimumScaleFactor = 14 / 18.f;
     titleLabel.tag = TAG_TITLELABEL_NAVIGATIONBAR;
-    [_titleView addSubview:titleLabel];
 
-    [_titleView removeFromSuperview];
+    NSMutableAttributedString *titleString =
+        [[NSMutableAttributedString alloc] initWithString:title];
+
+    titleLabel.attributedText = titleString;
+
+    [_titleView addSubview:titleLabel];
     [self.containerView addSubview:_titleView];
 }
 
@@ -126,30 +131,114 @@
     return titleLabel;
 }
 
-- (void)setLeftBarButton:(UIView *)leftBarButton
+- (void)addRightBarButtonItemContainerView
 {
-    [_leftBarButton removeFromSuperview];
-    _leftBarButton = nil;
-    if (leftBarButton) {
-        _leftBarButton = leftBarButton;
-        _leftBarButton.center = CGPointMake(CGRectGetWidth(_leftBarButton.bounds) / 2.0,
-                                            CGRectGetHeight(self.containerView.frame) / 2.0);
-        [self.containerView addSubview:_leftBarButton];
-    }
+    [_rightBarButtonItemcontainerView removeFromSuperview];
+    _rightBarButtonItemcontainerView = nil;
+    _rightBarButtonItemcontainerView = [[UIView alloc] initWithFrame:CGRectZero];
+    [self addSubview:_rightBarButtonItemcontainerView];
 }
 
-- (void)setRightBarButton:(UIView *)rightBarButton
+- (void)addLeftBarButtonItemContainerView
 {
-    [_rightBarButton removeFromSuperview];
-    _rightBarButton = nil;
-    if (rightBarButton) {
-        _rightBarButton = rightBarButton;
-        _rightBarButton.center = CGPointMake(CGRectGetWidth(self.containerView.frame) -
-                                                 (CGRectGetWidth(_rightBarButton.frame) / 2),
-                                             CGRectGetHeight(self.containerView.frame) / 2);
-        [self.containerView addSubview:_rightBarButton];
-        [self.containerView bringSubviewToFront:_rightBarButton];
+    [_leftBarButtonItemcontainerView removeFromSuperview];
+    _leftBarButtonItemcontainerView = nil;
+    _leftBarButtonItemcontainerView = [[UIView alloc] initWithFrame:CGRectZero];
+    [self addSubview:_leftBarButtonItemcontainerView];
+}
+
+- (void)layoutRightBarButtonItemContainerView
+{
+    _rightBarButtonItemcontainerView.frame =
+        CGRectMake(CGRectGetWidth(self.bounds), 0, 20, kBarButtonItemContainerViewHeight);
+
+    CGFloat startX = kLeftBarButtomItemMargin;
+    for (UIView *view in [_rightBarButtonItemcontainerView subviews]) {
+        view.frame =
+            CGRectMake(startX, 0, CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds));
+        view.center = CGPointMake(view.center.x,
+                                  CGRectGetHeight(_rightBarButtonItemcontainerView.bounds) / 2);
+        startX += kLeftBarButtomItemMargin + CGRectGetWidth(view.bounds);
     }
+    CGRect rect = _rightBarButtonItemcontainerView.frame;
+    rect.size.width = startX;
+    rect.origin.y = CGRectGetWidth(self.bounds) - startX;
+    _rightBarButtonItemcontainerView.frame = rect;
+    _rightBarButtonItemcontainerView.center = CGPointMake(
+        _rightBarButtonItemcontainerView.center.x,
+        kPTStatusBarHeight + 2 + CGRectGetHeight(_rightBarButtonItemcontainerView.bounds) / 2);
+}
+
+- (void)layoutLeftBarButtonItemContainerView
+{
+    _leftBarButtonItemcontainerView.frame = CGRectMake(0, 0, 20, kBarButtonItemContainerViewHeight);
+
+    CGFloat startX = kLeftBarButtomItemMargin;
+    for (UIView *view in [_leftBarButtonItemcontainerView subviews]) {
+        view.frame =
+            CGRectMake(startX, 0, CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds));
+        view.center =
+            CGPointMake(view.center.x, CGRectGetHeight(_leftBarButtonItemcontainerView.bounds) / 2);
+        startX += kLeftBarButtomItemMargin + CGRectGetWidth(view.bounds);
+    }
+    CGRect rect = _leftBarButtonItemcontainerView.frame;
+    rect.size.width = startX;
+    _leftBarButtonItemcontainerView.frame = rect;
+    _leftBarButtonItemcontainerView.center = CGPointMake(
+        _leftBarButtonItemcontainerView.center.x,
+        kPTStatusBarHeight + 2 + CGRectGetHeight(_leftBarButtonItemcontainerView.bounds) / 2);
+}
+
+- (void)setRightBarButtonItem:(UIBarButtonItem *)rightBarButtonItem
+{
+    _rightBarButtonItem = rightBarButtonItem;
+    if (!rightBarButtonItem) {
+        [_rightBarButtonItemcontainerView removeFromSuperview];
+        return;
+    }
+    [self addRightBarButtonItemContainerView];
+    [_rightBarButtonItemcontainerView addSubview:rightBarButtonItem.customView];
+    [self layoutRightBarButtonItemContainerView];
+}
+
+- (void)setLeftBarButtonItem:(UIBarButtonItem *)leftBarButtonItem
+{
+    _leftBarButtonItem = leftBarButtonItem;
+    if (!leftBarButtonItem) {
+        [_leftBarButtonItemcontainerView removeFromSuperview];
+        return;
+    }
+    [self addLeftBarButtonItemContainerView];
+    [_leftBarButtonItemcontainerView addSubview:leftBarButtonItem.customView];
+    [self layoutLeftBarButtonItemContainerView];
+}
+
+- (void)setRightBarButtonItems:(NSArray<UIBarButtonItem *> *)rightBarButtonItems
+{
+    _rightBarButtonItems = rightBarButtonItems;
+    if (!rightBarButtonItems) {
+        [_rightBarButtonItemcontainerView removeFromSuperview];
+        return;
+    }
+    [self addRightBarButtonItemContainerView];
+    for (UIBarButtonItem *item in rightBarButtonItems) {
+        [_rightBarButtonItemcontainerView addSubview:item.customView];
+    }
+    [self layoutRightBarButtonItemContainerView];
+}
+
+- (void)setLeftBarButtonItems:(NSArray<UIBarButtonItem *> *)leftBarButtonItems
+{
+    _leftBarButtonItems = leftBarButtonItems;
+    if (!leftBarButtonItems) {
+        [_leftBarButtonItemcontainerView removeFromSuperview];
+        return;
+    }
+    [self addLeftBarButtonItemContainerView];
+    for (UIBarButtonItem *item in leftBarButtonItems) {
+        [_leftBarButtonItemcontainerView addSubview:item.customView];
+    }
+    [self layoutLeftBarButtonItemContainerView];
 }
 
 - (void)setBottomBorderColor:(UIColor *)color

@@ -15,7 +15,7 @@ PTBoxCommonImplementation;
 
 + (NSArray *)extraRegisterGroupType
 {
-    return @[ @"TYPE3" ];
+    return @[ CC_HOMEPAGEMODULECONSTANT_TYPE3 ];
 }
 
 - (NSArray *)collectionView:(UICollectionView *)collectionView
@@ -35,6 +35,7 @@ PTBoxCommonImplementation;
 
     NSUInteger itemCount = [collectionView numberOfItemsInSection:section];
     NSMutableArray *sectionAttributes = [@[] mutableCopy];
+    // SAVE: 后台返回数据暂时只有单行
     NSUInteger lines = (itemCount + 2) / 3;
     PTCollectionViewLayoutAttributes *attributes = nil;
     for (NSInteger item = 0; item < itemCount; ++item) {
@@ -46,34 +47,43 @@ PTBoxCommonImplementation;
         }
         attributes.bottomSeparatorLineInsets = UIEdgeInsetsZero;
 
-        attributes.frame =
-            CGRectMake(([self itemSize:0].width) * (item % 3) +
-                           ((item % 3 == 2) ? (320 - 3 * PTRoundPixelValue(320 / 3)) : 0),
-                       [self itemSize:0].height * (lines - 1), [self itemSize:item % 3].width,
-                       [self itemSize:item % 3].height);
+        attributes.frame = CGRectMake(
+            ([self collectionView:collectionView itemSize:0].width) * (item % 3) +
+                ((item % 3 == 2)
+                     ? (WIDTH(collectionView) - 3 * PTRoundPixelValue(WIDTH(collectionView) / 3))
+                     : 0),
+            [self collectionView:collectionView itemSize:0].height * (lines - 1),
+            [self collectionView:collectionView itemSize:item % 3].width,
+            [self collectionView:collectionView itemSize:item % 3].height);
         attributes.topSeparatorLineInsets =
             hasTopLine ? UIEdgeInsetsZero : attributes.topSeparatorLineInsets;
 
         [sectionAttributes addObject:attributes];
     }
-    *totalHeight = itemCount > 0 ? ([self itemSize:0].height * lines) : 0;
+    *totalHeight =
+        itemCount > 0 ? ([self collectionView:collectionView itemSize:0].height * lines) : 0;
     return sectionAttributes;
 }
 
-- (CGSize)itemSize:(NSUInteger)item
+- (CGSize)collectionView:(UICollectionView *)collectionView itemSize:(NSUInteger)item
 {
-    CGFloat pad = 320 - 3 * PTRoundPixelValue(320 / 3);
+    CGFloat sizeRatio = PTRatio4InchWithCurrentPhoneSize();
+    CGSize visibleSize =
+        CGSizeMake(collectionView.frame.size.width, PTRoundPixelValue(100 * sizeRatio));
 
+    CGFloat pad = visibleSize.width - 3 * PTRoundPixelValue(visibleSize.width / 3);
+
+    CGFloat itemWidth = PTRoundPixelValue(visibleSize.width / 3);
     NSArray *sizeMap = @[
-        NSStringFromCGSize(CGSizeMake(PTRoundPixelValue(320 / 3), 100)),
-        NSStringFromCGSize(CGSizeMake(PTRoundPixelValue(320 / 3) + pad, 100)),
-        NSStringFromCGSize(CGSizeMake(PTRoundPixelValue(320 / 3), 100)),
+        NSStringFromCGSize(CGSizeMake(itemWidth, visibleSize.height)),
+        NSStringFromCGSize(CGSizeMake(itemWidth + pad, visibleSize.height)),
+        NSStringFromCGSize(CGSizeMake(itemWidth, visibleSize.height)),
     ];
 
     item = item % 3;
     NSString *str = sizeMap[item];
     CGSize size = CGSizeFromString(str);
-    return size;
+        return size;
 }
 
 @end

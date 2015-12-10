@@ -77,6 +77,7 @@
     if ([self loadByPage]) {
         // TODO:
     }
+	//[self addNavigationBar];
 }
 
 - (UITableViewStyle)getTableStyle

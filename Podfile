@@ -25,4 +25,5 @@ target :PTKit do
     pod 'GPUImage'
     pod 'JSONKit-NoWarning'
     pod 'Aspects'
+	pod 'JRSwizzle'
 end

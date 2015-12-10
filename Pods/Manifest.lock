@@ -32,6 +32,7 @@ PODS:
   - DACircularProgress (2.2.0)
   - EGOTableViewPullRefresh (0.1.0)
   - GPUImage (0.1.7)
+  - JRSwizzle (1.0)
   - JSONKit-NoWarning (1.2)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
@@ -132,6 +133,7 @@ DEPENDENCIES:
   - CocoaLumberjack (~> 2.0.0-beta4)
   - EGOTableViewPullRefresh
   - GPUImage
+  - JRSwizzle
   - JSONKit-NoWarning
   - libextobjc
   - libqrencode
@@ -161,6 +163,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 0f92b77239d5f3c612fc66185e2998391ac8e054
   EGOTableViewPullRefresh: d4c15be51914f4168d6fd7529b6ad3a4ab01e5f4
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
@@ -177,4 +180,4 @@ SPEC CHECKSUMS:
   ZBarSDK: 54b4a463b40778e936bc156cc664ac959a2e441c
   ZXing: 2becd5a04af246acb8d4d4c627fb17a218db9074
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

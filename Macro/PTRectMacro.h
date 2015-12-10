@@ -41,7 +41,7 @@
 
 #define kTopBarHeight (44.f)
 #define kBottomBarHeight (49.f)
-
+#define k4InchScreenWith (320.0)
 #define kCellDefaultHeight (44.f)
 
 #define isRetina                                                                                   \

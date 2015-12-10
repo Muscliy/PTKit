@@ -17,6 +17,7 @@
 //
 //	 ----------------------------------
 #import "PTType6BoxGroup.h"
+#import "PTUIMathUtilities.h"
 
 @implementation PTType6BoxGroup
 
@@ -24,7 +25,11 @@ PTBoxCommonImplementation;
 
 + (NSArray *)extraRegisterGroupType
 {
-    return @[ @"TYPE6", @"TYPE8", @"TYPE9" ];
+    return @[
+        CC_HOMEPAGEMODULECONSTANT_TYPE6,
+        CC_HOMEPAGEMODULECONSTANT_TYPE8,
+        CC_HOMEPAGEMODULECONSTANT_TYPE9
+    ];
 }
 
 - (NSArray *)collectionView:(UICollectionView *)collectionView
@@ -37,11 +42,11 @@ PTBoxCommonImplementation;
     id type = types[section];
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:section];
     PTCollectionViewLayoutAttributes *attribute = nil;
-    SEL selSize =
-        NSSelectorFromString([NSString stringWithFormat:@"item%@Size:", (NSString *)type]);
+    SEL selSize = NSSelectorFromString(
+        [NSString stringWithFormat:@"collectionView:item%@Size:", (NSString *)type]);
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    NSValue *ret = [self performSelector:selSize];
+    NSValue *ret = [self performSelector:selSize withObject:collectionView withObject:nil];
 #pragma clang diagnostic pop
 
     CGSize size = [ret CGSizeValue];
@@ -58,45 +63,34 @@ PTBoxCommonImplementation;
     return nil;
 }
 
-- (NSValue *)itemTYPE6Size:(NSUInteger)item
+- (NSValue *)collectionView:(UICollectionView *)collectionView itemTYPE6Size:(NSUInteger)item
 {
-    item = 0;
-    NSArray *sizeMap = @[ NSStringFromCGSize(CGSizeMake(600, 160)), ];
-
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    NSString *str = sizeMap[item];
+    NSArray *sizeMap =
+        @[ NSStringFromCGSize(CGSizeMake(CGRectGetWidth(collectionView.frame) - 20, 80)), ];
+    CGFloat sizeRatio = PTRatio4InchWithCurrentPhoneSize();
+    NSString *str = [sizeMap firstObject];
     CGSize size = CGSizeFromString(str);
-    size.width = size.width * sizeRatio;
-    size.height = size.height * sizeRatio;
+    size.height = PTRoundPixIntValue(size.height * sizeRatio);
     NSValue *value = [NSValue valueWithCGSize:size];
     return value;
 }
 
-- (NSValue *)itemTYPE8Size:(NSUInteger)item
+- (NSValue *)collectionView:(UICollectionView *)collectionView itemTYPE8Size:(NSUInteger)item
 {
-    item = 0;
-    NSArray *sizeMap = @[ NSStringFromCGSize(CGSizeMake(640, 40)), ];
-
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    NSString *str = sizeMap[item];
+    NSArray *sizeMap =
+        @[ NSStringFromCGSize(CGSizeMake(CGRectGetWidth(collectionView.frame), 20)), ];
+    NSString *str = [sizeMap firstObject];
     CGSize size = CGSizeFromString(str);
-    size.width = size.width * sizeRatio;
-    size.height = size.height * sizeRatio;
     NSValue *value = [NSValue valueWithCGSize:size];
     return value;
 }
 
-- (NSValue *)itemTYPE9Size:(NSUInteger)item
+- (NSValue *)collectionView:(UICollectionView *)collectionView itemTYPE9Size:(NSUInteger)item
 {
-    item = 0;
-    NSArray *sizeMap = @[ NSStringFromCGSize(CGSizeMake(640, 20)), ];
-
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    item = item % 3;
-    NSString *str = sizeMap[item];
+    NSArray *sizeMap =
+        @[ NSStringFromCGSize(CGSizeMake(CGRectGetWidth(collectionView.frame), 10)), ];
+    NSString *str = [sizeMap firstObject];
     CGSize size = CGSizeFromString(str);
-    size.width = size.width * sizeRatio;
-    size.height = size.height * sizeRatio;
     NSValue *value = [NSValue valueWithCGSize:size];
     return value;
 }
@@ -106,9 +100,8 @@ PTBoxCommonImplementation;
                     dataSource:(id<PTBoxDataSource>)dataSource
                           type:(id)type
 {
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    if ([type isEqualToString:@"TYPE6"]) {
-        return UIEdgeInsetsMake(0, 20 * sizeRatio, 0, 20 * sizeRatio);
+    if ([type isEqualToString:CC_HOMEPAGEMODULECONSTANT_TYPE6]) {
+        return UIEdgeInsetsMake(0, 10, 0, 10);
     }
     return UIEdgeInsetsZero;
 }

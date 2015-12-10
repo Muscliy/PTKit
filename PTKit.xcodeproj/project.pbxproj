@@ -41,18 +41,31 @@
 		5903E4641A3EFDE2007ADC7D /* PTModuleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E4631A3EFDE2007ADC7D /* PTModuleCollectionViewController.m */; };
 		5903E46A1A3EFEDD007ADC7D /* PTNetworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E4691A3EFEDD007ADC7D /* PTNetworkImageView.m */; };
 		5903E46E1A3FD411007ADC7D /* NSTimer+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */; };
-		590C3FAC1B16BD8C00A0CC7A /* PTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */; };
+		590BC8831BD8DDDE00DF0F9F /* PTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 590BC8821BD8DDDE00DF0F9F /* PTRefreshControl.m */; };
+		590BC8861BD8DF1B00DF0F9F /* PTRefreshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 590BC8851BD8DF1B00DF0F9F /* PTRefreshContentView.m */; };
 		590C3FB01B16DA2400A0CC7A /* UIColor+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FAF1B16DA2400A0CC7A /* UIColor+Extents.m */; };
 		590C3FCE1B19588D00A0CC7A /* PTUIKitCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FCD1B19588D00A0CC7A /* PTUIKitCategoryViewController.m */; };
 		590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */; };
 		590C3FEA1B1D5CB700A0CC7A /* UISearchBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */; };
 		590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */; };
+		5914D4A51C18585D00FCECEE /* PTPrefsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */; };
+		59169E491BD9E1D500702186 /* PTCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E441BD9E1D500702186 /* PTCameraManager.m */; };
+		59169E4A1BD9E1D500702186 /* PTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E461BD9E1D500702186 /* PTCameraView.m */; };
+		59169E4B1BD9E1D500702186 /* PTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E481BD9E1D500702186 /* PTCameraViewController.m */; };
+		59169E551BD9E1F900702186 /* PTCodeReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E4E1BD9E1F900702186 /* PTCodeReaderUtil.m */; };
+		59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E501BD9E1F900702186 /* PTCodeScanViewController.m */; };
+		59169E571BD9E1F900702186 /* PTQRCodeReaderOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E521BD9E1F900702186 /* PTQRCodeReaderOverlayView.m */; };
+		59169E581BD9E1F900702186 /* PTQRCodeReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59169E541BD9E1F900702186 /* PTQRCodeReaderViewController.mm */; };
+		59169F0B1BD9E24700702186 /* PTWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169F081BD9E24700702186 /* PTWebViewProgress.m */; };
+		59169F0C1BD9E24700702186 /* PTWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169F0A1BD9E24700702186 /* PTWebViewProgressView.m */; };
 		59277C5B1AC53453008823B6 /* PTImageSizeDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59277C5A1AC53453008823B6 /* PTImageSizeDebugViewController.m */; };
 		5930396E1B84653A0040F67F /* PTPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930396D1B8465390040F67F /* PTPushViewController.m */; };
 		593039711B84654E0040F67F /* PTPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593039701B84654E0040F67F /* PTPopViewController.m */; };
 		593039741B8466490040F67F /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593039731B8466490040F67F /* PopAnimation.m */; };
+		593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559321C0D75CC00D7B12B /* PTPreferences.m */; };
+		593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559351C0D852800D7B12B /* PTPropertyDescriptor.m */; };
 		595126A61A85EE23003AEE1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595126A51A85EE23003AEE1B /* AVFoundation.framework */; };
-		595126A91A85F312003AEE1B /* PTQRCodeReaderOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */; };
+		595227AD1BDA17C3002078BB /* PTRefreshControlDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */; };
 		595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */; };
 		595733281AFA2C2E006474CB /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595733271AFA2C2E006474CB /* BaiduMapAPI.framework */; };
 		5957332A1AFA2CF5006474CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595733291AFA2CF5006474CB /* CoreLocation.framework */; };
@@ -63,8 +76,6 @@
 		5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957333B1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m */; };
 		595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */; };
 		595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */; };
-		595BCB481A88F16400A3CD28 /* PTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BCB471A88F16400A3CD28 /* PTCameraView.m */; };
-		595BCB4B1A88F17900A3CD28 /* PTCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BCB4A1A88F17900A3CD28 /* PTCameraManager.m */; };
 		595BCB631A8B40A400A3CD28 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB621A8B40A400A3CD28 /* libiconv.dylib */; };
 		595BCB651A8B40AF00A3CD28 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB641A8B40AF00A3CD28 /* AddressBook.framework */; };
 		595BCB671A8B40B400A3CD28 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB661A8B40B400A3CD28 /* AddressBookUI.framework */; };
@@ -91,6 +102,22 @@
 		59606C7B1B8C685D00A3B67C /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 59606C7A1B8C685D00A3B67C /* Animator.m */; };
 		59606C7E1B8C68BA00A3B67C /* UIView+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59606C7D1B8C68BA00A3B67C /* UIView+Extents.m */; };
 		59606C811B8C693000A3B67C /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59606C801B8C693000A3B67C /* NavigationControllerDelegate.m */; };
+		5960BF0F1BEC880A00EABB11 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF0E1BEC880A00EABB11 /* PTViewController.m */; };
+		5960BF121BEC9C7400EABB11 /* PTViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF111BEC9C7400EABB11 /* PTViewController+Tracking.m */; };
+		5960BF281BEC9D2E00EABB11 /* NSNull+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF151BEC9D2E00EABB11 /* NSNull+Tracking.m */; };
+		5960BF291BEC9D2E00EABB11 /* NSObject+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF171BEC9D2E00EABB11 /* NSObject+Tracking.m */; };
+		5960BF2A1BEC9D2E00EABB11 /* NSString+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF191BEC9D2E00EABB11 /* NSString+Tracking.m */; };
+		5960BF2B1BEC9D2E00EABB11 /* UIImage+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF1B1BEC9D2E00EABB11 /* UIImage+Tracking.m */; };
+		5960BF2C1BEC9D2E00EABB11 /* UILabel+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF1D1BEC9D2E00EABB11 /* UILabel+Tracking.m */; };
+		5960BF2D1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF1F1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		5960BF2E1BEC9D2E00EABB11 /* UISearchBar+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF211BEC9D2E00EABB11 /* UISearchBar+Tracking.m */; };
+		5960BF2F1BEC9D2E00EABB11 /* UITabBarItem+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF231BEC9D2E00EABB11 /* UITabBarItem+Tracking.m */; };
+		5960BF301BEC9D2E00EABB11 /* UITextField+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF251BEC9D2E00EABB11 /* UITextField+Tracking.m */; };
+		5960BF311BEC9D2E00EABB11 /* UITextView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF271BEC9D2E00EABB11 /* UITextView+Tracking.m */; };
+		5960BF381BEDB20D00EABB11 /* PTType16BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF331BEDB20D00EABB11 /* PTType16BoxGroup.m */; };
+		5960BF391BEDB20D00EABB11 /* PTType17BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF351BEDB20D00EABB11 /* PTType17BoxGroup.m */; };
+		5960BF3A1BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF371BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m */; };
+		5960BF4A1BEF812B00EABB11 /* PTPrivacyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF491BEF812B00EABB11 /* PTPrivacyAccessor.m */; };
 		59676D2A1ADE5D2E00C9934E /* PTTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D291ADE5D2E00C9934E /* PTTagView.m */; };
 		59676D2D1ADE5D4300C9934E /* PTTagViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D2C1ADE5D4200C9934E /* PTTagViewItem.m */; };
 		59676D301ADE68E700C9934E /* PTTagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D2F1ADE68E700C9934E /* PTTagListViewController.m */; };
@@ -114,12 +141,11 @@
 		59676D691ADF866500C9934E /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59676D591ADF866500C9934E /* 4@2x.png */; };
 		59676D6B1ADF884100C9934E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59676D6A1ADF884100C9934E /* CFNetwork.framework */; };
 		5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */; };
-		5975AD201A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5975AD1F1A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm */; };
 		5978071D1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5978071C1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m */; };
 		597807201B7DC359004D8DE0 /* PTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5978071F1B7DC359004D8DE0 /* PTTableViewCell.m */; };
 		597807241B7DC470004D8DE0 /* PTLayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597807231B7DC470004D8DE0 /* PTLayoutTableViewCell.m */; };
-		597C59F41BB3CCEC00501A60 /* PTInfinitePageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C59F31BB3CCEC00501A60 /* PTInfinitePageScrollView.m */; settings = {ASSET_TAGS = (); }; };
-		597C59FB1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C59FA1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m */; settings = {ASSET_TAGS = (); }; };
+		597C59F41BB3CCEC00501A60 /* PTInfinitePageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C59F31BB3CCEC00501A60 /* PTInfinitePageScrollView.m */; };
+		597C59FB1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C59FA1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m */; };
 		597E45721B820B1800CB7D4A /* PTFoundationDebugListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45711B820B1800CB7D4A /* PTFoundationDebugListTableViewController.m */; };
 		597E45751B820BCC00CB7D4A /* Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45741B820BCC00CB7D4A /* Sark.m */; };
 		597E45781B820C2F00CB7D4A /* NSObject+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45771B820C2F00CB7D4A /* NSObject+Extents.m */; };
@@ -131,7 +157,6 @@
 		599E4D281A8884C300DDBD88 /* UIImage+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 599E4D271A8884C300DDBD88 /* UIImage+Extents.m */; };
 		599E4D2B1A88866000DDBD88 /* NSMutableAttributedString+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 599E4D2A1A88866000DDBD88 /* NSMutableAttributedString+Extents.m */; };
 		599E4D2D1A88868E00DDBD88 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E4D2C1A88868E00DDBD88 /* CoreText.framework */; };
-		599E4D7F1A888A4E00DDBD88 /* PTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599E4D7E1A888A4E00DDBD88 /* PTCameraViewController.m */; };
 		599F85A71AE89DD900D3C49E /* PTFloatingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599F85A61AE89DD900D3C49E /* PTFloatingHeaderView.m */; };
 		599F85AA1AE89F6A00D3C49E /* PTFloatingHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599F85A91AE89F6A00D3C49E /* PTFloatingHeaderViewController.m */; };
 		59B3916E1A255F350092837C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B3916D1A255F350092837C /* CoreGraphics.framework */; };
@@ -150,9 +175,7 @@
 		59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9D1AF0BD5E0090A5EB /* libz.dylib */; };
 		59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */; };
 		59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */; };
-		59E41A611A8B466C0021B1A7 /* PTCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A601A8B466C0021B1A7 /* PTCodeScanViewController.m */; };
 		59E41A651A8B4E8A0021B1A7 /* UIDevice+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */; };
-		59E41A681A8B531E0021B1A7 /* PTCodeReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A671A8B531E0021B1A7 /* PTCodeReaderUtil.m */; };
 		59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */; };
 		59EFDBF71A3B475100E0C16F /* PTInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EFDBF61A3B475100E0C16F /* PTInfiniteScrollView.m */; };
 		59EFDC011A3C8F5B00E0C16F /* PTInfinitePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EFDC001A3C8F5B00E0C16F /* PTInfinitePageView.m */; };
@@ -163,11 +186,7 @@
 		59F228061A235E8B00AFF494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F228051A235E8B00AFF494 /* Images.xcassets */; };
 		59F228091A235E8B00AFF494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F228071A235E8B00AFF494 /* LaunchScreen.xib */; };
 		59F228151A235E8B00AFF494 /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228141A235E8B00AFF494 /* PTKitTests.m */; };
-		59F2DC701B8EEABA00B2CE90 /* NormalJson in Resources */ = {isa = PBXBuildFile; fileRef = 59F2DC6F1B8EEABA00B2CE90 /* NormalJson */; };
-		59F2DC721B8EEAC200B2CE90 /* layoutjson in Resources */ = {isa = PBXBuildFile; fileRef = 59F2DC711B8EEAC200B2CE90 /* layoutjson */; };
 		59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */; };
-		59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D421A384A30002A7ECA /* PTWebViewProgress.m */; };
-		59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */; };
 		59FE59ED1B7306E5003DE97E /* PTAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59D81B7306E5003DE97E /* PTAssert.m */; };
 		59FE59EE1B7306E5003DE97E /* PTDDFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59DC1B7306E5003DE97E /* PTDDFormatter.m */; };
 		59FE59EF1B7306E5003DE97E /* PTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59DE1B7306E5003DE97E /* PTLogger.m */; };
@@ -178,9 +197,9 @@
 		59FE59F41B7306E5003DE97E /* PTTestCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59E81B7306E5003DE97E /* PTTestCore.m */; };
 		59FE59F51B7306E5003DE97E /* PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59EA1B7306E5003DE97E /* PTTimer.m */; };
 		59FE59F61B7306E5003DE97E /* PTUIMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59EC1B7306E5003DE97E /* PTUIMathUtilities.m */; };
-		59FFC7E61BAFDAA8006F8289 /* PTSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7E51BAFDAA8006F8289 /* PTSearchDisplayController.m */; settings = {ASSET_TAGS = (); }; };
-		59FFC7EC1BAFDB57006F8289 /* PTSearchNavigatonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EB1BAFDB57006F8289 /* PTSearchNavigatonBar.m */; settings = {ASSET_TAGS = (); }; };
-		59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EE1BAFE609006F8289 /* UIControl+Extents.m */; settings = {ASSET_TAGS = (); }; };
+		59FFC7E61BAFDAA8006F8289 /* PTSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7E51BAFDAA8006F8289 /* PTSearchDisplayController.m */; };
+		59FFC7EC1BAFDB57006F8289 /* PTSearchNavigatonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EB1BAFDB57006F8289 /* PTSearchNavigatonBar.m */; };
+		59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EE1BAFE609006F8289 /* UIControl+Extents.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,8 +256,10 @@
 		5903E4691A3EFEDD007ADC7D /* PTNetworkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNetworkImageView.m; sourceTree = "<group>"; };
 		5903E46C1A3FD411007ADC7D /* NSTimer+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extents.h"; sourceTree = "<group>"; };
 		5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extents.m"; sourceTree = "<group>"; };
-		590C3FAA1B16BD8C00A0CC7A /* PTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAlertView.h; sourceTree = "<group>"; };
-		590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAlertView.m; sourceTree = "<group>"; };
+		590BC8811BD8DDDE00DF0F9F /* PTRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRefreshControl.h; sourceTree = "<group>"; };
+		590BC8821BD8DDDE00DF0F9F /* PTRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRefreshControl.m; sourceTree = "<group>"; };
+		590BC8841BD8DF1B00DF0F9F /* PTRefreshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRefreshContentView.h; sourceTree = "<group>"; };
+		590BC8851BD8DF1B00DF0F9F /* PTRefreshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRefreshContentView.m; sourceTree = "<group>"; };
 		590C3FAE1B16DA2400A0CC7A /* UIColor+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extents.h"; sourceTree = "<group>"; };
 		590C3FAF1B16DA2400A0CC7A /* UIColor+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extents.m"; sourceTree = "<group>"; };
 		590C3FCC1B19588D00A0CC7A /* PTUIKitCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUIKitCategoryViewController.h; sourceTree = "<group>"; };
@@ -253,6 +274,27 @@
 		591101C41A51446500261162 /* PTFontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFontMacro.h; sourceTree = "<group>"; };
 		591101C51A51446500261162 /* PTOSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOSMacro.h; sourceTree = "<group>"; };
 		591101C61A51446500261162 /* PTRectMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRectMacro.h; sourceTree = "<group>"; };
+		5914D4A31C18585D00FCECEE /* PTPrefsRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrefsRouter.h; sourceTree = "<group>"; };
+		5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPrefsRouter.m; sourceTree = "<group>"; };
+		59169E421BD9E1D500702186 /* PTCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCamera.h; sourceTree = "<group>"; };
+		59169E431BD9E1D500702186 /* PTCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraManager.h; sourceTree = "<group>"; };
+		59169E441BD9E1D500702186 /* PTCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraManager.m; sourceTree = "<group>"; };
+		59169E451BD9E1D500702186 /* PTCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraView.h; sourceTree = "<group>"; };
+		59169E461BD9E1D500702186 /* PTCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraView.m; sourceTree = "<group>"; };
+		59169E471BD9E1D500702186 /* PTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraViewController.h; sourceTree = "<group>"; };
+		59169E481BD9E1D500702186 /* PTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraViewController.m; sourceTree = "<group>"; };
+		59169E4D1BD9E1F900702186 /* PTCodeReaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeReaderUtil.h; sourceTree = "<group>"; };
+		59169E4E1BD9E1F900702186 /* PTCodeReaderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCodeReaderUtil.m; sourceTree = "<group>"; };
+		59169E4F1BD9E1F900702186 /* PTCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeScanViewController.h; sourceTree = "<group>"; };
+		59169E501BD9E1F900702186 /* PTCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCodeScanViewController.m; sourceTree = "<group>"; };
+		59169E511BD9E1F900702186 /* PTQRCodeReaderOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTQRCodeReaderOverlayView.h; sourceTree = "<group>"; };
+		59169E521BD9E1F900702186 /* PTQRCodeReaderOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTQRCodeReaderOverlayView.m; sourceTree = "<group>"; };
+		59169E531BD9E1F900702186 /* PTQRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTQRCodeReaderViewController.h; sourceTree = "<group>"; };
+		59169E541BD9E1F900702186 /* PTQRCodeReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PTQRCodeReaderViewController.mm; sourceTree = "<group>"; };
+		59169F071BD9E24700702186 /* PTWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgress.h; sourceTree = "<group>"; };
+		59169F081BD9E24700702186 /* PTWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgress.m; sourceTree = "<group>"; };
+		59169F091BD9E24700702186 /* PTWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgressView.h; sourceTree = "<group>"; };
+		59169F0A1BD9E24700702186 /* PTWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgressView.m; sourceTree = "<group>"; };
 		59277C591AC53453008823B6 /* PTImageSizeDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTImageSizeDebugViewController.h; sourceTree = "<group>"; };
 		59277C5A1AC53453008823B6 /* PTImageSizeDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTImageSizeDebugViewController.m; sourceTree = "<group>"; };
 		5930396C1B8465390040F67F /* PTPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPushViewController.h; sourceTree = "<group>"; };
@@ -261,9 +303,13 @@
 		593039701B84654E0040F67F /* PTPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPopViewController.m; sourceTree = "<group>"; };
 		593039721B8466490040F67F /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
 		593039731B8466490040F67F /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		593559311C0D75CC00D7B12B /* PTPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPreferences.h; sourceTree = "<group>"; };
+		593559321C0D75CC00D7B12B /* PTPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPreferences.m; sourceTree = "<group>"; };
+		593559341C0D852800D7B12B /* PTPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPropertyDescriptor.h; sourceTree = "<group>"; };
+		593559351C0D852800D7B12B /* PTPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPropertyDescriptor.m; sourceTree = "<group>"; };
 		595126A51A85EE23003AEE1B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		595126A71A85F312003AEE1B /* PTQRCodeReaderOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTQRCodeReaderOverlayView.h; sourceTree = "<group>"; };
-		595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTQRCodeReaderOverlayView.m; sourceTree = "<group>"; };
+		595227AB1BDA17C3002078BB /* PTRefreshControlDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRefreshControlDebugViewController.h; sourceTree = "<group>"; };
+		595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRefreshControlDebugViewController.m; sourceTree = "<group>"; };
 		595733241AFA03CC006474CB /* PTPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPagerTabStripViewController.h; sourceTree = "<group>"; };
 		595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPagerTabStripViewController.m; sourceTree = "<group>"; };
 		595733271AFA2C2E006474CB /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
@@ -280,10 +326,6 @@
 		595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPagerTabStripButtonBarViewCell.m; sourceTree = "<group>"; };
 		595733531AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTButtonBarPagerTabStripExampleViewController.h; sourceTree = "<group>"; };
 		595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTButtonBarPagerTabStripExampleViewController.m; sourceTree = "<group>"; };
-		595BCB461A88F16400A3CD28 /* PTCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraView.h; sourceTree = "<group>"; };
-		595BCB471A88F16400A3CD28 /* PTCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraView.m; sourceTree = "<group>"; };
-		595BCB491A88F17900A3CD28 /* PTCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraManager.h; sourceTree = "<group>"; };
-		595BCB4A1A88F17900A3CD28 /* PTCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraManager.m; sourceTree = "<group>"; };
 		595BCB621A8B40A400A3CD28 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		595BCB641A8B40AF00A3CD28 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		595BCB661A8B40B400A3CD28 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -322,6 +364,38 @@
 		59606C7D1B8C68BA00A3B67C /* UIView+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extents.m"; sourceTree = "<group>"; };
 		59606C7F1B8C693000A3B67C /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		59606C801B8C693000A3B67C /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		5960BF0D1BEC880A00EABB11 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
+		5960BF0E1BEC880A00EABB11 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
+		5960BF101BEC9C7400EABB11 /* PTViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTViewController+Tracking.h"; sourceTree = "<group>"; };
+		5960BF111BEC9C7400EABB11 /* PTViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PTViewController+Tracking.m"; sourceTree = "<group>"; };
+		5960BF141BEC9D2E00EABB11 /* NSNull+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Tracking.h"; sourceTree = "<group>"; };
+		5960BF151BEC9D2E00EABB11 /* NSNull+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Tracking.m"; sourceTree = "<group>"; };
+		5960BF161BEC9D2E00EABB11 /* NSObject+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tracking.h"; sourceTree = "<group>"; };
+		5960BF171BEC9D2E00EABB11 /* NSObject+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tracking.m"; sourceTree = "<group>"; };
+		5960BF181BEC9D2E00EABB11 /* NSString+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tracking.h"; sourceTree = "<group>"; };
+		5960BF191BEC9D2E00EABB11 /* NSString+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tracking.m"; sourceTree = "<group>"; };
+		5960BF1A1BEC9D2E00EABB11 /* UIImage+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tracking.h"; sourceTree = "<group>"; };
+		5960BF1B1BEC9D2E00EABB11 /* UIImage+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tracking.m"; sourceTree = "<group>"; };
+		5960BF1C1BEC9D2E00EABB11 /* UILabel+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Tracking.h"; sourceTree = "<group>"; };
+		5960BF1D1BEC9D2E00EABB11 /* UILabel+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Tracking.m"; sourceTree = "<group>"; };
+		5960BF1E1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		5960BF1F1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		5960BF201BEC9D2E00EABB11 /* UISearchBar+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Tracking.h"; sourceTree = "<group>"; };
+		5960BF211BEC9D2E00EABB11 /* UISearchBar+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Tracking.m"; sourceTree = "<group>"; };
+		5960BF221BEC9D2E00EABB11 /* UITabBarItem+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+Tracking.h"; sourceTree = "<group>"; };
+		5960BF231BEC9D2E00EABB11 /* UITabBarItem+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Tracking.m"; sourceTree = "<group>"; };
+		5960BF241BEC9D2E00EABB11 /* UITextField+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Tracking.h"; sourceTree = "<group>"; };
+		5960BF251BEC9D2E00EABB11 /* UITextField+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Tracking.m"; sourceTree = "<group>"; };
+		5960BF261BEC9D2E00EABB11 /* UITextView+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Tracking.h"; sourceTree = "<group>"; };
+		5960BF271BEC9D2E00EABB11 /* UITextView+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Tracking.m"; sourceTree = "<group>"; };
+		5960BF321BEDB20D00EABB11 /* PTType16BoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTType16BoxGroup.h; sourceTree = "<group>"; };
+		5960BF331BEDB20D00EABB11 /* PTType16BoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTType16BoxGroup.m; sourceTree = "<group>"; };
+		5960BF341BEDB20D00EABB11 /* PTType17BoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTType17BoxGroup.h; sourceTree = "<group>"; };
+		5960BF351BEDB20D00EABB11 /* PTType17BoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTType17BoxGroup.m; sourceTree = "<group>"; };
+		5960BF361BEDB20D00EABB11 /* PTTypeBPICBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTypeBPICBoxGroup.h; sourceTree = "<group>"; };
+		5960BF371BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTypeBPICBoxGroup.m; sourceTree = "<group>"; };
+		5960BF481BEF812B00EABB11 /* PTPrivacyAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivacyAccessor.h; sourceTree = "<group>"; };
+		5960BF491BEF812B00EABB11 /* PTPrivacyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPrivacyAccessor.m; sourceTree = "<group>"; };
 		59676D281ADE5D2E00C9934E /* PTTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTagView.h; sourceTree = "<group>"; };
 		59676D291ADE5D2E00C9934E /* PTTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTagView.m; sourceTree = "<group>"; };
 		59676D2B1ADE5D4200C9934E /* PTTagViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTagViewItem.h; sourceTree = "<group>"; };
@@ -351,8 +425,6 @@
 		59676D6A1ADF884100C9934E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5969DAB31A2C1D0400509FB7 /* PTBaseViewCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTBaseViewCotroller.h; sourceTree = "<group>"; };
 		5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTBaseViewCotroller.m; sourceTree = "<group>"; };
-		5975AD1E1A85EB6600F43DE4 /* PTQRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTQRCodeReaderViewController.h; sourceTree = "<group>"; };
-		5975AD1F1A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PTQRCodeReaderViewController.mm; sourceTree = "<group>"; };
 		5978071B1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLayoutDebugTableViewController.h; sourceTree = "<group>"; };
 		5978071C1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLayoutDebugTableViewController.m; sourceTree = "<group>"; };
 		5978071E1B7DC359004D8DE0 /* PTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewCell.h; sourceTree = "<group>"; };
@@ -384,9 +456,6 @@
 		599E4D291A88866000DDBD88 /* NSMutableAttributedString+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Extents.h"; sourceTree = "<group>"; };
 		599E4D2A1A88866000DDBD88 /* NSMutableAttributedString+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Extents.m"; sourceTree = "<group>"; };
 		599E4D2C1A88868E00DDBD88 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		599E4D7D1A888A4E00DDBD88 /* PTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCameraViewController.h; sourceTree = "<group>"; };
-		599E4D7E1A888A4E00DDBD88 /* PTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCameraViewController.m; sourceTree = "<group>"; };
-		599E4D801A888B1B00DDBD88 /* PTCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTCamera.h; sourceTree = "<group>"; };
 		599F85A51AE89DD900D3C49E /* PTFloatingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFloatingHeaderView.h; sourceTree = "<group>"; };
 		599F85A61AE89DD900D3C49E /* PTFloatingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFloatingHeaderView.m; sourceTree = "<group>"; };
 		599F85A81AE89F6A00D3C49E /* PTFloatingHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFloatingHeaderViewController.h; sourceTree = "<group>"; };
@@ -418,12 +487,8 @@
 		59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		59DABFA11AF0BDDE0090A5EB /* PTAMapDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAMapDebugViewController.h; sourceTree = "<group>"; };
 		59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAMapDebugViewController.m; sourceTree = "<group>"; };
-		59E41A5F1A8B466C0021B1A7 /* PTCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeScanViewController.h; sourceTree = "<group>"; };
-		59E41A601A8B466C0021B1A7 /* PTCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCodeScanViewController.m; sourceTree = "<group>"; };
 		59E41A631A8B4E8A0021B1A7 /* UIDevice+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extents.h"; sourceTree = "<group>"; };
 		59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extents.m"; sourceTree = "<group>"; };
-		59E41A661A8B531E0021B1A7 /* PTCodeReaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCodeReaderUtil.h; sourceTree = "<group>"; };
-		59E41A671A8B531E0021B1A7 /* PTCodeReaderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCodeReaderUtil.m; sourceTree = "<group>"; };
 		59EC76621AEA2DE0006F257A /* UINavigationBar+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extents.h"; sourceTree = "<group>"; };
 		59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extents.m"; sourceTree = "<group>"; };
 		59EFDBF51A3B475100E0C16F /* PTInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTInfiniteScrollView.h; sourceTree = "<group>"; };
@@ -443,14 +508,8 @@
 		59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F228131A235E8B00AFF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F228141A235E8B00AFF494 /* PTKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitTests.m; sourceTree = "<group>"; };
-		59F2DC6F1B8EEABA00B2CE90 /* NormalJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NormalJson; sourceTree = "<group>"; };
-		59F2DC711B8EEAC200B2CE90 /* layoutjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layoutjson; sourceTree = "<group>"; };
 		59F3A60F1B131232002E2241 /* PTReactiveCocoaDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTReactiveCocoaDemoViewController.h; sourceTree = "<group>"; };
 		59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTReactiveCocoaDemoViewController.m; sourceTree = "<group>"; };
-		59F66D411A384A30002A7ECA /* PTWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgress.h; sourceTree = "<group>"; };
-		59F66D421A384A30002A7ECA /* PTWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgress.m; sourceTree = "<group>"; };
-		59F66D431A384A30002A7ECA /* PTWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewProgressView.h; sourceTree = "<group>"; };
-		59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewProgressView.m; sourceTree = "<group>"; };
 		59FE59D71B7306E5003DE97E /* PTAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAssert.h; sourceTree = "<group>"; };
 		59FE59D81B7306E5003DE97E /* PTAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAssert.m; sourceTree = "<group>"; };
 		59FE59D91B7306E5003DE97E /* PTBaseDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTBaseDefines.h; sourceTree = "<group>"; };
@@ -555,6 +614,12 @@
 		5903E4341A3EC987007ADC7D /* PTBoxGroup */ = {
 			isa = PBXGroup;
 			children = (
+				5960BF321BEDB20D00EABB11 /* PTType16BoxGroup.h */,
+				5960BF331BEDB20D00EABB11 /* PTType16BoxGroup.m */,
+				5960BF341BEDB20D00EABB11 /* PTType17BoxGroup.h */,
+				5960BF351BEDB20D00EABB11 /* PTType17BoxGroup.m */,
+				5960BF361BEDB20D00EABB11 /* PTTypeBPICBoxGroup.h */,
+				5960BF371BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m */,
 				5903E4351A3EC987007ADC7D /* PTCategoryBoxGroup.h */,
 				5903E4361A3EC987007ADC7D /* PTCategoryBoxGroup.m */,
 				5903E4371A3EC987007ADC7D /* PTType10BoxGroup.h */,
@@ -635,6 +700,7 @@
 		5903E46B1A3FD3F8007ADC7D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				5960BF131BEC9D2E00EABB11 /* NSObject+Tracking */,
 				5903E46C1A3FD411007ADC7D /* NSTimer+Extents.h */,
 				5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */,
 				599E4D231A88848000DDBD88 /* UIBarButtonItem+Extents.h */,
@@ -665,6 +731,17 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		590BC8801BD7818400DF0F9F /* PTRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				590BC8811BD8DDDE00DF0F9F /* PTRefreshControl.h */,
+				590BC8821BD8DDDE00DF0F9F /* PTRefreshControl.m */,
+				590BC8841BD8DF1B00DF0F9F /* PTRefreshContentView.h */,
+				590BC8851BD8DF1B00DF0F9F /* PTRefreshContentView.m */,
+			);
+			path = PTRefreshControl;
+			sourceTree = "<group>";
+		};
 		590C3FCB1B19588D00A0CC7A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,8 +749,50 @@
 				590C3FCD1B19588D00A0CC7A /* PTUIKitCategoryViewController.m */,
 				590C3FCF1B19592600A0CC7A /* PTAlertViewDemoViewCotroller.h */,
 				590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */,
+				595227AB1BDA17C3002078BB /* PTRefreshControlDebugViewController.h */,
+				595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		59169E411BD9E1D500702186 /* PTCamera */ = {
+			isa = PBXGroup;
+			children = (
+				59169E421BD9E1D500702186 /* PTCamera.h */,
+				59169E431BD9E1D500702186 /* PTCameraManager.h */,
+				59169E441BD9E1D500702186 /* PTCameraManager.m */,
+				59169E451BD9E1D500702186 /* PTCameraView.h */,
+				59169E461BD9E1D500702186 /* PTCameraView.m */,
+				59169E471BD9E1D500702186 /* PTCameraViewController.h */,
+				59169E481BD9E1D500702186 /* PTCameraViewController.m */,
+			);
+			path = PTCamera;
+			sourceTree = "<group>";
+		};
+		59169E4C1BD9E1F900702186 /* PTQRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				59169E4D1BD9E1F900702186 /* PTCodeReaderUtil.h */,
+				59169E4E1BD9E1F900702186 /* PTCodeReaderUtil.m */,
+				59169E4F1BD9E1F900702186 /* PTCodeScanViewController.h */,
+				59169E501BD9E1F900702186 /* PTCodeScanViewController.m */,
+				59169E511BD9E1F900702186 /* PTQRCodeReaderOverlayView.h */,
+				59169E521BD9E1F900702186 /* PTQRCodeReaderOverlayView.m */,
+				59169E531BD9E1F900702186 /* PTQRCodeReaderViewController.h */,
+				59169E541BD9E1F900702186 /* PTQRCodeReaderViewController.mm */,
+			);
+			path = PTQRCodeReader;
+			sourceTree = "<group>";
+		};
+		59169F061BD9E24700702186 /* PTWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				59169F071BD9E24700702186 /* PTWebViewProgress.h */,
+				59169F081BD9E24700702186 /* PTWebViewProgress.m */,
+				59169F091BD9E24700702186 /* PTWebViewProgressView.h */,
+				59169F0A1BD9E24700702186 /* PTWebViewProgressView.m */,
+			);
+			path = PTWebViewProgress;
 			sourceTree = "<group>";
 		};
 		59277C581AC53429008823B6 /* Debug */ = {
@@ -685,6 +804,13 @@
 				59606C731B8C535000A3B67C /* PTDynamicsViewController.m */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		593559371C0D944100D7B12B /* PTRouter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PTRouter;
 			sourceTree = "<group>";
 		};
 		595733231AFA02E1006474CB /* PTPagerTabStrip */ = {
@@ -705,8 +831,6 @@
 		595DA3891AA2B2F4002FA051 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				59F2DC6F1B8EEABA00B2CE90 /* NormalJson */,
-				59F2DC711B8EEAC200B2CE90 /* layoutjson */,
 				59676D491ADF866500C9934E /* Images */,
 				595DA38A1AA2B304002FA051 /* Thing images */,
 			);
@@ -723,6 +847,33 @@
 				595DA38F1AA2B304002FA051 /* thing05.jpg */,
 			);
 			path = "Thing images";
+			sourceTree = "<group>";
+		};
+		5960BF131BEC9D2E00EABB11 /* NSObject+Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				5960BF141BEC9D2E00EABB11 /* NSNull+Tracking.h */,
+				5960BF151BEC9D2E00EABB11 /* NSNull+Tracking.m */,
+				5960BF161BEC9D2E00EABB11 /* NSObject+Tracking.h */,
+				5960BF171BEC9D2E00EABB11 /* NSObject+Tracking.m */,
+				5960BF181BEC9D2E00EABB11 /* NSString+Tracking.h */,
+				5960BF191BEC9D2E00EABB11 /* NSString+Tracking.m */,
+				5960BF1A1BEC9D2E00EABB11 /* UIImage+Tracking.h */,
+				5960BF1B1BEC9D2E00EABB11 /* UIImage+Tracking.m */,
+				5960BF1C1BEC9D2E00EABB11 /* UILabel+Tracking.h */,
+				5960BF1D1BEC9D2E00EABB11 /* UILabel+Tracking.m */,
+				5960BF1E1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.h */,
+				5960BF1F1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m */,
+				5960BF201BEC9D2E00EABB11 /* UISearchBar+Tracking.h */,
+				5960BF211BEC9D2E00EABB11 /* UISearchBar+Tracking.m */,
+				5960BF221BEC9D2E00EABB11 /* UITabBarItem+Tracking.h */,
+				5960BF231BEC9D2E00EABB11 /* UITabBarItem+Tracking.m */,
+				5960BF241BEC9D2E00EABB11 /* UITextField+Tracking.h */,
+				5960BF251BEC9D2E00EABB11 /* UITextField+Tracking.m */,
+				5960BF261BEC9D2E00EABB11 /* UITextView+Tracking.h */,
+				5960BF271BEC9D2E00EABB11 /* UITextView+Tracking.m */,
+			);
+			path = "NSObject+Tracking";
 			sourceTree = "<group>";
 		};
 		59676D271ADE5D1400C9934E /* PTTagView */ = {
@@ -784,21 +935,6 @@
 				595DA3B11AA55D38002FA051 /* PTFontListViewController.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5975AD1D1A85EB4E00F43DE4 /* QRCodeReader */ = {
-			isa = PBXGroup;
-			children = (
-				5975AD1E1A85EB6600F43DE4 /* PTQRCodeReaderViewController.h */,
-				5975AD1F1A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm */,
-				595126A71A85F312003AEE1B /* PTQRCodeReaderOverlayView.h */,
-				595126A81A85F312003AEE1B /* PTQRCodeReaderOverlayView.m */,
-				59E41A5F1A8B466C0021B1A7 /* PTCodeScanViewController.h */,
-				59E41A601A8B466C0021B1A7 /* PTCodeScanViewController.m */,
-				59E41A661A8B531E0021B1A7 /* PTCodeReaderUtil.h */,
-				59E41A671A8B531E0021B1A7 /* PTCodeReaderUtil.m */,
-			);
-			path = QRCodeReader;
 			sourceTree = "<group>";
 		};
 		597807211B7DC454004D8DE0 /* ViewDebug */ = {
@@ -869,29 +1005,12 @@
 				599A9B1E1A84946900AA302C /* PTNavigationController.m */,
 				599A9B201A84947E00AA302C /* PTNavigationBar.h */,
 				599A9B211A84947E00AA302C /* PTNavigationBar.m */,
+				5960BF0D1BEC880A00EABB11 /* PTViewController.h */,
+				5960BF0E1BEC880A00EABB11 /* PTViewController.m */,
+				5960BF101BEC9C7400EABB11 /* PTViewController+Tracking.h */,
+				5960BF111BEC9C7400EABB11 /* PTViewController+Tracking.m */,
 			);
 			path = Track;
-			sourceTree = "<group>";
-		};
-		599E4D7B1A88892B00DDBD88 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				599E4D7D1A888A4E00DDBD88 /* PTCameraViewController.h */,
-				599E4D7E1A888A4E00DDBD88 /* PTCameraViewController.m */,
-				599E4D801A888B1B00DDBD88 /* PTCamera.h */,
-				595BCB461A88F16400A3CD28 /* PTCameraView.h */,
-				595BCB471A88F16400A3CD28 /* PTCameraView.m */,
-				595BCB491A88F17900A3CD28 /* PTCameraManager.h */,
-				595BCB4A1A88F17900A3CD28 /* PTCameraManager.m */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
-		599E4D7C1A88894700DDBD88 /* Photos */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Photos;
 			sourceTree = "<group>";
 		};
 		599F85A41AE89D3200D3C49E /* PTFloatingHeaderView */ = {
@@ -1003,38 +1122,28 @@
 		59F66D3F1A38496F002A7ECA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				593559371C0D944100D7B12B /* PTRouter */,
+				59169F061BD9E24700702186 /* PTWebViewProgress */,
+				59169E4C1BD9E1F900702186 /* PTQRCodeReader */,
+				59169E411BD9E1D500702186 /* PTCamera */,
+				590BC8801BD7818400DF0F9F /* PTRefreshControl */,
 				59FFC7E01BAFDA5E006F8289 /* PTSearchViewController */,
 				595733231AFA02E1006474CB /* PTPagerTabStrip */,
 				599F85A41AE89D3200D3C49E /* PTFloatingHeaderView */,
 				59676D3E1ADF5A1400C9934E /* PTSegmentedControl */,
 				59676D271ADE5D1400C9934E /* PTTagView */,
 				597905B11AA04E5B00E81090 /* ViewControllerTransitions */,
-				599E4D7C1A88894700DDBD88 /* Photos */,
-				599E4D7B1A88892B00DDBD88 /* Camera */,
-				5975AD1D1A85EB4E00F43DE4 /* QRCodeReader */,
 				5903E4261A3EC987007ADC7D /* PTBox */,
 				59EFDBF41A3B473000E0C16F /* PTInfiniteScrollView */,
-				59F66D401A384A24002A7ECA /* WebViewProgress */,
-				590C3FAA1B16BD8C00A0CC7A /* PTAlertView.h */,
-				590C3FAB1B16BD8C00A0CC7A /* PTAlertView.m */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		59F66D401A384A24002A7ECA /* WebViewProgress */ = {
-			isa = PBXGroup;
-			children = (
-				59F66D411A384A30002A7ECA /* PTWebViewProgress.h */,
-				59F66D421A384A30002A7ECA /* PTWebViewProgress.m */,
-				59F66D431A384A30002A7ECA /* PTWebViewProgressView.h */,
-				59F66D441A384A30002A7ECA /* PTWebViewProgressView.m */,
-			);
-			path = WebViewProgress;
 			sourceTree = "<group>";
 		};
 		59FE59D61B7306E5003DE97E /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5960BF481BEF812B00EABB11 /* PTPrivacyAccessor.h */,
+				5960BF491BEF812B00EABB11 /* PTPrivacyAccessor.m */,
 				59FE59D71B7306E5003DE97E /* PTAssert.h */,
 				59FE59D81B7306E5003DE97E /* PTAssert.m */,
 				59FE59D91B7306E5003DE97E /* PTBaseDefines.h */,
@@ -1057,6 +1166,12 @@
 				59FE59EA1B7306E5003DE97E /* PTTimer.m */,
 				59FE59EB1B7306E5003DE97E /* PTUIMathUtilities.h */,
 				59FE59EC1B7306E5003DE97E /* PTUIMathUtilities.m */,
+				593559311C0D75CC00D7B12B /* PTPreferences.h */,
+				593559321C0D75CC00D7B12B /* PTPreferences.m */,
+				593559341C0D852800D7B12B /* PTPropertyDescriptor.h */,
+				593559351C0D852800D7B12B /* PTPropertyDescriptor.m */,
+				5914D4A31C18585D00FCECEE /* PTPrefsRouter.h */,
+				5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1124,6 +1239,7 @@
 				59F227F21A235E8B00AFF494 /* Frameworks */,
 				59F227F31A235E8B00AFF494 /* Resources */,
 				9C9E3A21D3DB94375A892819 /* Copy Pods Resources */,
+				E47B2C770AA1F80259A72F60 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1200,7 +1316,6 @@
 			files = (
 				59676D671ADF866500C9934E /* 4-selected@2x.png in Resources */,
 				59676D5C1ADF866500C9934E /* 1.png in Resources */,
-				59F2DC721B8EEAC200B2CE90 /* layoutjson in Resources */,
 				59F228041A235E8B00AFF494 /* Main.storyboard in Resources */,
 				595DA3941AA2B304002FA051 /* thing05.jpg in Resources */,
 				595DA3901AA2B304002FA051 /* thing01.jpg in Resources */,
@@ -1209,7 +1324,6 @@
 				595DA3931AA2B304002FA051 /* thing04.jpg in Resources */,
 				59676D5A1ADF866500C9934E /* 1-selected.png in Resources */,
 				59676D691ADF866500C9934E /* 4@2x.png in Resources */,
-				59F2DC701B8EEABA00B2CE90 /* NormalJson in Resources */,
 				59676D631ADF866500C9934E /* 3-selected@2x.png in Resources */,
 				59676D661ADF866500C9934E /* 4-selected.png in Resources */,
 				59676D5D1ADF866500C9934E /* 1@2x.png in Resources */,
@@ -1252,6 +1366,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTKit/Pods-PTKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E47B2C770AA1F80259A72F60 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTKit/Pods-PTKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E57A1B14A9CAAC3A41FDD7F5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1274,29 +1403,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5960BF311BEC9D2E00EABB11 /* UITextView+Tracking.m in Sources */,
 				595733361AFA3DF5006474CB /* UIViewController+POPHUD.m in Sources */,
+				590BC8831BD8DDDE00DF0F9F /* PTRefreshControl.m in Sources */,
 				595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */,
+				5960BF2D1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */,
+				5960BF0F1BEC880A00EABB11 /* PTViewController.m in Sources */,
 				59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */,
 				595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */,
 				59D745641A400CC40058016D /* PTModuleDecorationView.m in Sources */,
 				5903E45C1A3ECA56007ADC7D /* PTCollectionView.m in Sources */,
+				5960BF391BEDB20D00EABB11 /* PTType17BoxGroup.m in Sources */,
 				59F228011A235E8B00AFF494 /* ViewController.m in Sources */,
 				59676D2A1ADE5D2E00C9934E /* PTTagView.m in Sources */,
+				59169E4B1BD9E1D500702186 /* PTCameraViewController.m in Sources */,
+				5960BF121BEC9C7400EABB11 /* PTViewController+Tracking.m in Sources */,
 				595DA39A1AA2B42B002FA051 /* PTTransitionsDebugListViewController.m in Sources */,
+				593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */,
 				5903E4471A3EC987007ADC7D /* PTBoxManager.m in Sources */,
 				59676D411ADF5A3600C9934E /* PTSegmentedControl.m in Sources */,
 				590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */,
 				599A9B1F1A84946900AA302C /* PTNavigationController.m in Sources */,
-				59F66D451A384A30002A7ECA /* PTWebViewProgress.m in Sources */,
 				5978071D1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m in Sources */,
-				59E41A611A8B466C0021B1A7 /* PTCodeScanViewController.m in Sources */,
 				59FE59EE1B7306E5003DE97E /* PTDDFormatter.m in Sources */,
+				5960BF291BEC9D2E00EABB11 /* NSObject+Tracking.m in Sources */,
 				593039711B84654E0040F67F /* PTPopViewController.m in Sources */,
+				5960BF381BEDB20D00EABB11 /* PTType16BoxGroup.m in Sources */,
 				597C59FB1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m in Sources */,
 				5903E4501A3EC987007ADC7D /* PTType4BoxGroup.m in Sources */,
 				597E457B1B82C49300CB7D4A /* Father.m in Sources */,
 				5903E44B1A3EC987007ADC7D /* PTCategoryBoxGroup.m in Sources */,
+				595227AD1BDA17C3002078BB /* PTRefreshControlDebugViewController.m in Sources */,
+				59169E571BD9E1F900702186 /* PTQRCodeReaderOverlayView.m in Sources */,
+				59169E491BD9E1D500702186 /* PTCameraManager.m in Sources */,
 				597807241B7DC470004D8DE0 /* PTLayoutTableViewCell.m in Sources */,
 				5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */,
 				59E41A651A8B4E8A0021B1A7 /* UIDevice+Extents.m in Sources */,
@@ -1307,43 +1447,53 @@
 				599E4D251A88848000DDBD88 /* UIBarButtonItem+Extents.m in Sources */,
 				597E457E1B82C4AA00CB7D4A /* Son.m in Sources */,
 				595DA3851AA2A87B002FA051 /* PTInteractiveDetailViewController.m in Sources */,
+				5960BF281BEC9D2E00EABB11 /* NSNull+Tracking.m in Sources */,
 				59EFDBF71A3B475100E0C16F /* PTInfiniteScrollView.m in Sources */,
+				59169E581BD9E1F900702186 /* PTQRCodeReaderViewController.mm in Sources */,
 				599A9B221A84947E00AA302C /* PTNavigationBar.m in Sources */,
 				5903E44A1A3EC987007ADC7D /* PTCollectionViewLayoutAttributes.m in Sources */,
+				59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */,
 				59F227FE1A235E8B00AFF494 /* AppDelegate.m in Sources */,
 				59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */,
 				59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */,
 				595DA3B21AA55D38002FA051 /* PTFontListViewController.m in Sources */,
 				59606C741B8C535000A3B67C /* PTDynamicsViewController.m in Sources */,
+				590BC8861BD8DF1B00DF0F9F /* PTRefreshContentView.m in Sources */,
 				59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */,
 				59277C5B1AC53453008823B6 /* PTImageSizeDebugViewController.m in Sources */,
+				59169F0B1BD9E24700702186 /* PTWebViewProgress.m in Sources */,
 				595733391AFB1393006474CB /* PTPagerTabStripButtonBarView.m in Sources */,
 				595DA3A11AA2E4AF002FA051 /* PTViewControllerPushAnimatedTransitioning.m in Sources */,
 				59FE59F61B7306E5003DE97E /* PTUIMathUtilities.m in Sources */,
+				59169E4A1BD9E1D500702186 /* PTCameraView.m in Sources */,
 				59606C811B8C693000A3B67C /* NavigationControllerDelegate.m in Sources */,
 				59FE59F21B7306E5003DE97E /* PTScreen.m in Sources */,
 				595DA39E1AA2E491002FA051 /* PTViewControllerPopAnimatedTransitioning.m in Sources */,
-				595126A91A85F312003AEE1B /* PTQRCodeReaderOverlayView.m in Sources */,
 				5903E4491A3EC987007ADC7D /* PTCollectionViewLayout.m in Sources */,
 				59676D2D1ADE5D4300C9934E /* PTTagViewItem.m in Sources */,
 				5903E44F1A3EC987007ADC7D /* PTType3BoxGroup.m in Sources */,
 				59D745771A402D9E0058016D /* PTModuleTitleCollectionViewCell.m in Sources */,
 				5903E44E1A3EC987007ADC7D /* PTType2BoxGroup.m in Sources */,
 				5903E4461A3EC987007ADC7D /* PTBoxGroup.m in Sources */,
+				59169E551BD9E1F900702186 /* PTCodeReaderUtil.m in Sources */,
 				595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */,
+				5960BF3A1BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m in Sources */,
 				590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */,
 				5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */,
 				59FE59EF1B7306E5003DE97E /* PTLogger.m in Sources */,
+				5960BF2A1BEC9D2E00EABB11 /* NSString+Tracking.m in Sources */,
+				5960BF2E1BEC9D2E00EABB11 /* UISearchBar+Tracking.m in Sources */,
 				590C3FB01B16DA2400A0CC7A /* UIColor+Extents.m in Sources */,
 				59D7455E1A4005400058016D /* PTDebugListViewController.m in Sources */,
 				595DA3821AA2A82D002FA051 /* PTInteractiveCollectionViewController.m in Sources */,
+				5914D4A51C18585D00FCECEE /* PTPrefsRouter.m in Sources */,
 				5930396E1B84653A0040F67F /* PTPushViewController.m in Sources */,
 				59FE59F31B7306E5003DE97E /* PTSystemInfo.m in Sources */,
+				593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */,
 				59FE59F41B7306E5003DE97E /* PTTestCore.m in Sources */,
 				59676D481ADF84CC00C9934E /* PTSegmentedControlViewController.m in Sources */,
-				595BCB4B1A88F17900A3CD28 /* PTCameraManager.m in Sources */,
 				597E45781B820C2F00CB7D4A /* NSObject+Extents.m in Sources */,
-				59F66D461A384A30002A7ECA /* PTWebViewProgressView.m in Sources */,
+				5960BF2C1BEC9D2E00EABB11 /* UILabel+Tracking.m in Sources */,
 				59FE59F11B7306E5003DE97E /* PTRect.m in Sources */,
 				5903E46E1A3FD411007ADC7D /* NSTimer+Extents.m in Sources */,
 				5903E44C1A3EC987007ADC7D /* PTType10BoxGroup.m in Sources */,
@@ -1352,27 +1502,26 @@
 				59606C7B1B8C685D00A3B67C /* Animator.m in Sources */,
 				59D7457A1A40365F0058016D /* PTType12BoxGroup.m in Sources */,
 				5903E44D1A3EC987007ADC7D /* PTType1BoxGroup.m in Sources */,
-				599E4D7F1A888A4E00DDBD88 /* PTCameraViewController.m in Sources */,
-				590C3FAC1B16BD8C00A0CC7A /* PTAlertView.m in Sources */,
 				59606C781B8C683700A3B67C /* GPUImageAnimator.m in Sources */,
 				59D7455B1A3FE81B0058016D /* PTTableView.m in Sources */,
 				590C3FEA1B1D5CB700A0CC7A /* UISearchBar+Extents.m in Sources */,
+				5960BF2B1BEC9D2E00EABB11 /* UIImage+Tracking.m in Sources */,
+				5960BF2F1BEC9D2E00EABB11 /* UITabBarItem+Tracking.m in Sources */,
+				5960BF4A1BEF812B00EABB11 /* PTPrivacyAccessor.m in Sources */,
 				59FFC7E61BAFDAA8006F8289 /* PTSearchDisplayController.m in Sources */,
 				59D745711A401ECF0058016D /* PTType13BoxGroup.m in Sources */,
 				597C59F41BB3CCEC00501A60 /* PTInfinitePageScrollView.m in Sources */,
 				59FFC7EC1BAFDB57006F8289 /* PTSearchNavigatonBar.m in Sources */,
 				59606C7E1B8C68BA00A3B67C /* UIView+Extents.m in Sources */,
 				59D745741A4028180058016D /* PTType14BoxGroup.m in Sources */,
-				5975AD201A85EB6600F43DE4 /* PTQRCodeReaderViewController.mm in Sources */,
 				5903E4611A3EFDB8007ADC7D /* PTModuleCollectionViewCell.m in Sources */,
 				59D7456E1A401A170058016D /* PTModuleHeaderCollectionCell.m in Sources */,
 				5903E4521A3EC987007ADC7D /* PTBoxManagerAdapter.m in Sources */,
+				5960BF301BEC9D2E00EABB11 /* UITextField+Tracking.m in Sources */,
 				599E4D2B1A88866000DDBD88 /* NSMutableAttributedString+Extents.m in Sources */,
-				59E41A681A8B531E0021B1A7 /* PTCodeReaderUtil.m in Sources */,
 				5903E4511A3EC987007ADC7D /* PTType6BoxGroup.m in Sources */,
 				5903E4641A3EFDE2007ADC7D /* PTModuleCollectionViewController.m in Sources */,
 				5903E4551A3EC9DF007ADC7D /* PTCollectionViewController.m in Sources */,
-				595BCB481A88F16400A3CD28 /* PTCameraView.m in Sources */,
 				59FE59F01B7306E5003DE97E /* PTMediaDeviceAuthorize.m in Sources */,
 				59EFDC011A3C8F5B00E0C16F /* PTInfinitePageView.m in Sources */,
 				5903E4451A3EC987007ADC7D /* PTBox.m in Sources */,
@@ -1382,6 +1531,7 @@
 				597807201B7DC359004D8DE0 /* PTTableViewCell.m in Sources */,
 				597E45751B820BCC00CB7D4A /* Sark.m in Sources */,
 				59676D301ADE68E700C9934E /* PTTagListViewController.m in Sources */,
+				59169F0C1BD9E24700702186 /* PTWebViewProgressView.m in Sources */,
 				595DA3881AA2ABC6002FA051 /* PTCollectionViewCell.m in Sources */,
 				59F227FB1A235E8B00AFF494 /* main.m in Sources */,
 				599F85AA1AE89F6A00D3C49E /* PTFloatingHeaderViewController.m in Sources */,

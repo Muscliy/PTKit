@@ -8,6 +8,7 @@
 
 #import "PTType1BoxGroup.h"
 #import "PTCollectionViewLayout.h"
+#import "PTUIMathUtilities.h"
 
 @implementation PTType1BoxGroup
 
@@ -16,7 +17,7 @@ PTBoxCommonImplementation;
 + (NSArray *)extraRegisterGroupType
 {
     //可以换成两个类实现
-    return @[ @"TYPE1" ];
+    return @[ CC_HOMEPAGEMODULECONSTANT_TYPE1 ];
 }
 
 - (NSArray *)collectionView:(UICollectionView *)collectionView
@@ -83,26 +84,26 @@ PTBoxCommonImplementation;
                     dataSource:(id<PTBoxDataSource>)dataSource
                           type:(id)type
 {
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    return UIEdgeInsetsMake(20 * sizeRatio, 20 * sizeRatio, 20 * sizeRatio, 10 * sizeRatio);
+    return UIEdgeInsetsMake(10, 10, 10, 5);
 }
 
 - (CGSize)itemSize:(NSUInteger)item
 {
+
+    CGFloat sizeRatio = PTRatio4InchWithCurrentPhoneSize();
+    CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds);
+    CGFloat reactiveWidth = PTRoundPixIntValue(80 * sizeRatio);
     NSArray *sizeMap = @[
-        NSStringFromCGSize(CGSizeMake(290, 320)),
-        NSStringFromCGSize(CGSizeMake(160, 160)),
-        NSStringFromCGSize(CGSizeMake(160, 160)),
-        NSStringFromCGSize(CGSizeMake(160, 160)),
-        NSStringFromCGSize(CGSizeMake(160, 160)),
+        NSStringFromCGSize(CGSizeMake(width - 2 * reactiveWidth - 15, width / 2)),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, reactiveWidth)),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, reactiveWidth)),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, reactiveWidth)),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, reactiveWidth)),
     ];
 
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
     item = item % 5;
     NSString *str = sizeMap[item];
     CGSize size = CGSizeFromString(str);
-    size.width = size.width * sizeRatio;
-    size.height = size.height * sizeRatio;
     return size;
 }
 
@@ -115,7 +116,7 @@ PTBoxCommonImplementation;
     BOOL hasTopLine = NO;
     NSArray *showTypes = @[ CC_HOMEPAGEMODULECONSTANT_TYPE8, CC_HOMEPAGEMODULECONSTANT_TYPE9 ];
 
-    if (section > 1) {
+    if (section >= 1) {
         NSString *aType = types[section - 1];
         hasTopLine = [showTypes containsObject:aType];
     }

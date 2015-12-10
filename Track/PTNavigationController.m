@@ -10,61 +10,33 @@
 #import "PTNavigationBar.h"
 #import "UIBarButtonItem+Extents.h"
 
-@implementation UINavigationController (leftBarButtonItem)
-
-- (UIBarButtonItem *)ex_leftBarButtonItem:(id)target action:(SEL)action
-{
-    if ([self topVCIsInModal]) {
-        return [UIBarButtonItem ex_leftIconItemTarget:target
-                                               action:action
-                                           normalIcon:@"icon_Wclose"
-                                        highlightIcon:@"icon_Wclose_in"];
-    } else {
-        if (self.viewControllers.count > 1) {
-            return [UIBarButtonItem ex_leftIconItemTarget:target
-                                                   action:action
-                                               normalIcon:@"icon_back"
-                                            highlightIcon:@"icon_back_in"];
-        }
-    }
-    return nil;
-}
-
-- (BOOL)topVCIsInModal
-{
-    if (self.viewControllers.count <= 1 && self.presentingViewController) {
-        return YES;
-    }
-    return NO;
-}
-
-@end
-
 @implementation PTNavigationController
 
-- (instancetype)init
++ (void)initialize
 {
-    if ((self = [super initWithNavigationBarClass:[PTNavigationBar class] toolbarClass:nil])) {
-    }
-    return self;
+	[[UINavigationBar appearance]
+	 setTitleTextAttributes:[NSDictionary
+							 dictionaryWithObjectsAndKeys:
+							 [UIColor whiteColor], UITextAttributeTextColor,
+							 [UIColor clearColor], UITextAttributeTextShadowColor,
+							 [UIFont systemFontOfSize:18], UITextAttributeFont, nil]];
+	[[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+	[[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+	
+
 }
 
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    
-    
-    
-
-    if ((self = [super initWithNavigationBarClass:[PTNavigationBar class] toolbarClass:nil])) {
-        self.viewControllers = @[ rootViewController ];
+    if ((self = [super initWithRootViewController:rootViewController])) {
     }
 
     return self;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle
+- (void)viewDidLoad
 {
-    return UIStatusBarStyleLightContent;
+    [super viewDidLoad];
 }
 
 @end

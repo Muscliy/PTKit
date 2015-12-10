@@ -8,13 +8,14 @@
 
 #import "PTType2BoxGroup.h"
 #import "PTCollectionViewLayout.h"
+#import "PTUIMathUtilities.h"
 
 @implementation PTType2BoxGroup
 PTBoxCommonImplementation;
 
 + (NSArray *)extraRegisterGroupType
 {
-    return @[ @"TYPE2" ];
+    return @[ CC_HOMEPAGEMODULECONSTANT_TYPE2 ];
 }
 
 - (NSArray *)collectionView:(UICollectionView *)collectionView
@@ -24,7 +25,7 @@ PTBoxCommonImplementation;
                      dataSource:(id<PTBoxDataSource>)dataSource
                            type:(id)types
 {
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
+    CGFloat sizeRatio = [PTBoxGroup contentScale320];
     NSUInteger itemCount = [collectionView numberOfItemsInSection:section];
     NSMutableArray *sectionAttributes = [@[] mutableCopy];
     PTCollectionViewLayoutAttributes *attributes = nil;
@@ -40,8 +41,8 @@ PTBoxCommonImplementation;
         }
 
         case 1: {
-            attributes.bottomSeparatorLineInsets =
-                UIEdgeInsetsMake(0, 40 * sizeRatio, 0, 10 * sizeRatio);
+            attributes.bottomSeparatorLineInsets = UIEdgeInsetsMake(
+                0, PTRoundPixelValue(40 * sizeRatio), 0, PTRoundPixelValue(10 * sizeRatio));
             break;
         }
 
@@ -56,7 +57,7 @@ PTBoxCommonImplementation;
             attributes.frame =
                 CGRectMake([self itemSize:0].width, (residue > 1 ? [self itemSize:item].height : 0),
                            [self itemSize:item].width, [self itemSize:item].height);
-            attributes.contentInsets = UIEdgeInsetsMake(0, 20 * sizeRatio, 0, 0);
+            attributes.contentInsets = UIEdgeInsetsMake(0, PTRoundPixelValue(20 * sizeRatio), 0, 0);
         }
 
         [sectionAttributes addObject:attributes];
@@ -72,24 +73,27 @@ PTBoxCommonImplementation;
                     dataSource:(id<PTBoxDataSource>)dataSource
                           type:(id)type
 {
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
-    return UIEdgeInsetsMake(20 * sizeRatio, 20 * sizeRatio, 20 * sizeRatio, 10 * sizeRatio);
+    return UIEdgeInsetsMake(10, 10, 10, 5);
 }
 
 - (CGSize)itemSize:(NSUInteger)item
 {
+    CGFloat sizeRatio = PTRatio4InchWithCurrentPhoneSize();
+    CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds);
+    CGFloat reactiveWidth = PTRoundPixIntValue(160 * sizeRatio);
+    UIEdgeInsets insets =
+        [self collectionView:nil insetForSectionAtIndex:0 dataSource:nil type:nil];
+
     NSArray *sizeMap = @[
-        NSStringFromCGSize(CGSizeMake(290, 320)),
-        NSStringFromCGSize(CGSizeMake(320, 160)),
-        NSStringFromCGSize(CGSizeMake(320, 160)),
+        NSStringFromCGSize(
+            CGSizeMake(width - insets.left - insets.right - reactiveWidth, width / 2)),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, PTRoundPixelValue(width / 4))),
+        NSStringFromCGSize(CGSizeMake(reactiveWidth, PTRoundPixelValue(width / 4))),
     ];
 
-    CGFloat sizeRatio = [PTBoxGroup contentScale640];
     item = item % 3;
     NSString *str = sizeMap[item];
     CGSize size = CGSizeFromString(str);
-    size.width = size.width * sizeRatio;
-    size.height = size.height * sizeRatio;
     return size;
 }
 
@@ -102,7 +106,7 @@ PTBoxCommonImplementation;
     BOOL hasTopLine = NO;
     NSArray *showTypes = @[ CC_HOMEPAGEMODULECONSTANT_TYPE8, CC_HOMEPAGEMODULECONSTANT_TYPE9 ];
 
-    if (section > 1) {
+    if (section >= 1) {
         NSString *aType = types[section - 1];
         hasTopLine = [showTypes containsObject:aType];
     }

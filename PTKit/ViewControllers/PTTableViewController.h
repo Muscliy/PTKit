@@ -10,8 +10,9 @@
 #import "EGORefreshTableHeaderView.h"
 #import "NimbusModels.h"
 #import "PTTableView.h"
+#import "PTViewController.h"
 
-@interface PTTableViewController : PTBaseViewCotroller<UITableViewDelegate, UISearchBarDelegate,
+@interface PTTableViewController : PTViewController<UITableViewDelegate, UISearchBarDelegate,
 UISearchDisplayDelegate, EGORefreshTableHeaderDelegate,PTTableViewDelegate,NITableViewModelDelegate>
 
 @property (nonatomic, strong) PTTableView *tableView;

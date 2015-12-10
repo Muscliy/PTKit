@@ -20,7 +20,6 @@
 #import "PTButtonBarPagerTabStripExampleViewController.h"
 #import "PTAMapDebugViewController.h"
 #import "PTReactiveCocoaDemoViewController.h"
-#import "PTAlertView.h"
 #import "PTUIKitCategoryViewController.h"
 #import "PTLayoutDebugTableViewController.h"
 #import "PTFoundationDebugListTableViewController.h"

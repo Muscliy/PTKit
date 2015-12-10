@@ -124,9 +124,9 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = COLOR_SHADE;
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+//    }
     if (!self.navBackButtonHidden) {
         [self setupBackButton];
     }
@@ -134,9 +134,7 @@
 
 - (void)setupBackButton
 {
-    self.navigationItem.leftBarButtonItem =
-        [self.navigationController ex_leftBarButtonItem:self
-                                                 action:@selector(leftBarButtonItemOnClick)];
+ 
 }
 
 - (void)didReceiveMemoryWarning

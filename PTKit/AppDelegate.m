@@ -12,6 +12,9 @@
 #import "PTNavigationBar.h"
 #import <BaiduMapAPI/BMapKit.h>
 #import "Aspects.h"
+#import "PTNavigationController.h"
+#import "PTUIKitCategoryViewController.h"
+#import "PTModuleCollectionViewController.h"
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 
@@ -37,9 +40,25 @@
    
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
-    [self configrationApiInfo];
+	vc.title = @"Demo1";
+	
+	
+	PTUIKitCategoryViewController *vc2 = [[PTUIKitCategoryViewController alloc] initWithNibName:nil bundle:nil];
+	vc2.title = @"Demo2";
+	PTNavigationController *nav2 = [[PTNavigationController alloc] initWithRootViewController:vc2];
+	
+	UITabBarController *tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+	tabController.viewControllers = @[nav, nav2],
+	tabController.selectedIndex = 0;
+	
+	
+	self.window.rootViewController = tabController;
+	
+	
+	[self configrationApiInfo];
+	
     [self.window makeKeyAndVisible];
+    NSLog(@"dsl");
     return YES;
 }
 

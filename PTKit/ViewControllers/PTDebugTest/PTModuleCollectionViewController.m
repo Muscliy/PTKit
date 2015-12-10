@@ -41,7 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
+	//self.navigationController.navigationBar.hidden = YES;
     self.collectionView.backgroundColor = [UIColor blueColor];
     
     NSArray *collectionContents = @[

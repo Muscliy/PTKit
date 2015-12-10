@@ -9,6 +9,7 @@
 #import "PTUIKitCategoryViewController.h"
 #import "PTAlertViewDemoViewCotroller.h"
 #import "PTDynamicsViewController.h"
+#import "PTRefreshControlDebugViewController.h"
 
 @interface PTUIKitCategoryViewController ()
 
@@ -26,6 +27,7 @@
     
     NSArray *tableContents = @[
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"UIAlertView"] navigationBlock:NIPushControllerAction([PTAlertViewDemoViewCotroller class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTRefreshControl"] navigationBlock:NIPushControllerAction([PTRefreshControlDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Dynamics"] navigationBlock:NIPushControllerAction([PTDynamicsViewController class])],
                                ];
     
