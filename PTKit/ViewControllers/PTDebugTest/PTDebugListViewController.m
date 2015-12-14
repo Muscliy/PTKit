@@ -24,7 +24,7 @@
 #import "PTLayoutDebugTableViewController.h"
 #import "PTFoundationDebugListTableViewController.h"
 #import "JSONKit.h"
-#import "NSObject+Extents.h"
+#import "NSObject+Introspection.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -37,7 +37,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
+	//NSLog(@"%@",[NSMutableSet properties]);
     _actions = [[NITableViewActions alloc] initWithTarget:self];
     NIActionBlock codeBlock = ^(id object, id target, NSIndexPath *indexPath) {
        
@@ -70,7 +71,7 @@
     //[self extobjcTest];
     [self parseJosnString];
     
-    NSArray *property = [UITableView instanceVariables];
+    NSArray *property = [NSMutableSet ex_instanceVariables];
   
     NSLog(@"%@",property);
 }

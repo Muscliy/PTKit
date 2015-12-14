@@ -7,7 +7,6 @@
 //
 
 #import "PTFoundationDebugListTableViewController.h"
-#import "NSObject+Extents.h"
 #import "Sark.h"
 #import "Father.h"
 #import "Son.h"

@@ -64,6 +64,7 @@
 		593039741B8466490040F67F /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593039731B8466490040F67F /* PopAnimation.m */; };
 		593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559321C0D75CC00D7B12B /* PTPreferences.m */; };
 		593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559351C0D852800D7B12B /* PTPropertyDescriptor.m */; };
+		594724181C1E603D007C0D87 /* NSObject+Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 594724171C1E603D007C0D87 /* NSObject+Introspection.m */; };
 		595126A61A85EE23003AEE1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595126A51A85EE23003AEE1B /* AVFoundation.framework */; };
 		595227AD1BDA17C3002078BB /* PTRefreshControlDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */; };
 		595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733251AFA03CC006474CB /* PTPagerTabStripViewController.m */; };
@@ -148,7 +149,6 @@
 		597C59FB1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C59FA1BB4F1B700501A60 /* PTInfinitePageScrollViewItem.m */; };
 		597E45721B820B1800CB7D4A /* PTFoundationDebugListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45711B820B1800CB7D4A /* PTFoundationDebugListTableViewController.m */; };
 		597E45751B820BCC00CB7D4A /* Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45741B820BCC00CB7D4A /* Sark.m */; };
-		597E45781B820C2F00CB7D4A /* NSObject+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45771B820C2F00CB7D4A /* NSObject+Extents.m */; };
 		597E457B1B82C49300CB7D4A /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E457A1B82C49300CB7D4A /* Father.m */; };
 		597E457E1B82C4AA00CB7D4A /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E457D1B82C4AA00CB7D4A /* Son.m */; };
 		599A9B1F1A84946900AA302C /* PTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A9B1E1A84946900AA302C /* PTNavigationController.m */; };
@@ -307,6 +307,8 @@
 		593559321C0D75CC00D7B12B /* PTPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPreferences.m; sourceTree = "<group>"; };
 		593559341C0D852800D7B12B /* PTPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPropertyDescriptor.h; sourceTree = "<group>"; };
 		593559351C0D852800D7B12B /* PTPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPropertyDescriptor.m; sourceTree = "<group>"; };
+		594724161C1E603D007C0D87 /* NSObject+Introspection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Introspection.h"; sourceTree = "<group>"; };
+		594724171C1E603D007C0D87 /* NSObject+Introspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Introspection.m"; sourceTree = "<group>"; };
 		595126A51A85EE23003AEE1B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		595227AB1BDA17C3002078BB /* PTRefreshControlDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRefreshControlDebugViewController.h; sourceTree = "<group>"; };
 		595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRefreshControlDebugViewController.m; sourceTree = "<group>"; };
@@ -439,8 +441,6 @@
 		597E45711B820B1800CB7D4A /* PTFoundationDebugListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFoundationDebugListTableViewController.m; sourceTree = "<group>"; };
 		597E45731B820BCC00CB7D4A /* Sark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sark.h; sourceTree = "<group>"; };
 		597E45741B820BCC00CB7D4A /* Sark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sark.m; sourceTree = "<group>"; };
-		597E45761B820C2F00CB7D4A /* NSObject+Extents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extents.h"; sourceTree = "<group>"; };
-		597E45771B820C2F00CB7D4A /* NSObject+Extents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extents.m"; sourceTree = "<group>"; };
 		597E45791B82C49300CB7D4A /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
 		597E457A1B82C49300CB7D4A /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		597E457C1B82C4AA00CB7D4A /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Son.h; path = PTKit/ViewControllers/Son.h; sourceTree = SOURCE_ROOT; };
@@ -700,6 +700,7 @@
 		5903E46B1A3FD3F8007ADC7D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				594724151C1E5E6D007C0D87 /* Foundation */,
 				5960BF131BEC9D2E00EABB11 /* NSObject+Tracking */,
 				5903E46C1A3FD411007ADC7D /* NSTimer+Extents.h */,
 				5903E46D1A3FD411007ADC7D /* NSTimer+Extents.m */,
@@ -721,8 +722,6 @@
 				590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */,
 				590C3FEB1B1D7DA200A0CC7A /* NSString+Extents.h */,
 				590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */,
-				597E45761B820C2F00CB7D4A /* NSObject+Extents.h */,
-				597E45771B820C2F00CB7D4A /* NSObject+Extents.m */,
 				59606C7C1B8C68BA00A3B67C /* UIView+Extents.h */,
 				59606C7D1B8C68BA00A3B67C /* UIView+Extents.m */,
 				59FFC7ED1BAFE609006F8289 /* UIControl+Extents.h */,
@@ -811,6 +810,15 @@
 			children = (
 			);
 			path = PTRouter;
+			sourceTree = "<group>";
+		};
+		594724151C1E5E6D007C0D87 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				594724161C1E603D007C0D87 /* NSObject+Introspection.h */,
+				594724171C1E603D007C0D87 /* NSObject+Introspection.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		595733231AFA02E1006474CB /* PTPagerTabStrip */ = {
@@ -1470,6 +1478,7 @@
 				59FE59F21B7306E5003DE97E /* PTScreen.m in Sources */,
 				595DA39E1AA2E491002FA051 /* PTViewControllerPopAnimatedTransitioning.m in Sources */,
 				5903E4491A3EC987007ADC7D /* PTCollectionViewLayout.m in Sources */,
+				594724181C1E603D007C0D87 /* NSObject+Introspection.m in Sources */,
 				59676D2D1ADE5D4300C9934E /* PTTagViewItem.m in Sources */,
 				5903E44F1A3EC987007ADC7D /* PTType3BoxGroup.m in Sources */,
 				59D745771A402D9E0058016D /* PTModuleTitleCollectionViewCell.m in Sources */,
@@ -1492,7 +1501,6 @@
 				593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */,
 				59FE59F41B7306E5003DE97E /* PTTestCore.m in Sources */,
 				59676D481ADF84CC00C9934E /* PTSegmentedControlViewController.m in Sources */,
-				597E45781B820C2F00CB7D4A /* NSObject+Extents.m in Sources */,
 				5960BF2C1BEC9D2E00EABB11 /* UILabel+Tracking.m in Sources */,
 				59FE59F11B7306E5003DE97E /* PTRect.m in Sources */,
 				5903E46E1A3FD411007ADC7D /* NSTimer+Extents.m in Sources */,
