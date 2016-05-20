@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C731938B93092D4AEB1E2384'
+               BlueprintIdentifier = '7CE62FBED75334DC1DA20FCB'
                BlueprintName = 'EGOTableViewPullRefresh'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libEGOTableViewPullRefresh.a'>
