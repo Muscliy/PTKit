@@ -1,7 +1,7 @@
 workspace 'PTKit'
 
 target :PTKit do
-    platform :ios, '6.1'
+    platform :ios, '7.0'
     pod 'MBProgressHUD'
     pod 'EGOTableViewPullRefresh'
     pod 'Nimbus/Core'
@@ -19,7 +19,7 @@ target :PTKit do
     pod 'libqrencode'
     pod 'libextobjc'
     pod 'MWPhotoBrowser'
-    pod 'AFNetworking'
+    pod 'AFNetworking', '~> 3.1.0'
     pod 'ReactiveCocoa'
     pod 'Masonry'
     pod 'GPUImage'
