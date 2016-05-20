@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '99040839CB8325F67C297BE7'
+               BlueprintIdentifier = 'C68A29305F2D85784A1270EC'
                BlueprintName = 'Nimbus'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNimbus.a'>
