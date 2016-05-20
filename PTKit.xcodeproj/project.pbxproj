@@ -62,6 +62,8 @@
 		5930396E1B84653A0040F67F /* PTPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930396D1B8465390040F67F /* PTPushViewController.m */; };
 		593039711B84654E0040F67F /* PTPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593039701B84654E0040F67F /* PTPopViewController.m */; };
 		593039741B8466490040F67F /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593039731B8466490040F67F /* PopAnimation.m */; };
+		59310EBB1C2CE24F00D51812 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 59310EBA1C2CE24F00D51812 /* Person.m */; };
+		59310EBF1C336DB900D51812 /* PTMultiColorLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59310EBE1C336DB900D51812 /* PTMultiColorLoader.m */; };
 		593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559321C0D75CC00D7B12B /* PTPreferences.m */; };
 		593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593559351C0D852800D7B12B /* PTPropertyDescriptor.m */; };
 		594724181C1E603D007C0D87 /* NSObject+Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 594724171C1E603D007C0D87 /* NSObject+Introspection.m */; };
@@ -142,6 +144,11 @@
 		59676D691ADF866500C9934E /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59676D591ADF866500C9934E /* 4@2x.png */; };
 		59676D6B1ADF884100C9934E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59676D6A1ADF884100C9934E /* CFNetwork.framework */; };
 		5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */; };
+		596B69001C47CE78007BC0DD /* PTLayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B68FF1C47CE78007BC0DD /* PTLayerListViewController.m */; };
+		596F4E2D1C2256620010CB55 /* PTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F4E2C1C2256620010CB55 /* PTButton.m */; };
+		596F4E301C225A4E0010CB55 /* PTAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F4E2F1C225A4E0010CB55 /* PTAppInfo.m */; };
+		596F4E331C225F890010CB55 /* PTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F4E321C225F890010CB55 /* PTSplashView.m */; };
+		596F4E361C228F920010CB55 /* PTWindowStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F4E351C228F920010CB55 /* PTWindowStack.m */; };
 		5978071D1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5978071C1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m */; };
 		597807201B7DC359004D8DE0 /* PTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5978071F1B7DC359004D8DE0 /* PTTableViewCell.m */; };
 		597807241B7DC470004D8DE0 /* PTLayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597807231B7DC470004D8DE0 /* PTLayoutTableViewCell.m */; };
@@ -184,7 +191,6 @@
 		59F228011A235E8B00AFF494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228001A235E8B00AFF494 /* ViewController.m */; };
 		59F228041A235E8B00AFF494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F228021A235E8B00AFF494 /* Main.storyboard */; };
 		59F228061A235E8B00AFF494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F228051A235E8B00AFF494 /* Images.xcassets */; };
-		59F228091A235E8B00AFF494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F228071A235E8B00AFF494 /* LaunchScreen.xib */; };
 		59F228151A235E8B00AFF494 /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228141A235E8B00AFF494 /* PTKitTests.m */; };
 		59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */; };
 		59FE59ED1B7306E5003DE97E /* PTAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59D81B7306E5003DE97E /* PTAssert.m */; };
@@ -303,6 +309,10 @@
 		593039701B84654E0040F67F /* PTPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPopViewController.m; sourceTree = "<group>"; };
 		593039721B8466490040F67F /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
 		593039731B8466490040F67F /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		59310EB91C2CE24F00D51812 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		59310EBA1C2CE24F00D51812 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		59310EBD1C336DB900D51812 /* PTMultiColorLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMultiColorLoader.h; sourceTree = "<group>"; };
+		59310EBE1C336DB900D51812 /* PTMultiColorLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMultiColorLoader.m; sourceTree = "<group>"; };
 		593559311C0D75CC00D7B12B /* PTPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPreferences.h; sourceTree = "<group>"; };
 		593559321C0D75CC00D7B12B /* PTPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPreferences.m; sourceTree = "<group>"; };
 		593559341C0D852800D7B12B /* PTPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPropertyDescriptor.h; sourceTree = "<group>"; };
@@ -427,6 +437,16 @@
 		59676D6A1ADF884100C9934E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5969DAB31A2C1D0400509FB7 /* PTBaseViewCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTBaseViewCotroller.h; sourceTree = "<group>"; };
 		5969DAB41A2C1D0400509FB7 /* PTBaseViewCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTBaseViewCotroller.m; sourceTree = "<group>"; };
+		596B68FE1C47CE78007BC0DD /* PTLayerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLayerListViewController.h; sourceTree = "<group>"; };
+		596B68FF1C47CE78007BC0DD /* PTLayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLayerListViewController.m; sourceTree = "<group>"; };
+		596F4E2B1C2256620010CB55 /* PTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTButton.h; sourceTree = "<group>"; };
+		596F4E2C1C2256620010CB55 /* PTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTButton.m; sourceTree = "<group>"; };
+		596F4E2E1C225A4E0010CB55 /* PTAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAppInfo.h; sourceTree = "<group>"; };
+		596F4E2F1C225A4E0010CB55 /* PTAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAppInfo.m; sourceTree = "<group>"; };
+		596F4E311C225F890010CB55 /* PTSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSplashView.h; sourceTree = "<group>"; };
+		596F4E321C225F890010CB55 /* PTSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSplashView.m; sourceTree = "<group>"; };
+		596F4E341C228F920010CB55 /* PTWindowStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWindowStack.h; sourceTree = "<group>"; };
+		596F4E351C228F920010CB55 /* PTWindowStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWindowStack.m; sourceTree = "<group>"; };
 		5978071B1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLayoutDebugTableViewController.h; sourceTree = "<group>"; };
 		5978071C1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLayoutDebugTableViewController.m; sourceTree = "<group>"; };
 		5978071E1B7DC359004D8DE0 /* PTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewCell.h; sourceTree = "<group>"; };
@@ -504,7 +524,6 @@
 		59F228001A235E8B00AFF494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		59F228031A235E8B00AFF494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59F228051A235E8B00AFF494 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		59F228081A235E8B00AFF494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F228131A235E8B00AFF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F228141A235E8B00AFF494 /* PTKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitTests.m; sourceTree = "<group>"; };
@@ -693,6 +712,8 @@
 				59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */,
 				5978071B1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.h */,
 				5978071C1B7DBFF4004D8DE0 /* PTLayoutDebugTableViewController.m */,
+				596B68FE1C47CE78007BC0DD /* PTLayerListViewController.h */,
+				596B68FF1C47CE78007BC0DD /* PTLayerListViewController.m */,
 			);
 			path = PTDebugTest;
 			sourceTree = "<group>";
@@ -801,8 +822,19 @@
 				59277C5A1AC53453008823B6 /* PTImageSizeDebugViewController.m */,
 				59606C721B8C535000A3B67C /* PTDynamicsViewController.h */,
 				59606C731B8C535000A3B67C /* PTDynamicsViewController.m */,
+				59310EB91C2CE24F00D51812 /* Person.h */,
+				59310EBA1C2CE24F00D51812 /* Person.m */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		59310EBC1C336D3300D51812 /* PTLoader */ = {
+			isa = PBXGroup;
+			children = (
+				59310EBD1C336DB900D51812 /* PTMultiColorLoader.h */,
+				59310EBE1C336DB900D51812 /* PTMultiColorLoader.m */,
+			);
+			path = PTLoader;
 			sourceTree = "<group>";
 		};
 		593559371C0D944100D7B12B /* PTRouter */ = {
@@ -1094,7 +1126,6 @@
 				59F228001A235E8B00AFF494 /* ViewController.m */,
 				59F228021A235E8B00AFF494 /* Main.storyboard */,
 				59F228051A235E8B00AFF494 /* Images.xcassets */,
-				59F228071A235E8B00AFF494 /* LaunchScreen.xib */,
 				59F227F81A235E8B00AFF494 /* Supporting Files */,
 			);
 			path = PTKit;
@@ -1130,6 +1161,7 @@
 		59F66D3F1A38496F002A7ECA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				59310EBC1C336D3300D51812 /* PTLoader */,
 				593559371C0D944100D7B12B /* PTRouter */,
 				59169F061BD9E24700702186 /* PTWebViewProgress */,
 				59169E4C1BD9E1F900702186 /* PTQRCodeReader */,
@@ -1180,6 +1212,14 @@
 				593559351C0D852800D7B12B /* PTPropertyDescriptor.m */,
 				5914D4A31C18585D00FCECEE /* PTPrefsRouter.h */,
 				5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */,
+				596F4E2B1C2256620010CB55 /* PTButton.h */,
+				596F4E2C1C2256620010CB55 /* PTButton.m */,
+				596F4E2E1C225A4E0010CB55 /* PTAppInfo.h */,
+				596F4E2F1C225A4E0010CB55 /* PTAppInfo.m */,
+				596F4E311C225F890010CB55 /* PTSplashView.h */,
+				596F4E321C225F890010CB55 /* PTSplashView.m */,
+				596F4E341C228F920010CB55 /* PTWindowStack.h */,
+				596F4E351C228F920010CB55 /* PTWindowStack.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1338,7 +1378,6 @@
 				59676D611ADF866500C9934E /* 2@2x.png in Resources */,
 				595DA3911AA2B304002FA051 /* thing02.jpg in Resources */,
 				59676D651ADF866500C9934E /* 3@2x.png in Resources */,
-				59F228091A235E8B00AFF494 /* LaunchScreen.xib in Resources */,
 				59676D5B1ADF866500C9934E /* 1-selected@2x.png in Resources */,
 				59676D5F1ADF866500C9934E /* 2-selected@2x.png in Resources */,
 				59676D681ADF866500C9934E /* 4.png in Resources */,
@@ -1415,6 +1454,7 @@
 				595733361AFA3DF5006474CB /* UIViewController+POPHUD.m in Sources */,
 				590BC8831BD8DDDE00DF0F9F /* PTRefreshControl.m in Sources */,
 				595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */,
+				596F4E2D1C2256620010CB55 /* PTButton.m in Sources */,
 				5960BF2D1BEC9D2E00EABB11 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */,
 				5960BF0F1BEC880A00EABB11 /* PTViewController.m in Sources */,
@@ -1430,6 +1470,7 @@
 				595DA39A1AA2B42B002FA051 /* PTTransitionsDebugListViewController.m in Sources */,
 				593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */,
 				5903E4471A3EC987007ADC7D /* PTBoxManager.m in Sources */,
+				596F4E361C228F920010CB55 /* PTWindowStack.m in Sources */,
 				59676D411ADF5A3600C9934E /* PTSegmentedControl.m in Sources */,
 				590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */,
 				599A9B1F1A84946900AA302C /* PTNavigationController.m in Sources */,
@@ -1444,6 +1485,7 @@
 				5903E44B1A3EC987007ADC7D /* PTCategoryBoxGroup.m in Sources */,
 				595227AD1BDA17C3002078BB /* PTRefreshControlDebugViewController.m in Sources */,
 				59169E571BD9E1F900702186 /* PTQRCodeReaderOverlayView.m in Sources */,
+				596B69001C47CE78007BC0DD /* PTLayerListViewController.m in Sources */,
 				59169E491BD9E1D500702186 /* PTCameraManager.m in Sources */,
 				597807241B7DC470004D8DE0 /* PTLayoutTableViewCell.m in Sources */,
 				5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */,
@@ -1457,7 +1499,9 @@
 				595DA3851AA2A87B002FA051 /* PTInteractiveDetailViewController.m in Sources */,
 				5960BF281BEC9D2E00EABB11 /* NSNull+Tracking.m in Sources */,
 				59EFDBF71A3B475100E0C16F /* PTInfiniteScrollView.m in Sources */,
+				596F4E301C225A4E0010CB55 /* PTAppInfo.m in Sources */,
 				59169E581BD9E1F900702186 /* PTQRCodeReaderViewController.mm in Sources */,
+				59310EBF1C336DB900D51812 /* PTMultiColorLoader.m in Sources */,
 				599A9B221A84947E00AA302C /* PTNavigationBar.m in Sources */,
 				5903E44A1A3EC987007ADC7D /* PTCollectionViewLayoutAttributes.m in Sources */,
 				59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */,
@@ -1494,6 +1538,7 @@
 				5960BF2E1BEC9D2E00EABB11 /* UISearchBar+Tracking.m in Sources */,
 				590C3FB01B16DA2400A0CC7A /* UIColor+Extents.m in Sources */,
 				59D7455E1A4005400058016D /* PTDebugListViewController.m in Sources */,
+				59310EBB1C2CE24F00D51812 /* Person.m in Sources */,
 				595DA3821AA2A82D002FA051 /* PTInteractiveCollectionViewController.m in Sources */,
 				5914D4A51C18585D00FCECEE /* PTPrefsRouter.m in Sources */,
 				5930396E1B84653A0040F67F /* PTPushViewController.m in Sources */,
@@ -1521,6 +1566,7 @@
 				597C59F41BB3CCEC00501A60 /* PTInfinitePageScrollView.m in Sources */,
 				59FFC7EC1BAFDB57006F8289 /* PTSearchNavigatonBar.m in Sources */,
 				59606C7E1B8C68BA00A3B67C /* UIView+Extents.m in Sources */,
+				596F4E331C225F890010CB55 /* PTSplashView.m in Sources */,
 				59D745741A4028180058016D /* PTType14BoxGroup.m in Sources */,
 				5903E4611A3EFDB8007ADC7D /* PTModuleCollectionViewCell.m in Sources */,
 				59D7456E1A401A170058016D /* PTModuleHeaderCollectionCell.m in Sources */,
@@ -1571,14 +1617,6 @@
 				59F228031A235E8B00AFF494 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		59F228071A235E8B00AFF494 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59F228081A235E8B00AFF494 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1667,6 +1705,7 @@
 			baseConfigurationReference = 29BBB9589E1097EE002AE6AD /* Pods-PTKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1685,6 +1724,7 @@
 			baseConfigurationReference = 569B109F2E9A669103EC65D6 /* Pods-PTKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

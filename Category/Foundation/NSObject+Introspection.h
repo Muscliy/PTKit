@@ -20,4 +20,6 @@
 
 
 + (NSString *)ex_parentClassHierarchy;
+
++ (NSArray<NSString *> *)ex_propertyKeys;
 @end

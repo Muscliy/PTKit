@@ -220,7 +220,7 @@
 
 - (void)getCameraAvailable
 {
-    [PTMediaDeviceAuthorize isMediaDeviceAvailable:kMediaDeviceCamera
+    [PTMediaDeviceAuthorize isMediaDeviceAvailable:PTMediaDeviceCamera
                                  completionHandler:^(BOOL granted) {
                                    self.isCameraAvailable = granted;
                                  }];

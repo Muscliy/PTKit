@@ -286,4 +286,17 @@ static void getSuper(Class class, NSMutableString *result)
     return [property copy];
 }
 
++ (NSArray<NSString *> *)ex_propertyKeys
+{
+	unsigned int outCount, i;
+	NSMutableArray *keys = [@[] mutableCopy];
+	objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+	for (i=0; i<outCount; i++) {
+		objc_property_t property = properties[i];
+		NSString * key = [[NSString alloc]initWithCString:property_getName(property)  encoding:NSUTF8StringEncoding];
+		[keys addObject:key];
+	}
+	return [NSArray arrayWithArray:keys];
+}
+
 @end

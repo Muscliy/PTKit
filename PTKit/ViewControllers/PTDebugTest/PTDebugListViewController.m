@@ -25,6 +25,7 @@
 #import "PTFoundationDebugListTableViewController.h"
 #import "JSONKit.h"
 #import "NSObject+Introspection.h"
+#import "Person.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -70,10 +71,10 @@
     
     //[self extobjcTest];
     [self parseJosnString];
-    
-    NSArray *property = [NSMutableSet ex_instanceVariables];
-  
-    NSLog(@"%@",property);
+	Person *p = [[Person alloc] init];
+	p.firstName = @"三";
+	p.lastName = @"张";
+	NSLog(@"%@",p);
 }
 
 

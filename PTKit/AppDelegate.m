@@ -15,6 +15,8 @@
 #import "PTNavigationController.h"
 #import "PTUIKitCategoryViewController.h"
 #import "PTModuleCollectionViewController.h"
+#import "PTSplashView.h"
+#import "PTWindowStack.h"
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 
@@ -31,6 +33,7 @@
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
 {
+	
     return YES;
 }
 
@@ -41,7 +44,10 @@
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
 	vc.title = @"Demo1";
-	
+
+	NSMutableArray *images = [[NSMutableArray alloc] init];
+	[images addObject:@"demos"];
+	NSArray *imageGroup = [NSArray arrayWithArray:images];
 	
 	PTUIKitCategoryViewController *vc2 = [[PTUIKitCategoryViewController alloc] initWithNibName:nil bundle:nil];
 	vc2.title = @"Demo2";
@@ -53,12 +59,10 @@
 	
 	
 	self.window.rootViewController = tabController;
-	
-	
 	[self configrationApiInfo];
-	
-    [self.window makeKeyAndVisible];
-    NSLog(@"dsl");
+	[self.window makeKeyAndVisible];
+	[PTWindowStack pushWindow:self.window];
+	[PTSplashView showInWindow:self.window];
     return YES;
 }
 

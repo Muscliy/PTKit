@@ -128,7 +128,7 @@ const CGFloat B_TOOLBAR_H =  128.0f;
 
 -(void)getCameraAvailable
 {
-    [PTMediaDeviceAuthorize isMediaDeviceAvailable:kMediaDeviceCamera completionHandler:^(BOOL granted) {
+    [PTMediaDeviceAuthorize isMediaDeviceAvailable:PTMediaDeviceCamera completionHandler:^(BOOL granted) {
         
         self.isCameraAvailable = granted;
     }];

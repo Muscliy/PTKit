@@ -24,7 +24,7 @@
 
 @implementation PTMediaDeviceAuthorize
 
-+ (void)isMediaDeviceAvailable:(MediaDeviceType)type
++ (void)isMediaDeviceAvailable:(PTMediaDeviceType)type
              completionHandler:(void (^)(BOOL granted))handler
 {
     [PTMediaDeviceAuthorize isMediaDeviceAvailable:type
@@ -32,24 +32,24 @@
                                  completionHandler:handler];
 }
 
-+ (void)isMediaDeviceAvailable:(MediaDeviceType)type
++ (void)isMediaDeviceAvailable:(PTMediaDeviceType)type
     shouldRequestAccessForMedia:(BOOL)bRequest
               completionHandler:(void (^)(BOOL granted))handler
 {
     switch (type) {
-    case kMediaDeviceCamera:
+    case PTMediaDeviceCamera:
         [PTMediaDeviceAuthorize isCameraAvailable:handler shouldRequestAccessForMedia:bRequest];
         break;
 
-    case kMediaDeviceAlbum:
+    case PTMediaDeviceAlbum:
         [PTMediaDeviceAuthorize isAlbumAvailable:handler];
         break;
 
-    case kMediaDeviceMicroPhone:
+    case PTMediaDeviceMicroPhone:
         [PTMediaDeviceAuthorize isMicroPhoneAvailable:handler shouldRequestAccessForMedia:bRequest];
         break;
 
-    case kMediaDeviceLocation:
+    case PTMediaDeviceLocation:
         [PTMediaDeviceAuthorize isLocationAvailable:handler];
         break;
 
