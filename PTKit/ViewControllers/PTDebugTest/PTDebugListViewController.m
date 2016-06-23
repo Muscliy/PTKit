@@ -26,6 +26,7 @@
 #import "JSONKit.h"
 #import "NSObject+Introspection.h"
 #import "Person.h"
+#import "PTAfnetworkViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -61,7 +62,8 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Tag List"] navigationBlock:NIPushControllerAction([PTTagListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"segmented control"] navigationBlock:NIPushControllerAction([PTSegmentedControlViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"头部浮动控件"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])]
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])]
                                ];
     
     

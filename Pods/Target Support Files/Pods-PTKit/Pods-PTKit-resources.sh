@@ -71,12 +71,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
   install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
   install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
-  install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
-  install_resource "WebViewJavascriptBridge/WebViewJavascriptBridge/WebViewJavascriptBridge.js.txt"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-back.png"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-help.html"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-helpicons.png"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-samples.png"
+  install_resource "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blackArrow.png"
@@ -92,12 +91,11 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
   install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
   install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
-  install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
-  install_resource "WebViewJavascriptBridge/WebViewJavascriptBridge/WebViewJavascriptBridge.js.txt"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-back.png"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-help.html"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-helpicons.png"
   install_resource "../LocalCocoaPod/ZBar/iphone/res/zbar-samples.png"
+  install_resource "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

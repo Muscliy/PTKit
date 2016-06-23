@@ -17,6 +17,8 @@
 #import "PTModuleCollectionViewController.h"
 #import "PTSplashView.h"
 #import "PTWindowStack.h"
+#import "ServerConfig.h"
+#import "ServerConfigSyncer.h"
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 
@@ -40,7 +42,7 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   
+	[self launchDealServerConfig];
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
 	vc.title = @"Demo1";
@@ -104,6 +106,25 @@
 - (void)onGetNetworkState:(int)iError
 {
 
+}
+
+- (void)launchDealServerConfig{
+	
+#if defined(DEBUG)
+	NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
+	NSString *serverKey = [userData valueForKey:@"_debug_server_key"];
+	if (serverKey.length < 1 || ![ServerConfig getAllServerTypeKey]) {
+		serverKey = @"dev";
+		[userData setObject:serverKey forKey:@"_debug_server_key"];
+		[userData synchronize];
+	}
+	[ServerConfig setServerTypeKey:serverKey];
+#else
+	[ServerConfig setServerTypeKey:@"product"];
+#endif
+	NSLog(@"%@",[[ServerConfig getUrls:CONSTANTS_DEFAULT_CATEGORY] firstObject]);
+	
+	[[ServerConfigSyncer singleton] start];
 }
 
 @end

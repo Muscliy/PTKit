@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '38F97D9EE0C9CA33B99052D6'
+               BlueprintIdentifier = '57CC6D916154DA07DB8EFC04'
                BlueprintName = 'JRSwizzle'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJRSwizzle.a'>

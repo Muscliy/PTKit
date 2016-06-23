@@ -17,6 +17,8 @@
 #import "NIActions.h"
 #import "NIActions+Subclassing.h"
 
+#import <UIKit/UIKit.h>
+
 #import "NIDebuggingTools.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
@@ -159,15 +161,26 @@
 }
 
 - (BOOL)isObjectActionable:(id<NSObject>)object {
+  return NIActionTypeNone != [self attachedActionTypesForObject:object];
+}
+
+- (NIActionType)attachedActionTypesForObject:(id<NSObject>)object {
   if (nil == object) {
-    return NO;
+    return NIActionTypeNone;
   }
 
-  BOOL objectIsActionable = [self.objectSet containsObject:object];
-  if (!objectIsActionable) {
-    objectIsActionable = (nil != [self.class objectFromKeyClass:object.class map:self.classToAction]);
+  NIObjectActions* actions = [self actionForObjectOrClassOfObject:object];
+  NIActionType attachedActionTypes = 0;
+  if (actions.tapAction || actions.tapSelector) {
+    attachedActionTypes |= NIActionTypeTap;
   }
-  return objectIsActionable;
+  if (actions.detailAction || actions.detailSelector) {
+    attachedActionTypes |= NIActionTypeDetail;
+  }
+  if (actions.navigateAction || actions.navigateSelector) {
+    attachedActionTypes |= NIActionTypeNavigate;
+  }
+  return attachedActionTypes;
 }
 
 + (id)objectFromKeyClass:(Class)keyClass map:(NSMutableDictionary *)map {
@@ -181,7 +194,7 @@
       // We want to find the lowest node in the class hierarchy so that we pick the lowest ancestor
       // in the hierarchy tree.
       if ([keyClass isSubclassOfClass:class]
-          && (nil == superClass || [keyClass isSubclassOfClass:superClass])) {
+          && (nil == superClass || [class isSubclassOfClass:superClass])) {
         superClass = class;
       }
     }

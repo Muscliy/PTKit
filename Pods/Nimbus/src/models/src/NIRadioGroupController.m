@@ -18,6 +18,7 @@
 
 #import "NICellFactory.h"
 #import "NIRadioGroup.h"
+#import "NISDKAvailability.h"
 #import "NITableViewModel.h"
 
 #import "NIDebuggingTools.h"
@@ -74,8 +75,11 @@
 }
 #endif
 
-
+#if (defined(__IPHONE_9_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0)
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+#else
 - (NSUInteger)supportedInterfaceOrientations {
+#endif
   return UIInterfaceOrientationMaskAllButUpsideDown;
 }
 

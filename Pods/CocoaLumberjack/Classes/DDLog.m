@@ -1,6 +1,6 @@
 // Software License Agreement (BSD License)
 //
-// Copyright (c) 2010-2014, Deusty, LLC
+// Copyright (c) 2010-2015, Deusty, LLC
 // All rights reserved.
 //
 // Redistribution and use of this software in source and binary forms,
@@ -12,6 +12,11 @@
 // * Neither the name of Deusty nor the names of its contributors may be used
 //   to endorse or promote products derived from this software without specific
 //   prior written permission of Deusty, LLC.
+
+// Disable legacy macros
+#ifndef DD_LEGACY_MACROS
+    #define DD_LEGACY_MACROS 0
+#endif
 
 #import "DDLog.h"
 
@@ -37,7 +42,9 @@
 // So we use a primitive logging macro around NSLog.
 // We maintain the NS prefix on the macros to be explicit about the fact that we're using NSLog.
 
-#define DD_DEBUG NO
+#ifndef DD_DEBUG
+    #define DD_DEBUG NO
+#endif
 
 #define NSLogDebug(frmt, ...) do{ if(DD_DEBUG) NSLog((frmt), ##__VA_ARGS__); } while(0)
 
@@ -132,17 +139,7 @@ static NSUInteger _numProcessors;
 
         // Figure out how many processors are available.
         // This may be used later for an optimization on uniprocessor machines.
-
-        host_basic_info_data_t hostInfo;
-        mach_msg_type_number_t infoCount;
-
-        infoCount = HOST_BASIC_INFO_COUNT;
-        host_info(mach_host_self(), HOST_BASIC_INFO, (host_info_t)&hostInfo, &infoCount);
-
-        NSUInteger result = (NSUInteger)hostInfo.max_cpus;
-        NSUInteger one    = (NSUInteger)1;
-
-        _numProcessors = MAX(result, one);
+        _numProcessors = MAX([NSProcessInfo processInfo].processorCount, 1);
 
         NSLogDebug(@"DDLog: numProcessors = %@", @(_numProcessors));
 
@@ -191,7 +188,7 @@ static NSUInteger _numProcessors;
 #pragma mark Notifications
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-+ (void)applicationWillTerminate:(NSNotification *)notification {
++ (void)applicationWillTerminate:(NSNotification * __attribute__((unused)))notification {
     [self flushLog];
 }
 
@@ -303,10 +300,10 @@ static NSUInteger _numProcessors;
 + (void)log:(BOOL)asynchronous
       level:(DDLogLevel)level
        flag:(DDLogFlag)flag
-    context:(int)context
+    context:(NSInteger)context
        file:(const char *)file
    function:(const char *)function
-       line:(int)line
+       line:(NSUInteger)line
         tag:(id)tag
      format:(NSString *)format, ... {
     va_list args;
@@ -332,10 +329,10 @@ static NSUInteger _numProcessors;
 + (void)log:(BOOL)asynchronous
       level:(DDLogLevel)level
        flag:(DDLogFlag)flag
-    context:(int)context
+    context:(NSInteger)context
        file:(const char *)file
    function:(const char *)function
-       line:(int)line
+       line:(NSUInteger)line
         tag:(id)tag
      format:(NSString *)format
        args:(va_list)args {
@@ -358,10 +355,10 @@ static NSUInteger _numProcessors;
     message:(NSString *)message
       level:(DDLogLevel)level
        flag:(DDLogFlag)flag
-    context:(int)context
+    context:(NSInteger)context
        file:(const char *)file
    function:(const char *)function
-       line:(int)line
+       line:(NSUInteger)line
         tag:(id)tag {
     
     DDLogMessage *logMessage = [[DDLogMessage alloc] initWithMessage:message
@@ -372,7 +369,7 @@ static NSUInteger _numProcessors;
                                                             function:[NSString stringWithFormat:@"%s", function]
                                                                 line:line
                                                                  tag:tag
-                                                             options:0
+                                                             options:(DDLogMessageOptions)0
                                                            timestamp:nil];
     
     [self queueLogMessage:logMessage asynchronously:asynchronous];
@@ -456,7 +453,6 @@ static NSUInteger _numProcessors;
 }
 
 + (NSArray *)registeredClasses {
-    NSUInteger numClasses, i;
 
     // We're going to get the list of all registered classes.
     // The Objective-C runtime library automatically registers all the classes defined in your source code.
@@ -469,24 +465,37 @@ static NSUInteger _numProcessors;
     // registered class definitions without actually retrieving any class definitions.
     // This allows us to allocate the minimum amount of memory needed for the application.
 
-    numClasses = (NSUInteger)MAX(objc_getClassList(NULL, 0), 0);
+    NSUInteger numClasses = 0;
+    Class *classes = NULL;
 
-    // The numClasses method now tells us how many classes we have.
-    // So we can allocate our buffer, and get pointers to all the class definitions.
+    while (numClasses == 0) {
 
-    Class *classes = numClasses ? (Class *)malloc(sizeof(Class) * numClasses) : NULL;
+        numClasses = (NSUInteger)MAX(objc_getClassList(NULL, 0), 0);
 
-    if (classes == NULL) {
-        return nil;
+        // numClasses now tells us how many classes we have (but it might change)
+        // So we can allocate our buffer, and get pointers to all the class definitions.
+
+        NSUInteger bufferSize = numClasses;
+
+        classes = numClasses ? (Class *)malloc(sizeof(Class) * bufferSize) : NULL;
+        if (classes == NULL) {
+            return nil; //no memory or classes?
+        }
+
+        numClasses = (NSUInteger)MAX(objc_getClassList(classes, (int)bufferSize),0);
+
+        if (numClasses > bufferSize || numClasses == 0) {
+            //apparently more classes added between calls (or a problem); try again
+            free(classes);
+            numClasses = 0;
+        }
     }
-
-    numClasses = (NSUInteger)MAX(objc_getClassList(classes, (int)numClasses), 0);
 
     // We can now loop through the classes, and test each one to see if it is a DDLogging class.
 
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:numClasses];
 
-    for (i = 0; i < numClasses; i++) {
+    for (NSUInteger i = 0; i < numClasses; i++) {
         Class class = classes[i];
 
         if ([self isRegisteredClass:class]) {
@@ -513,7 +522,7 @@ static NSUInteger _numProcessors;
     if ([self isRegisteredClass:aClass]) {
         return [aClass ddLogLevel];
     }
-    return -1;
+    return (DDLogLevel)-1;
 }
 
 + (DDLogLevel)levelForClassWithName:(NSString *)aClassName {
@@ -866,10 +875,35 @@ NSString * DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy) {
 
 #endif /* if TARGET_OS_IPHONE */
 
+// Should we use pthread_threadid_np ?
+// With iOS 8+/OSX 10.10+ NSLog uses pthread_threadid_np instead of pthread_mach_thread_np
+
+#if TARGET_OS_IPHONE
+
+// Compiling for iOS
+
+  #ifndef kCFCoreFoundationVersionNumber_iOS_8_0
+    #define kCFCoreFoundationVersionNumber_iOS_8_0 1140.10
+  #endif
+
+    #define USE_PTHREAD_THREADID_NP                (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_8_0)
+
+#else
+
+// Compiling for Mac OS X
+
+  #ifndef kCFCoreFoundationVersionNumber10_10
+    #define kCFCoreFoundationVersionNumber10_10    1151.16
+  #endif
+
+    #define USE_PTHREAD_THREADID_NP                (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber10_10)
+
+#endif /* if TARGET_OS_IPHONE */
+
 - (instancetype)initWithMessage:(NSString *)message
                           level:(DDLogLevel)level
                            flag:(DDLogFlag)flag
-                        context:(NSUInteger)context
+                        context:(NSInteger)context
                            file:(NSString *)file
                        function:(NSString *)function
                            line:(NSUInteger)line
@@ -877,18 +911,29 @@ NSString * DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy) {
                         options:(DDLogMessageOptions)options
                       timestamp:(NSDate *)timestamp {
     if ((self = [super init])) {
-        _message      = message;
+        _message      = [message copy];
         _level        = level;
         _flag         = flag;
         _context      = context;
-        _file         = file;
-        _function     = function;
+
+        BOOL copyFile = (options & DDLogMessageCopyFile) == DDLogMessageCopyFile;
+        _file = copyFile ? [file copy] : file;
+
+        BOOL copyFunction = (options & DDLogMessageCopyFunction) == DDLogMessageCopyFunction;
+        _function = copyFunction ? [function copy] : function;
+
         _line         = line;
         _tag          = tag;
         _options      = options;
         _timestamp    = timestamp ?: [NSDate new];
-        
-        _threadID     = [[NSString alloc] initWithFormat:@"%x", pthread_mach_thread_np(pthread_self())];
+
+        if (USE_PTHREAD_THREADID_NP) {
+            __uint64_t tid;
+            pthread_threadid_np(NULL, &tid);
+            _threadID = [[NSString alloc] initWithFormat:@"%llu", tid];
+        } else {
+            _threadID = [[NSString alloc] initWithFormat:@"%x", pthread_mach_thread_np(pthread_self())];
+        }
         _threadName   = NSThread.currentThread.name;
 
         // Get the file name without extension
@@ -915,7 +960,7 @@ NSString * DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy) {
     return self;
 }
 
-- (id)copyWithZone:(NSZone *)zone {
+- (id)copyWithZone:(NSZone * __attribute__((unused)))zone {
     DDLogMessage *newMessage = [DDLogMessage new];
     
     newMessage->_message = _message;
@@ -988,7 +1033,7 @@ NSString * DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy) {
     #endif
 }
 
-- (void)logMessage:(DDLogMessage *)logMessage {
+- (void)logMessage:(DDLogMessage * __attribute__((unused)))logMessage {
     // Override me
 }
 
