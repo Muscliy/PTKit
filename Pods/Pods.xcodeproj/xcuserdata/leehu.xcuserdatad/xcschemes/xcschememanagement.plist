@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cordova.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -127,17 +132,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08AB713B00EC4233198C1BA6598DF48E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>08DE7A5BF6E6C6832E0AD760CFAE3698</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>09424AFFE7D99B4F92F1C896E04C26A2</key>
+		<key>073A86FCC75F7DFFF1DFAB63817E4368</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,12 +147,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43FE871D4590DE54D05DE127CD6BBA2D</key>
+		<key>1D623745C407D83E0CD905F832F290DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4FFF03FCE3F3F66AC2DDB5C2F5D5B6D1</key>
+		<key>26FF3223B1147085251B7ABD29A98D41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43FE871D4590DE54D05DE127CD6BBA2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -182,6 +182,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6C655719912FE71DAF7C9D7BF913ABDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6EB55D7A905F837BBC609C323E090BFB</key>
 		<dict>
 			<key>primary</key>
@@ -197,22 +202,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FCA53722A84204480AF67C30A43386E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>838C2B6A760D795335FB17C60FD2A0CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9498B7710434309798801F0EF544D780</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -237,12 +232,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E52B8AE381FDFFCF0A8B0A7352D802A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F39B2D234B8B0A6D7A9C8E450C9F736E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>F98C93DDDC1C73B7AA4070897CEBCC1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEF6BB3C6E7E11ADEDD9078C5BA005E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

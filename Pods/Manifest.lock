@@ -23,6 +23,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
+  - Cordova (3.9.1)
   - DACircularProgress (2.3.1)
   - EGOTableViewPullRefresh (0.1.0)
   - GBDeviceInfo (4.1.0):
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - Aspects
   - CocoaLumberjack (~> 2.0.0-beta4)
+  - Cordova
   - EGOTableViewPullRefresh
   - GBDeviceInfo
   - GPUImage
@@ -156,6 +158,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  Cordova: f8142a2cb0072f5225e865fc5660f174cc0674a5
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   EGOTableViewPullRefresh: d4c15be51914f4168d6fd7529b6ad3a4ab01e5f4
   GBDeviceInfo: e50df975a95e21faec93e2bf98376846fe17d307

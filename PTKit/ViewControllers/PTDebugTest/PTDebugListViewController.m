@@ -7,15 +7,12 @@
 //
 
 #import "PTDebugListViewController.h"
-#import "PTModuleCollectionViewController.h"
 #import "PTNavigationBar.h"
 #import "PTQRCodeReaderViewController.h"
 #import "PTTransitionsDebugListViewController.h"
 #import "PTFontListViewController.h"
 #import "PTImageSizeDebugViewController.h"
-#import "PTTagListViewController.h"
 #import "PTSegmentedControlViewController.h"
-#import "PTFloatingHeaderViewController.h"
 #import "extobjc.h"
 #import "PTButtonBarPagerTabStripExampleViewController.h"
 #import "PTAMapDebugViewController.h"
@@ -27,6 +24,7 @@
 #import "NSObject+Introspection.h"
 #import "Person.h"
 #import "PTAfnetworkViewController.h"
+#import "PTHybirdViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -52,18 +50,16 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"UIKit"] navigationBlock:NIPushControllerAction([PTUIKitCategoryViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"NSFoundation"] navigationBlock:NIPushControllerAction([PTFoundationDebugListTableViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Layout"] navigationBlock:NIPushControllerAction([PTLayoutDebugTableViewController class])],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Animation"] navigationBlock:NIPushControllerAction([PTTransitionsDebugListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"网易首页类目切换"] navigationBlock:NIPushControllerAction([PTButtonBarPagerTabStripExampleViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"高德搜索"] navigationBlock:NIPushControllerAction([PTAMapDebugViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"积木"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"扫一扫"] navigationBlock:codeBlock],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"过场动画"] navigationBlock:NIPushControllerAction([PTTransitionsDebugListViewController class])],
+							   
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"系统字体"] navigationBlock:NIPushControllerAction([PTFontListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片尺寸"] navigationBlock:NIPushControllerAction([PTImageSizeDebugViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Tag List"] navigationBlock:NIPushControllerAction([PTTagListViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"segmented control"] navigationBlock:NIPushControllerAction([PTSegmentedControlViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"头部浮动控件"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])],
-							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])]
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Hybird"] navigationBlock:NIPushControllerAction([PTHybirdViewController class])]
                                ];
     
     
