@@ -1,1 +1,0 @@
-../../../../LocalCocoaPod/ZBar/zbar/decoder/qr_finder.h

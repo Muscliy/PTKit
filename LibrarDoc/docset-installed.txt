@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/leehu/Library/Developer/Shared/Documentation/DocSets/com.com.paitao.ptkit.PTKit.docset
-Time: 2015-08-07 06:01:18 +0000

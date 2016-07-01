@@ -1,1 +1,0 @@
-../../../../LocalCocoaPod/ZBar/zbar/image.h
