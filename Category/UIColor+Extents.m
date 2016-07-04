@@ -11,6 +11,14 @@
 
 @implementation UIColor (Extents)
 
++ (UIColor *)ex_randomColor {
+	CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+	CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+	CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
+	UIColor *color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+	return color;
+}
+
 + (UIColor *)ex_colorFromHexRGB:(NSString *)inColorString
 {
     UIColor *result = nil;
