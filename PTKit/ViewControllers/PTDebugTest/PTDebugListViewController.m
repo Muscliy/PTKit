@@ -30,10 +30,23 @@
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
 @property (nonatomic, strong) NITableViewActions *actions;
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) PTLayoutDebugTableViewController *searchResultController;
 
 @end
 
 @implementation PTDebugListViewController
+
+- (BOOL)hasSearchBar
+{
+	return YES;
+}
+
+- (UISearchController *)getSearchBarController {
+	self.searchResultController = [[PTLayoutDebugTableViewController alloc] initWithNibName:nil bundle:nil];
+	self.searchController = [[UISearchController alloc] initWithSearchResultsController:self.searchResultController];
+	return self.searchController;
+}
 
 - (void)viewDidLoad
 {

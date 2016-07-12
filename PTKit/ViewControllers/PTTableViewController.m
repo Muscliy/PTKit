@@ -46,21 +46,11 @@
     [self.view addSubview:_tableView];
 
     if ([self hasSearchBar]) {
-        self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, width, 44)];
-        _searchBar.delegate = self;
-        _searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
-        _searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
-        _searchBar.keyboardType = UIKeyboardTypeDefault;
-        _searchBar.tintColor = [UIColor lightGrayColor];
-        self.searchBar.backgroundImage = [UIImage new];
-        _tableView.tableHeaderView = self.searchBar;
-
-        _searchDC =
-            [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
-                                              contentsController:[self getSearchBarController]];
-        _searchDC.searchResultsDelegate = self;
-        _searchDC.delegate = self;
-    }
+		UISearchController *searchController = [self getSearchBarController];
+		[searchController.searchBar sizeToFit];
+		self.tableView.tableHeaderView = searchController.searchBar;
+		self.definesPresentationContext = YES;
+	}
 
     if ([self hasLoadingHead]) {
         CGRect loadHeadFrame = CGRectMake(0, -self.tableView.frame.size.height, width,
@@ -130,9 +120,9 @@
     return NO;
 }
 
-- (UIViewController *)getSearchBarController
+- (UISearchController *)getSearchBarController
 {
-    return self;
+	return nil;
 }
 
 - (NICellObject *)getCellObject:(NSIndexPath *)path
@@ -230,103 +220,6 @@
       willDisplayCell:(UITableViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-}
-
-#pragma mark -
-#pragma mark SearchBarDelegate
-
-- (BOOL)matchTableData:(id)obj keyword:(NSString *)keyword
-{
-    return FALSE;
-}
-
-- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
-{
-    return YES;
-}
-
-- (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar
-{
-    return YES;
-}
-
-- (void)searchBar:(UISearchBar *)msearchBar textDidChange:(NSString *)searchText
-{
-    for (id el in msearchBar.subviews) {
-        if ([el isKindOfClass:[UIButton class]]) {
-            UIButton *cancelButton = (UIButton *)el;
-            [cancelButton setTitle:(searchText.length > 0 ? @"Done" : @"Cancel")
-                          forState:UIControlStateNormal];
-            break;
-        }
-    }
-
-    if (!searchText || [searchText isEqualToString:@""]) {
-        return;
-    }
-
-    NSMutableArray *searchData = [@[] mutableCopy];
-    NSUInteger sectionCount = [_tableView numberOfSections];
-    NIMutableTableViewModel *m = (NIMutableTableViewModel *)_tableView.dataSource;
-    for (NSInteger s = 0; s < sectionCount; s++) {
-        NSUInteger count = [_tableView numberOfRowsInSection:s];
-        for (NSUInteger i = 0; i < count; i++) {
-            NSIndexPath *path = [NSIndexPath indexPathForRow:i inSection:s];
-            id obj = [m objectAtIndexPath:path];
-            if ([self matchTableData:obj keyword:searchText])
-                [searchData addObject:obj];
-        }
-    }
-
-    self.searchModel =
-        [[NITableViewModel alloc] initWithListArray:searchData delegate:(id)[NICellFactory class]];
-
-    _searchDC.searchResultsDataSource = _searchModel;
-    _searchDC.searchResultsDelegate = self;
-    _searchDC.searchResultsTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-}
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)msearchBar
-{
-    [msearchBar resignFirstResponder];
-    [_searchDC setActive:NO animated:YES];
-}
-
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)msearchBar
-{
-    for (id el in msearchBar.subviews) {
-        if ([el isKindOfClass:[UIButton class]]) {
-            UIButton *cancelButton = (UIButton *)el;
-            [cancelButton setTitle:@"Done" forState:UIControlStateNormal];
-        } else if ([el isKindOfClass:[UITextField class]]) {
-            UITextField *searchText = (UITextField *)el;
-            searchText.returnKeyType = UIReturnKeyDone;
-        }
-    }
-}
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *)aSearchBar
-{
-    [_tableView reloadData];
-}
-
-- (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
-{
-    [controller.searchBar setShowsCancelButton:YES animated:NO];
-    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
-        for (UIView *subView in [[controller.searchBar.subviews firstObject] subviews]) {
-            if ([subView isKindOfClass:[UIButton class]]) {
-                UIButton *btn = (UIButton *)subView;
-                [btn setTitle:@"取消" forState:UIControlStateNormal];
-            }
-        }
-    } else {
-        for (UIView *subView in controller.searchBar.subviews) {
-            if ([subView isKindOfClass:[UIButton class]]) {
-                [(UIButton *)subView setTitle:@"取消" forState:UIControlStateNormal];
-            }
-        }
-    }
 }
 
 #pragma mark - NIMutableTableViewModelDelegate

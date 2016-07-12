@@ -18,15 +18,12 @@ UISearchDisplayDelegate, EGORefreshTableHeaderDelegate,PTTableViewDelegate,NITab
 @property (nonatomic, strong) PTTableView *tableView;
 @property (nonatomic, strong) NIMutableTableViewModel *model;
 @property (nonatomic, assign) BOOL hasMoreData;
-@property (nonatomic, strong) UISearchDisplayController *searchDC;
-@property (nonatomic, strong) UISearchBar *searchBar;
-@property (nonatomic, strong) NITableViewModel *searchModel;
 @property (nonatomic, strong) EGORefreshTableHeaderView *loadingHead;
 
 - (UITableViewStyle)getTableStyle;
 - (UITableViewCellSeparatorStyle)getSeparatorStyle;
 - (UIColor *)getSeparatorColor;
-- (UIViewController *)getSearchBarController;
+- (UISearchController *)getSearchBarController;
 - (UIColor *)getTableViewBackgroundColor;
 
 - (void)setTableData:(NSArray *)tableCells;

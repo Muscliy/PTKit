@@ -28,7 +28,6 @@
     _poisearch = [[BMKPoiSearch alloc] init];
     _poisearch.delegate = self;
 
-    self.searchDC = nil;
     self.cityName = @"杭州";
     self.title = @"杭州";
     self.navigationItem.rightBarButtonItem =
@@ -72,7 +71,7 @@
     citySearchOption.pageIndex = 0;
     citySearchOption.pageCapacity = 20;
     citySearchOption.city = self.cityName;
-    citySearchOption.keyword = self.searchBar.text;
+
     if (![_poisearch poiSearchInCity:citySearchOption]) {
     }
 }
@@ -90,8 +89,6 @@
     NITitleCellObject *cellObject = [self.model objectAtIndexPath:indexPath];
     self.cityName = cellObject.title;
     self.title = self.cityName;
-    self.searchBar.placeholder = [NSString stringWithFormat:@"在%@下搜索", self.cityName];
-    [self.searchBar becomeFirstResponder];
 }
 
 #pragma mark implement BMKSearchDelegate
