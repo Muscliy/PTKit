@@ -44,12 +44,11 @@
 {
 	[self launchDealServerConfig];
     PTDebugListViewController *vc = [[PTDebugListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    PTNavigationController *nav = [[PTNavigationController alloc] initWithRootViewController:vc];
 	vc.title = @"Demo1";
 
 	NSMutableArray *images = [[NSMutableArray alloc] init];
 	[images addObject:@"demos"];
-	NSArray *imageGroup = [NSArray arrayWithArray:images];
 	
 	PTUIKitCategoryViewController *vc2 = [[PTUIKitCategoryViewController alloc] initWithNibName:nil bundle:nil];
 	vc2.title = @"Demo2";
@@ -65,6 +64,7 @@
 	[self.window makeKeyAndVisible];
 	[PTWindowStack pushWindow:self.window];
 	[PTSplashView showInWindow:self.window];
+    [self modifyUserAgent];
     return YES;
 }
 
@@ -125,6 +125,16 @@
 	NSLog(@"%@",[[ServerConfig getUrls:CONSTANTS_DEFAULT_CATEGORY] firstObject]);
 	
 	[[ServerConfigSyncer singleton] start];
+}
+
+
+- (void)modifyUserAgent {
+    UIWebView* tempWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    NSString* userAgent = [tempWebView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    NSString *ua = [NSString stringWithFormat:@"%@ %@",
+                    userAgent,
+                    @"MicroMessenger/1.0"];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"UserAgent" : ua, @"User-Agent" : ua}];
 }
 
 @end

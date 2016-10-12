@@ -110,6 +110,8 @@
 		5960BF391BEDB20D00EABB11 /* PTType17BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF351BEDB20D00EABB11 /* PTType17BoxGroup.m */; };
 		5960BF3A1BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF371BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m */; };
 		5960BF4A1BEF812B00EABB11 /* PTPrivacyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5960BF491BEF812B00EABB11 /* PTPrivacyAccessor.m */; };
+		596570BF1D87D4A000A8D47E /* PTWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596570BE1D87D4A000A8D47E /* PTWebView.m */; };
+		596570C21D87D4BB00A8D47E /* PTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596570C11D87D4BA00A8D47E /* PTWebViewController.m */; };
 		59676D2A1ADE5D2E00C9934E /* PTTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D291ADE5D2E00C9934E /* PTTagView.m */; };
 		59676D2D1ADE5D4300C9934E /* PTTagViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D2C1ADE5D4200C9934E /* PTTagViewItem.m */; };
 		59676D301ADE68E700C9934E /* PTTagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59676D2F1ADE68E700C9934E /* PTTagListViewController.m */; };
@@ -208,8 +210,6 @@
 		59FE59F41B7306E5003DE97E /* PTTestCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59E81B7306E5003DE97E /* PTTestCore.m */; };
 		59FE59F51B7306E5003DE97E /* PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59EA1B7306E5003DE97E /* PTTimer.m */; };
 		59FE59F61B7306E5003DE97E /* PTUIMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE59EC1B7306E5003DE97E /* PTUIMathUtilities.m */; };
-		59FEA04C1D1D1CCF001FFD19 /* PTHybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEA04B1D1D1CCF001FFD19 /* PTHybirdViewController.m */; };
-		59FEA0501D1D21F5001FFD19 /* PTHybirdPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEA04F1D1D21F5001FFD19 /* PTHybirdPlugin.m */; };
 		59FFC7E61BAFDAA8006F8289 /* PTSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7E51BAFDAA8006F8289 /* PTSearchDisplayController.m */; };
 		59FFC7EC1BAFDB57006F8289 /* PTSearchNavigatonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EB1BAFDB57006F8289 /* PTSearchNavigatonBar.m */; };
 		59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC7EE1BAFE609006F8289 /* UIControl+Extents.m */; };
@@ -410,6 +410,10 @@
 		5960BF371BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTypeBPICBoxGroup.m; sourceTree = "<group>"; };
 		5960BF481BEF812B00EABB11 /* PTPrivacyAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivacyAccessor.h; sourceTree = "<group>"; };
 		5960BF491BEF812B00EABB11 /* PTPrivacyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPrivacyAccessor.m; sourceTree = "<group>"; };
+		596570BD1D87D4A000A8D47E /* PTWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebView.h; sourceTree = "<group>"; };
+		596570BE1D87D4A000A8D47E /* PTWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebView.m; sourceTree = "<group>"; };
+		596570C01D87D4BA00A8D47E /* PTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWebViewController.h; sourceTree = "<group>"; };
+		596570C11D87D4BA00A8D47E /* PTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWebViewController.m; sourceTree = "<group>"; };
 		59676D281ADE5D2E00C9934E /* PTTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTagView.h; sourceTree = "<group>"; };
 		59676D291ADE5D2E00C9934E /* PTTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTagView.m; sourceTree = "<group>"; };
 		59676D2B1ADE5D4200C9934E /* PTTagViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTagViewItem.h; sourceTree = "<group>"; };
@@ -586,10 +590,6 @@
 		59FE59EA1B7306E5003DE97E /* PTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTimer.m; sourceTree = "<group>"; };
 		59FE59EB1B7306E5003DE97E /* PTUIMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUIMathUtilities.h; sourceTree = "<group>"; };
 		59FE59EC1B7306E5003DE97E /* PTUIMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUIMathUtilities.m; sourceTree = "<group>"; };
-		59FEA04A1D1D1CCF001FFD19 /* PTHybirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHybirdViewController.h; sourceTree = "<group>"; };
-		59FEA04B1D1D1CCF001FFD19 /* PTHybirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHybirdViewController.m; sourceTree = "<group>"; };
-		59FEA04E1D1D21F5001FFD19 /* PTHybirdPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHybirdPlugin.h; sourceTree = "<group>"; };
-		59FEA04F1D1D21F5001FFD19 /* PTHybirdPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHybirdPlugin.m; sourceTree = "<group>"; };
 		59FFC7E41BAFDAA8006F8289 /* PTSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSearchDisplayController.h; sourceTree = "<group>"; };
 		59FFC7E51BAFDAA8006F8289 /* PTSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSearchDisplayController.m; sourceTree = "<group>"; };
 		59FFC7EA1BAFDB57006F8289 /* PTSearchNavigatonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSearchNavigatonBar.h; sourceTree = "<group>"; };
@@ -941,6 +941,17 @@
 			path = "Thing images";
 			sourceTree = "<group>";
 		};
+		596570BC1D87D48800A8D47E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				596570BD1D87D4A000A8D47E /* PTWebView.h */,
+				596570BE1D87D4A000A8D47E /* PTWebView.m */,
+				596570C01D87D4BA00A8D47E /* PTWebViewController.h */,
+				596570C11D87D4BA00A8D47E /* PTWebViewController.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		59676D271ADE5D1400C9934E /* PTTagView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1187,8 +1198,8 @@
 		59F66D3F1A38496F002A7ECA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				596570BC1D87D48800A8D47E /* WebView */,
 				59FA88411D2506AB00B9006D /* PTTableView */,
-				59FEA0491D1D1B46001FFD19 /* Hybird */,
 				59FFF5A71D1818F9000C08E9 /* Core */,
 				59310EBC1C336D3300D51812 /* PTLoader */,
 				593559371C0D944100D7B12B /* PTRouter */,
@@ -1332,17 +1343,6 @@
 				59FFF5AE1D181949000C08E9 /* PTDeviceTypes_iOS.h */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		59FEA0491D1D1B46001FFD19 /* Hybird */ = {
-			isa = PBXGroup;
-			children = (
-				59FEA04A1D1D1CCF001FFD19 /* PTHybirdViewController.h */,
-				59FEA04B1D1D1CCF001FFD19 /* PTHybirdViewController.m */,
-				59FEA04E1D1D21F5001FFD19 /* PTHybirdPlugin.h */,
-				59FEA04F1D1D21F5001FFD19 /* PTHybirdPlugin.m */,
-			);
-			path = Hybird;
 			sourceTree = "<group>";
 		};
 		59FFC7E01BAFDA5E006F8289 /* PTSearchViewController */ = {
@@ -1507,6 +1507,7 @@
 				TargetAttributes = {
 					59F227F41A235E8B00AFF494 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = MB7B8CT43M;
 					};
 					59F2280D1A235E8B00AFF494 = {
 						CreatedOnToolsVersion = 6.1;
@@ -1644,12 +1645,12 @@
 				5903E45C1A3ECA56007ADC7D /* PTCollectionView.m in Sources */,
 				5960BF391BEDB20D00EABB11 /* PTType17BoxGroup.m in Sources */,
 				59F228011A235E8B00AFF494 /* ViewController.m in Sources */,
-				59FEA04C1D1D1CCF001FFD19 /* PTHybirdViewController.m in Sources */,
 				59FA88981D265B6700B9006D /* NSNull+Tracking.m in Sources */,
 				59676D2A1ADE5D2E00C9934E /* PTTagView.m in Sources */,
 				59169E4B1BD9E1D500702186 /* PTCameraViewController.m in Sources */,
 				5960BF121BEC9C7400EABB11 /* PTViewController+Tracking.m in Sources */,
 				59FFF5901D17E088000C08E9 /* RpcContext.m in Sources */,
+				596570C21D87D4BB00A8D47E /* PTWebViewController.m in Sources */,
 				595DA39A1AA2B42B002FA051 /* PTTransitionsDebugListViewController.m in Sources */,
 				593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */,
 				5903E4471A3EC987007ADC7D /* PTBoxManager.m in Sources */,
@@ -1696,7 +1697,6 @@
 				5903E44A1A3EC987007ADC7D /* PTCollectionViewLayoutAttributes.m in Sources */,
 				59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */,
 				59F227FE1A235E8B00AFF494 /* AppDelegate.m in Sources */,
-				59FEA0501D1D21F5001FFD19 /* PTHybirdPlugin.m in Sources */,
 				59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */,
 				59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */,
 				595DA3B21AA55D38002FA051 /* PTFontListViewController.m in Sources */,
@@ -1741,6 +1741,7 @@
 				595DA3821AA2A82D002FA051 /* PTInteractiveCollectionViewController.m in Sources */,
 				5914D4A51C18585D00FCECEE /* PTPrefsRouter.m in Sources */,
 				59FFF5AD1D181921000C08E9 /* PTDevice.m in Sources */,
+				596570BF1D87D4A000A8D47E /* PTWebView.m in Sources */,
 				5930396E1B84653A0040F67F /* PTPushViewController.m in Sources */,
 				59FE59F31B7306E5003DE97E /* PTSystemInfo.m in Sources */,
 				593559331C0D75CC00D7B12B /* PTPreferences.m in Sources */,
@@ -1910,6 +1911,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1919,6 +1922,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
@@ -1929,6 +1933,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1938,6 +1944,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;

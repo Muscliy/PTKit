@@ -73,18 +73,5 @@
 	[self performSelector:@selector(reloadData) withObject:nil afterDelay:0.2f];
 }
 
-#pragma mark -
-#pragma mark UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	PTTableViewCellObject *cellObject = [self cellObjectAtIndexPath:indexPath];
-
-	if ([self.ptDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:withCellObject:)]) {
-		[self.ptDelegate tableView:self didSelectRowAtIndexPath:indexPath withCellObject:cellObject];
-	}
-}
-
-
 
 @end

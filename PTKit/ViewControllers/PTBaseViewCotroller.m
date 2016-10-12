@@ -124,9 +124,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = COLOR_SHADE;
-//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
-//    }
+
     if (!self.navBackButtonHidden) {
         [self setupBackButton];
     }

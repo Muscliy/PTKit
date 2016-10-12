@@ -24,7 +24,6 @@
 #import "NSObject+Introspection.h"
 #import "Person.h"
 #import "PTAfnetworkViewController.h"
-#import "PTHybirdViewController.h"
 
 @interface PTDebugListViewController ()<PTQRCodeReaderViewControllerDelegate>
 
@@ -58,32 +57,13 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"系统字体"] navigationBlock:NIPushControllerAction([PTFontListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片尺寸"] navigationBlock:NIPushControllerAction([PTImageSizeDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])],
-							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])],
-							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Hybird"] navigationBlock:NIPushControllerAction([PTHybirdViewController class])]
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])]
                                ];
     
     
     
     self.tableView.delegate = [self.actions forwardingTo:self];
     [self setTableData:tableContents];
-    
-    //[self extobjcTest];
-    [self parseJosnString];
-	Person *p = [[Person alloc] init];
-	p.firstName = @"三";
-	p.lastName = @"张";
-	NSLog(@"%@",p);
-}
-
-
-- (void)parseJosnString
-{
-
-}
-
-- (void)extobjcTest
-{
-    
 }
 
 - (void)qrcodeReadResult:(BOOL)isOK readStrResult:(NSString *)result
