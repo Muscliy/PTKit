@@ -37,7 +37,7 @@ attributesForItemsInSection:(NSInteger)section
 		attributes.frame = CGRectMake(
 									  ([self collectionView:collectionView itemSize:0].width) * (item % 3) +
 									  ((item % 3 == 2)
-									   ? (WIDTH(collectionView) - 3 * PTRoundPixelValue(WIDTH(collectionView) / 3))
+									   ? (collectionView.ex_width - 3 * PTRoundPixelValue(collectionView.ex_width / 3))
 									   : 0),
 									  0, [self collectionView:collectionView itemSize:item % 3].width,
 									  [self collectionView:collectionView itemSize:item % 3].height);

@@ -22,25 +22,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDTH(self.view), HEIGHT(self.view) - 64)];
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.ex_width, self.view.ex_height - 64)];
     _scrollView.backgroundColor = [UIColor orangeColor];
     _scrollView.alwaysBounceVertical = YES;
     _scrollView.showsVerticalScrollIndicator = YES;
     _scrollView.scrollEnabled = YES;
-    _scrollView.contentSize = CGSizeMake(WIDTH(self.view), 3000);
+    _scrollView.contentSize = CGSizeMake(self.view.ex_width, 3000);
     [self.view addSubview:_scrollView];
     _scrollView.delegate = self;
     
     _headerRefreshControl = [[PTRefreshControl alloc] initWithFrame:CGRectZero style:PTRefreshControlStyleHeader];
     _headerRefreshControl.backgroundColor= [UIColor blueColor];
-    _headerRefreshControl.frame = CGRectMake(0, -100, WIDTH(self.view), 100);
+    _headerRefreshControl.frame = CGRectMake(0, -100, self.view.ex_width, 100);
     _headerRefreshControl.delegate = self;
     _headerRefreshControl.dataSource = self;
     [_scrollView addSubview:_headerRefreshControl];
     
     _footerRefreshControl = [[PTRefreshControl alloc] initWithFrame:CGRectZero style:PTRefreshControlStyleFooter];
     _footerRefreshControl.backgroundColor= [UIColor blueColor];
-    _footerRefreshControl.frame = CGRectMake(0, _scrollView.contentSize.height, WIDTH(self.view), 100);
+    _footerRefreshControl.frame = CGRectMake(0, _scrollView.contentSize.height, self.view.ex_width, 100);
     _footerRefreshControl.delegate = self;
     _footerRefreshControl.dataSource = self;
     [_scrollView addSubview:_footerRefreshControl];

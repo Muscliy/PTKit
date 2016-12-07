@@ -48,6 +48,10 @@
 		590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FD01B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m */; };
 		590C3FEA1B1D5CB700A0CC7A /* UISearchBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FE91B1D5CB700A0CC7A /* UISearchBar+Extents.m */; };
 		590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C3FEC1B1D7DA200A0CC7A /* NSString+Extents.m */; };
+		5911F1731DB4801A001814B0 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911F1721DB4801A001814B0 /* NotificationService.m */; };
+		5911F1771DB4801A001814B0 /* PTPushService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5911F16F1DB4801A001814B0 /* PTPushService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5911F17D1DB4811F001814B0 /* PTPushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911F17C1DB4811F001814B0 /* PTPushHandler.m */; };
+		5911F1801DB482CC001814B0 /* PTApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911F17F1DB482CC001814B0 /* PTApplicationManager.m */; };
 		5914D4A51C18585D00FCECEE /* PTPrefsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */; };
 		59169E491BD9E1D500702186 /* PTCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E441BD9E1D500702186 /* PTCameraManager.m */; };
 		59169E4A1BD9E1D500702186 /* PTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E461BD9E1D500702186 /* PTCameraView.m */; };
@@ -233,6 +237,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5911F1751DB4801A001814B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59F227ED1A235E8B00AFF494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5911F16E1DB4801A001814B0;
+			remoteInfo = PTPushService;
+		};
 		59F2280F1A235E8B00AFF494 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59F227ED1A235E8B00AFF494 /* Project object */;
@@ -241,6 +252,20 @@
 			remoteInfo = PTKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5911F16A1DB47FD3001814B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5911F1771DB4801A001814B0 /* PTPushService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		29BBB9589E1097EE002AE6AD /* Pods-PTKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTKit/Pods-PTKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +329,14 @@
 		591101C41A51446500261162 /* PTFontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFontMacro.h; sourceTree = "<group>"; };
 		591101C51A51446500261162 /* PTOSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOSMacro.h; sourceTree = "<group>"; };
 		591101C61A51446500261162 /* PTRectMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRectMacro.h; sourceTree = "<group>"; };
+		5911F16F1DB4801A001814B0 /* PTPushService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PTPushService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5911F1711DB4801A001814B0 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		5911F1721DB4801A001814B0 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		5911F1741DB4801A001814B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5911F17B1DB4811F001814B0 /* PTPushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPushHandler.h; sourceTree = "<group>"; };
+		5911F17C1DB4811F001814B0 /* PTPushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPushHandler.m; sourceTree = "<group>"; };
+		5911F17E1DB482CC001814B0 /* PTApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApplicationManager.h; sourceTree = "<group>"; };
+		5911F17F1DB482CC001814B0 /* PTApplicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApplicationManager.m; sourceTree = "<group>"; };
 		5914D4A31C18585D00FCECEE /* PTPrefsRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrefsRouter.h; sourceTree = "<group>"; };
 		5914D4A41C18585D00FCECEE /* PTPrefsRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPrefsRouter.m; sourceTree = "<group>"; };
 		59169E421BD9E1D500702186 /* PTCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCamera.h; sourceTree = "<group>"; };
@@ -469,6 +502,8 @@
 		597E457A1B82C49300CB7D4A /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		597E457C1B82C4AA00CB7D4A /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Son.h; path = PTKit/ViewControllers/Son.h; sourceTree = SOURCE_ROOT; };
 		597E457D1B82C4AA00CB7D4A /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Son.m; path = PTKit/ViewControllers/Son.m; sourceTree = SOURCE_ROOT; };
+		598C4E5C1DF7D22C005FB794 /* TDMetrics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDMetrics.h; sourceTree = "<group>"; };
+		598C4E5D1DF7D43D005FB794 /* PTObjCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTObjCRuntime.h; sourceTree = "<group>"; };
 		599A9B1D1A84946900AA302C /* PTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNavigationController.h; sourceTree = "<group>"; };
 		599A9B1E1A84946900AA302C /* PTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNavigationController.m; sourceTree = "<group>"; };
 		599A9B201A84947E00AA302C /* PTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNavigationBar.h; sourceTree = "<group>"; };
@@ -639,6 +674,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5911F16C1DB4801A001814B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F227F21A235E8B00AFF494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -823,6 +865,16 @@
 				595227AC1BDA17C3002078BB /* PTRefreshControlDebugViewController.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5911F1701DB4801A001814B0 /* PTPushService */ = {
+			isa = PBXGroup;
+			children = (
+				5911F1711DB4801A001814B0 /* NotificationService.h */,
+				5911F1721DB4801A001814B0 /* NotificationService.m */,
+				5911F1741DB4801A001814B0 /* Info.plist */,
+			);
+			path = PTPushService;
 			sourceTree = "<group>";
 		};
 		59169E411BD9E1D500702186 /* PTCamera */ = {
@@ -1105,6 +1157,8 @@
 				591101C41A51446500261162 /* PTFontMacro.h */,
 				591101C51A51446500261162 /* PTOSMacro.h */,
 				591101C61A51446500261162 /* PTRectMacro.h */,
+				598C4E5C1DF7D22C005FB794 /* TDMetrics.h */,
+				598C4E5D1DF7D43D005FB794 /* PTObjCRuntime.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -1135,6 +1189,7 @@
 				59F66D3F1A38496F002A7ECA /* Tool */,
 				59F227F71A235E8B00AFF494 /* PTKit */,
 				59F228111A235E8B00AFF494 /* PTKitTests */,
+				5911F1701DB4801A001814B0 /* PTPushService */,
 				59F227F61A235E8B00AFF494 /* Products */,
 				B8D485D1028F516FAC1BC8D2 /* Pods */,
 				AF22F5E9B577143CB02946BF /* Frameworks */,
@@ -1146,6 +1201,7 @@
 			children = (
 				59F227F51A235E8B00AFF494 /* PTKit.app */,
 				59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */,
+				5911F16F1DB4801A001814B0 /* PTPushService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1341,6 +1397,10 @@
 				59FFF5AB1D181921000C08E9 /* PTDevice.h */,
 				59FFF5AC1D181921000C08E9 /* PTDevice.m */,
 				59FFF5AE1D181949000C08E9 /* PTDeviceTypes_iOS.h */,
+				5911F17B1DB4811F001814B0 /* PTPushHandler.h */,
+				5911F17C1DB4811F001814B0 /* PTPushHandler.m */,
+				5911F17E1DB482CC001814B0 /* PTApplicationManager.h */,
+				5911F17F1DB482CC001814B0 /* PTApplicationManager.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1458,6 +1518,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5911F16E1DB4801A001814B0 /* PTPushService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5911F1781DB4801A001814B0 /* Build configuration list for PBXNativeTarget "PTPushService" */;
+			buildPhases = (
+				5911F16B1DB4801A001814B0 /* Sources */,
+				5911F16C1DB4801A001814B0 /* Frameworks */,
+				5911F16D1DB4801A001814B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTPushService;
+			productName = PTPushService;
+			productReference = 5911F16F1DB4801A001814B0 /* PTPushService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		59F227F41A235E8B00AFF494 /* PTKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59F228181A235E8B00AFF494 /* Build configuration list for PBXNativeTarget "PTKit" */;
@@ -1468,10 +1545,12 @@
 				59F227F31A235E8B00AFF494 /* Resources */,
 				9C9E3A21D3DB94375A892819 /* [CP] Copy Pods Resources */,
 				E47B2C770AA1F80259A72F60 /* [CP] Embed Pods Frameworks */,
+				5911F16A1DB47FD3001814B0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5911F1761DB4801A001814B0 /* PBXTargetDependency */,
 			);
 			name = PTKit;
 			productName = PTKit;
@@ -1505,6 +1584,11 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = LeeHu;
 				TargetAttributes = {
+					5911F16E1DB4801A001814B0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K2A44E54SM;
+						ProvisioningStyle = Automatic;
+					};
 					59F227F41A235E8B00AFF494 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = MB7B8CT43M;
@@ -1534,11 +1618,19 @@
 				59F227F41A235E8B00AFF494 /* PTKit */,
 				59F2280D1A235E8B00AFF494 /* PTKitTests */,
 				59FE59F81B747CAF003DE97E /* PTKitDoc */,
+				5911F16E1DB4801A001814B0 /* PTPushService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5911F16D1DB4801A001814B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F227F31A235E8B00AFF494 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1627,6 +1719,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5911F16B1DB4801A001814B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5911F1731DB4801A001814B0 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F227F11A235E8B00AFF494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1655,6 +1755,7 @@
 				593559361C0D852800D7B12B /* PTPropertyDescriptor.m in Sources */,
 				5903E4471A3EC987007ADC7D /* PTBoxManager.m in Sources */,
 				59FA889D1D265B6700B9006D /* UILabel+Tracking.m in Sources */,
+				5911F17D1DB4811F001814B0 /* PTPushHandler.m in Sources */,
 				596F4E361C228F920010CB55 /* PTWindowStack.m in Sources */,
 				59676D411ADF5A3600C9934E /* PTSegmentedControl.m in Sources */,
 				590C3FD11B19592600A0CC7A /* PTAlertViewDemoViewCotroller.m in Sources */,
@@ -1732,6 +1833,7 @@
 				595733261AFA03CC006474CB /* PTPagerTabStripViewController.m in Sources */,
 				5960BF3A1BEDB20D00EABB11 /* PTTypeBPICBoxGroup.m in Sources */,
 				590C3FED1B1D7DA200A0CC7A /* NSString+Extents.m in Sources */,
+				5911F1801DB482CC001814B0 /* PTApplicationManager.m in Sources */,
 				5969DAB51A2C1D0400509FB7 /* PTBaseViewCotroller.m in Sources */,
 				59FE59EF1B7306E5003DE97E /* PTLogger.m in Sources */,
 				59FA889F1D265B6700B9006D /* UISearchBar+Tracking.m in Sources */,
@@ -1808,6 +1910,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5911F1761DB4801A001814B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5911F16E1DB4801A001814B0 /* PTPushService */;
+			targetProxy = 5911F1751DB4801A001814B0 /* PBXContainerItemProxy */;
+		};
 		59F228101A235E8B00AFF494 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 59F227F41A235E8B00AFF494 /* PTKit */;
@@ -1827,6 +1934,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5911F1791DB4801A001814B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = K2A44E54SM;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PTPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paitao.PTKit.PTPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5911F17A1DB4801A001814B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K2A44E54SM;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PTPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paitao.PTKit.PTPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		59F228161A235E8B00AFF494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2000,6 +2151,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5911F1781DB4801A001814B0 /* Build configuration list for PBXNativeTarget "PTPushService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5911F1791DB4801A001814B0 /* Debug */,
+				5911F17A1DB4801A001814B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		59F227F01A235E8B00AFF494 /* Build configuration list for PBXProject "PTKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

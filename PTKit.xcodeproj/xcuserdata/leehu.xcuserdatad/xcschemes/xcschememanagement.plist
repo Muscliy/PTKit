@@ -12,11 +12,31 @@
 		<key>PTKitDoc.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>1</integer>
+		</dict>
+		<key>PTPushService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>PushService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5911F15D1DB47FD3001814B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5911F16E1DB4801A001814B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>59F227F41A235E8B00AFF494</key>
 		<dict>
 			<key>primary</key>

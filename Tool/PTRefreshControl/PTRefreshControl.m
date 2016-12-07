@@ -70,7 +70,7 @@
 {
     [super layoutSubviews];
     if (CGRectEqualToRect(self.contentView.frame, CGRectZero)) {
-        self.contentView.frame = CGRectMake(0, 0, WIDTH(self), 60);
+        self.contentView.frame = CGRectMake(0, 0, self.ex_width, 60);
     }
 }
 

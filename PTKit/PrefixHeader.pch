@@ -18,6 +18,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import "PTBaseDefines.h"
+#import "PTCodeSnippet.h"
 
 #endif
 

@@ -31,7 +31,7 @@ PTBoxCommonImplementation;
         attributes = [PTCollectionViewLayoutAttributes
             layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForItem:item
                                                                      inSection:section]];
-        attributes.frame = CGRectMake(0, 0.5, WIDTH(collectionView), (43));
+        attributes.frame = CGRectMake(0, 0.5, collectionView.ex_width, (43));
         [sectionAttributes addObject:attributes];
     }
     *totalHeight = itemCount > 0 ? (44) : 0;

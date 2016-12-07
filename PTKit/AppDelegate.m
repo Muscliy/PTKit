@@ -19,6 +19,7 @@
 #import "PTWindowStack.h"
 #import "ServerConfig.h"
 #import "ServerConfigSyncer.h"
+#import "PTPushHandler.h"
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 

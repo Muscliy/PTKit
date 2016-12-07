@@ -29,7 +29,7 @@
     [super layoutSubviews];
     self.titleLabel.frame = CGRectMake(0, 0, 30, 20);
     [self.titleLabel sizeToFit];
-    self.titleLabel.center = CGPointMake(WIDTH(self) / 2.0, HEIGHT(self) / 2.0);
+    self.titleLabel.center = CGPointMake(self.ex_width / 2.0, self.ex_height / 2.0);
 }
 
 + (NICollectionViewCellObject *)createObject:(id)_delegate userData:(id)_userData

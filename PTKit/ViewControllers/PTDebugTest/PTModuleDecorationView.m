@@ -40,8 +40,8 @@
 {
     [super layoutSubviews];
     
-    _line.frame = CGRectMake(0, HEIGHT(self) - 0.5, WIDTH(self), 0.5);
-    _topLine.frame = CGRectMake(0, 0.5, WIDTH(self), 0.5);
+    _line.frame = CGRectMake(0, self.ex_height - 0.5, self.ex_width, 0.5);
+    _topLine.frame = CGRectMake(0, 0.5, self.ex_height, 0.5);
 }
 
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes

@@ -43,7 +43,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    _progressView.frame = CGRectMake(0, 0, WIDTH(self), HEIGHT(self));
+    _progressView.frame = CGRectMake(0, 0, self.ex_width, self.ex_height);
 }
 
 - (void)setProgressViewProgress:(CGFloat)progress
