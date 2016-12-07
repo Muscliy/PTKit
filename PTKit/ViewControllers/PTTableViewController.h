@@ -11,6 +11,7 @@
 #import "NimbusModels.h"
 #import "PTTableView.h"
 #import "PTViewController.h"
+#import "PTTableViewDelegate.h"
 
 @interface PTTableViewController : PTViewController<UITableViewDelegate, UISearchBarDelegate,
 UISearchDisplayDelegate, EGORefreshTableHeaderDelegate,PTTableViewDelegate,NITableViewModelDelegate>

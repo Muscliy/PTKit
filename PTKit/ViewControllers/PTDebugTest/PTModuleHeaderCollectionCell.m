@@ -48,17 +48,17 @@
     self.titleLabel.frame = CGRectMake(10, 0, 100, 20);
     [self.titleLabel sizeToFit];
     self.titleLabel.center =
-        CGPointMake(self.titleLabel.center.x, PTRoundPixelValue(HEIGHT(self) / 2.0));
+        CGPointMake(self.titleLabel.center.x, PTRoundPixelValue(self.ex_height / 2.0));
     _subTitleLabel.hidden = !([self.userData.titles count] > 1);
     _rightIcon.hidden = !([self.userData.titles count] > 1);
 
-    _rightIcon.center = CGPointMake(WIDTH(self) - 15 - WIDTH(_rightIcon) / 2,
-                                    PTRoundPixelValue(HEIGHT(self) / 2.0));
+    _rightIcon.center = CGPointMake(self.ex_width - 15 - _rightIcon.ex_width / 2,
+                                    PTRoundPixelValue(self.ex_height / 2.0));
     _subTitleLabel.frame = CGRectMake(0, 0, 30, 20);
     [_subTitleLabel sizeToFit];
     _subTitleLabel.center =
-        CGPointMake(PTRoundPixelValue(MinX(_rightIcon) - WIDTH(_subTitleLabel) / 2.0 - 5),
-                    PTRoundPixelValue(HEIGHT(self) / 2.0));
+        CGPointMake(PTRoundPixelValue(_rightIcon.ex_left - _subTitleLabel.ex_width / 2.0 - 5),
+                    PTRoundPixelValue(self.ex_height / 2.0));
     
 }
 

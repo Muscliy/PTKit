@@ -40,7 +40,7 @@
     _tableView.separatorStyle = [self getSeparatorStyle];
     _tableView.separatorColor = [self getSeparatorColor];
     _tableView.delegate = self;
-    _tableView.guidedDelegate = self;
+    _tableView.ptDelegate = self;
     _tableView.backgroundColor = [self getTableViewBackgroundColor];
 
     [self.view addSubview:_tableView];
@@ -134,7 +134,6 @@
 {
     [self onLoadEnd];
     if (!self.tableView.dataSource) {
-        [self.tableView showErrorGuideView];
     }
 }
 
@@ -156,7 +155,6 @@
 
     _tableView.dataSource = _model;
     [_tableView reloadData];
-    [_tableView checkAndShowEmptyView];
 }
 
 - (void)addTableData:(NSArray *)tableCells
@@ -167,7 +165,6 @@
     } else {
         [self setTableData:tableCells];
     }
-    [_tableView checkAndShowEmptyView];
 }
 
 - (void)appendTableData:(NSArray *)tableCells
@@ -199,7 +196,6 @@
     } else {
         [self setTableData:sectionedArray];
     }
-    [_tableView checkAndShowEmptyView];
 }
 
 #pragma mark -

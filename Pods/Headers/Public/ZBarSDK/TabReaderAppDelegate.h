@@ -1,1 +1,0 @@
-../../../../LocalCocoaPod/ZBar/iphone/examples/TabReader/TabReader/TabReaderAppDelegate.h

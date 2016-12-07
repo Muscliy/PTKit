@@ -1,1 +1,0 @@
-../../../../LocalCocoaPod/ZBar/zbar/decoder/code39.h

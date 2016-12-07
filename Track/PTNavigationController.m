@@ -17,9 +17,9 @@
 	[[UINavigationBar appearance]
 	 setTitleTextAttributes:[NSDictionary
 							 dictionaryWithObjectsAndKeys:
-							 [UIColor whiteColor], UITextAttributeTextColor,
-							 [UIColor clearColor], UITextAttributeTextShadowColor,
-							 [UIFont systemFontOfSize:18], UITextAttributeFont, nil]];
+							 [UIColor whiteColor], NSForegroundColorAttributeName,
+							 [UIColor clearColor], NSShadowAttributeName,
+							 [UIFont systemFontOfSize:18], NSFontAttributeName, nil]];
 	[[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
 	[[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 	
@@ -37,6 +37,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    viewController.hidesBottomBarWhenPushed = YES;
+	[super pushViewController:viewController animated:animated];
 }
 
 @end

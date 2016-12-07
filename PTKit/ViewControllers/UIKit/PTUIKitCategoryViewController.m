@@ -12,6 +12,12 @@
 #import "PTRefreshControlDebugViewController.h"
 #import "PTMultiColorLoader.h"
 #import "PTLayerListViewController.h"
+#import "PTFloatingHeaderViewController.h"
+#import "PTTagListViewController.h"
+#import "PTSegmentedControlViewController.h"
+#import "PTModuleCollectionViewController.h"
+#import "PTWebViewController.h"
+
 
 @interface PTUIKitCategoryViewController ()
 
@@ -46,6 +52,11 @@
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTRefreshControl"] navigationBlock:NIPushControllerAction([PTRefreshControlDebugViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"Dynamics"] navigationBlock:NIPushControllerAction([PTDynamicsViewController class])],
 							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTMultiLoader"] navigationBlock:loader],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTFloatHeader"] navigationBlock:NIPushControllerAction([PTFloatingHeaderViewController class])],
+							    [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTTagList"] navigationBlock:NIPushControllerAction([PTTagListViewController class])],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTSegmentedcontrol"] navigationBlock:NIPushControllerAction([PTSegmentedControlViewController class])],
+							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTModuleCollectionView"] navigationBlock:NIPushControllerAction([PTModuleCollectionViewController class])],
+                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"PTWebViewController"] navigationBlock:NIPushControllerAction([PTWebViewController class])],
                                ];
     
     

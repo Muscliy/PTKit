@@ -26,4 +26,8 @@ target :PTKit do
     pod 'JSONKit-NoWarning'
     pod 'Aspects'
 	pod 'JRSwizzle'
+	pod 'JSONKit-NoWarning'
+	pod 'UICKeyChainStore'
+	pod 'GBDeviceInfo'
+	pod 'Cordova'
 end

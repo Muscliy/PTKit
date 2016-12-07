@@ -1,1 +1,0 @@
-../../../../LocalCocoaPod/ZBar/include/zbar.h
