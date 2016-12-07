@@ -1,14 +1,15 @@
 //
-//  NetWorkMonitor.h
+//  PTNetworkMonitor.h
 //  PTKit
 //
-//  Created by LeeHu on 6/20/16.
+//  Created by LeeHu on 12/7/16.
 //  Copyright © 2016 LeeHu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NetWorkMonitor : NSObject
+@interface PTNetworkMonitor : NSObject
+
 
 + (instancetype)shareInstance;
 
@@ -21,5 +22,6 @@
 - (BOOL)isReachableWWAN;
 
 - (void)notifyNetWorkFailed;
+
 
 @end

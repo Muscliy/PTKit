@@ -16,7 +16,7 @@
 #import "LocalUserInfo.h"
 #import "IReturnCode.h"
 #import "NetWorkType.h"
-#import "NetWorkMonitor.h"
+#import "PTNetworkMonitor.h"
 
 @interface RpcInfo ()<RpcDelegate>
 
@@ -124,9 +124,9 @@ static RpcInfo *instance = nil;
 
 - (int)getNetworkType
 {
-	if ([NetWorkMonitor shareInstance].isReachableWIFI) {
+	if ([PTNetworkMonitor shareInstance].isReachableWIFI) {
 		return NETWORKTYPE_WIFI;
-	} else if ([NetWorkMonitor shareInstance].isReachableWWAN) {
+	} else if ([PTNetworkMonitor shareInstance].isReachableWWAN) {
 		return NETWORKTYPE_TWOG;
 	} else {
 		return NETWORKTYPE_NONE;
