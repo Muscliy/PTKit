@@ -1677,9 +1677,29 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PTKit/Pods-PTKit-resources.sh",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blackArrow.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blackArrow@2x.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blueArrow.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blueArrow@2x.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow.png",
+				"${PODS_ROOT}/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow@2x.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-samples.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1707,13 +1727,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

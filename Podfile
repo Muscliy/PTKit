@@ -1,7 +1,7 @@
 workspace 'PTKit'
 
 target :PTKit do
-    platform :ios, '7.0'
+    platform :ios, '9.0'
     pod 'MBProgressHUD'
     pod 'EGOTableViewPullRefresh'
     pod 'Nimbus/Core'
@@ -11,7 +11,6 @@ target :PTKit do
     pod 'CocoaLumberjack', '~> 2.0.0-beta4'
 	pod 'libextobjc'
     pod 'SDWebImage/Core'
-    pod 'SDWebImage/WebP'
     pod 'WebViewJavascriptBridge'
     pod 'UICKeyChainStore'
     pod 'ZBarSDK', :path => 'LocalCocoaPod/ZBar'
@@ -20,7 +19,6 @@ target :PTKit do
     pod 'libextobjc'
     pod 'MWPhotoBrowser'
     pod 'AFNetworking', '~> 3.1.0'
-    pod 'ReactiveCocoa'
     pod 'Masonry'
     pod 'GPUImage'
     pod 'JSONKit-NoWarning'
@@ -29,5 +27,4 @@ target :PTKit do
 	pod 'JSONKit-NoWarning'
 	pod 'UICKeyChainStore'
 	pod 'GBDeviceInfo'
-	pod 'Cordova'
 end
