@@ -16,7 +16,6 @@
 #import "extobjc.h"
 #import "PTButtonBarPagerTabStripExampleViewController.h"
 #import "PTAMapDebugViewController.h"
-#import "PTReactiveCocoaDemoViewController.h"
 #import "PTUIKitCategoryViewController.h"
 #import "PTLayoutDebugTableViewController.h"
 #import "PTFoundationDebugListTableViewController.h"
@@ -56,7 +55,6 @@
 							   
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"系统字体"] navigationBlock:NIPushControllerAction([PTFontListViewController class])],
                                [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"图片尺寸"] navigationBlock:NIPushControllerAction([PTImageSizeDebugViewController class])],
-                               [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"ReactiveCocoa"] navigationBlock:NIPushControllerAction([PTReactiveCocoaDemoViewController class])],
 							   [self.actions attachToObject:[NITitleCellObject objectWithTitle:@"AFNetwork"] navigationBlock:NIPushControllerAction([PTAfnetworkViewController class])]
                                ];
     

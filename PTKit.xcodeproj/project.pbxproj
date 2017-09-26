@@ -57,7 +57,6 @@
 		59169E4A1BD9E1D500702186 /* PTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E461BD9E1D500702186 /* PTCameraView.m */; };
 		59169E4B1BD9E1D500702186 /* PTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E481BD9E1D500702186 /* PTCameraViewController.m */; };
 		59169E551BD9E1F900702186 /* PTCodeReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E4E1BD9E1F900702186 /* PTCodeReaderUtil.m */; };
-		59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E501BD9E1F900702186 /* PTCodeScanViewController.m */; };
 		59169E571BD9E1F900702186 /* PTQRCodeReaderOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169E521BD9E1F900702186 /* PTQRCodeReaderOverlayView.m */; };
 		59169E581BD9E1F900702186 /* PTQRCodeReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59169E541BD9E1F900702186 /* PTQRCodeReaderViewController.mm */; };
 		59169F0B1BD9E24700702186 /* PTWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169F081BD9E24700702186 /* PTWebViewProgress.m */; };
@@ -82,7 +81,6 @@
 		5957333C1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957333B1AFB41AD006474CB /* PTButtonBarPagerTabStripViewController.m */; };
 		595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733511AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m */; };
 		595733551AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595733541AFB667A006474CB /* PTButtonBarPagerTabStripExampleViewController.m */; };
-		595BCB631A8B40A400A3CD28 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB621A8B40A400A3CD28 /* libiconv.dylib */; };
 		595BCB651A8B40AF00A3CD28 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB641A8B40AF00A3CD28 /* AddressBook.framework */; };
 		595BCB671A8B40B400A3CD28 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB661A8B40B400A3CD28 /* AddressBookUI.framework */; };
 		595BCB691A8B40BC00A3CD28 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BCB681A8B40BC00A3CD28 /* CoreMedia.framework */; };
@@ -152,6 +150,11 @@
 		597E45751B820BCC00CB7D4A /* Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E45741B820BCC00CB7D4A /* Sark.m */; };
 		597E457B1B82C49300CB7D4A /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E457A1B82C49300CB7D4A /* Father.m */; };
 		597E457E1B82C4AA00CB7D4A /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E457D1B82C4AA00CB7D4A /* Son.m */; };
+		5983BA851F7A444D002150A9 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5983BA841F7A444D002150A9 /* libstdc++.6.0.9.tbd */; };
+		5983BA871F7A4459002150A9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5983BA861F7A4459002150A9 /* libz.tbd */; };
+		5983BA891F7A4466002150A9 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5983BA881F7A4466002150A9 /* libiconv.tbd */; };
+		5983BA8B1F7A46FD002150A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5983BA8A1F7A46FC002150A9 /* Images.xcassets */; };
+		598C2A7C1F7A4B1F003E4B61 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598C2A7B1F7A4B1F003E4B61 /* Launch Screen.storyboard */; };
 		599A9B1F1A84946900AA302C /* PTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A9B1E1A84946900AA302C /* PTNavigationController.m */; };
 		599A9B221A84947E00AA302C /* PTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A9B211A84947E00AA302C /* PTNavigationBar.m */; };
 		599E4D251A88848000DDBD88 /* UIBarButtonItem+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 599E4D241A88848000DDBD88 /* UIBarButtonItem+Extents.m */; };
@@ -172,8 +175,6 @@
 		59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7457C1A411EF40058016D /* PTType11BoxGroup.m */; };
 		59DABF9A1AF0BA3F0090A5EB /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF991AF0BA3F0090A5EB /* AMapSearchKit.framework */; };
 		59DABF9C1AF0BD4A0090A5EB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9B1AF0BD4A0090A5EB /* CoreTelephony.framework */; };
-		59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9D1AF0BD5E0090A5EB /* libz.dylib */; };
-		59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DABF9F1AF0BD6E0090A5EB /* libstdc++.6.0.9.dylib */; };
 		59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DABFA21AF0BDDE0090A5EB /* PTAMapDebugViewController.m */; };
 		59E41A651A8B4E8A0021B1A7 /* UIDevice+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A641A8B4E8A0021B1A7 /* UIDevice+Extents.m */; };
 		59EC76641AEA2DE0006F257A /* UINavigationBar+Extents.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC76631AEA2DE0006F257A /* UINavigationBar+Extents.m */; };
@@ -183,11 +184,9 @@
 		59F227FE1A235E8B00AFF494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F227FD1A235E8B00AFF494 /* AppDelegate.m */; };
 		59F228011A235E8B00AFF494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228001A235E8B00AFF494 /* ViewController.m */; };
 		59F228041A235E8B00AFF494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F228021A235E8B00AFF494 /* Main.storyboard */; };
-		59F228061A235E8B00AFF494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F228051A235E8B00AFF494 /* Images.xcassets */; };
 		59F228151A235E8B00AFF494 /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F228141A235E8B00AFF494 /* PTKitTests.m */; };
 		59F2ECA41D1A6E62002778CC /* ServerConfigSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ECA31D1A6E62002778CC /* ServerConfigSyncer.m */; };
 		59F2ECA71D1A9A6C002778CC /* RpcCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ECA61D1A9A6C002778CC /* RpcCookieManager.m */; };
-		59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A6101B131232002E2241 /* PTReactiveCocoaDemoViewController.m */; };
 		59FA88461D2506F100B9006D /* PTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA88431D2506F100B9006D /* PTTableView.m */; };
 		59FA88471D2506F100B9006D /* PTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA88451D2506F100B9006D /* PTTableViewCell.m */; };
 		59FA884E1D25083700B9006D /* PTTableVewSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA884D1D25083700B9006D /* PTTableVewSearchBar.m */; };
@@ -502,6 +501,11 @@
 		597E457A1B82C49300CB7D4A /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		597E457C1B82C4AA00CB7D4A /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Son.h; path = PTKit/ViewControllers/Son.h; sourceTree = SOURCE_ROOT; };
 		597E457D1B82C4AA00CB7D4A /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Son.m; path = PTKit/ViewControllers/Son.m; sourceTree = SOURCE_ROOT; };
+		5983BA841F7A444D002150A9 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		5983BA861F7A4459002150A9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5983BA881F7A4466002150A9 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		5983BA8A1F7A46FC002150A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		598C2A7B1F7A4B1F003E4B61 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		598C4E5C1DF7D22C005FB794 /* TDMetrics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDMetrics.h; sourceTree = "<group>"; };
 		598C4E5D1DF7D43D005FB794 /* PTObjCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTObjCRuntime.h; sourceTree = "<group>"; };
 		599A9B1D1A84946900AA302C /* PTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNavigationController.h; sourceTree = "<group>"; };
@@ -560,7 +564,6 @@
 		59F227FF1A235E8B00AFF494 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		59F228001A235E8B00AFF494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		59F228031A235E8B00AFF494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59F228051A235E8B00AFF494 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59F2280E1A235E8B00AFF494 /* PTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F228131A235E8B00AFF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F228141A235E8B00AFF494 /* PTKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitTests.m; sourceTree = "<group>"; };
@@ -685,12 +688,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5983BA891F7A4466002150A9 /* libiconv.tbd in Frameworks */,
+				5983BA871F7A4459002150A9 /* libz.tbd in Frameworks */,
+				5983BA851F7A444D002150A9 /* libstdc++.6.0.9.tbd in Frameworks */,
 				5957332E1AFA2D0E006474CB /* OpenGLES.framework in Frameworks */,
 				5957332C1AFA2D04006474CB /* QuartzCore.framework in Frameworks */,
 				5957332A1AFA2CF5006474CB /* CoreLocation.framework in Frameworks */,
 				595733281AFA2C2E006474CB /* BaiduMapAPI.framework in Frameworks */,
-				59DABFA01AF0BD6F0090A5EB /* libstdc++.6.0.9.dylib in Frameworks */,
-				59DABF9E1AF0BD5E0090A5EB /* libz.dylib in Frameworks */,
 				59DABF9C1AF0BD4A0090A5EB /* CoreTelephony.framework in Frameworks */,
 				59DABF9A1AF0BA3F0090A5EB /* AMapSearchKit.framework in Frameworks */,
 				59676D6B1ADF884100C9934E /* CFNetwork.framework in Frameworks */,
@@ -702,7 +706,6 @@
 				595BCB691A8B40BC00A3CD28 /* CoreMedia.framework in Frameworks */,
 				595BCB671A8B40B400A3CD28 /* AddressBookUI.framework in Frameworks */,
 				595BCB651A8B40AF00A3CD28 /* AddressBook.framework in Frameworks */,
-				595BCB631A8B40A400A3CD28 /* libiconv.dylib in Frameworks */,
 				599E4D2D1A88868E00DDBD88 /* CoreText.framework in Frameworks */,
 				595126A61A85EE23003AEE1B /* AVFoundation.framework in Frameworks */,
 				59B391721A25602B0092837C /* UIKit.framework in Frameworks */,
@@ -1217,9 +1220,10 @@
 				59F227FD1A235E8B00AFF494 /* AppDelegate.m */,
 				59F227FF1A235E8B00AFF494 /* ViewController.h */,
 				59F228001A235E8B00AFF494 /* ViewController.m */,
+				5983BA8A1F7A46FC002150A9 /* Images.xcassets */,
 				59F228021A235E8B00AFF494 /* Main.storyboard */,
-				59F228051A235E8B00AFF494 /* Images.xcassets */,
 				59F227F81A235E8B00AFF494 /* Supporting Files */,
+				598C2A7B1F7A4B1F003E4B61 /* Launch Screen.storyboard */,
 			);
 			path = PTKit;
 			sourceTree = "<group>";
@@ -1479,6 +1483,9 @@
 		AF22F5E9B577143CB02946BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5983BA881F7A4466002150A9 /* libiconv.tbd */,
+				5983BA861F7A4459002150A9 /* libz.tbd */,
+				5983BA841F7A444D002150A9 /* libstdc++.6.0.9.tbd */,
 				5957332D1AFA2D0E006474CB /* OpenGLES.framework */,
 				5957332B1AFA2D04006474CB /* QuartzCore.framework */,
 				595733291AFA2CF5006474CB /* CoreLocation.framework */,
@@ -1636,6 +1643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59676D671ADF866500C9934E /* 4-selected@2x.png in Resources */,
+				5983BA8B1F7A46FD002150A9 /* Images.xcassets in Resources */,
 				59676D5C1ADF866500C9934E /* 1.png in Resources */,
 				59F228041A235E8B00AFF494 /* Main.storyboard in Resources */,
 				595DA3941AA2B304002FA051 /* thing05.jpg in Resources */,
@@ -1652,11 +1660,11 @@
 				595DA3911AA2B304002FA051 /* thing02.jpg in Resources */,
 				59676D651ADF866500C9934E /* 3@2x.png in Resources */,
 				59676D5B1ADF866500C9934E /* 1-selected@2x.png in Resources */,
+				598C2A7C1F7A4B1F003E4B61 /* Launch Screen.storyboard in Resources */,
 				59676D5F1ADF866500C9934E /* 2-selected@2x.png in Resources */,
 				59676D681ADF866500C9934E /* 4.png in Resources */,
 				59676D5E1ADF866500C9934E /* 2-selected.png in Resources */,
 				59676D601ADF866500C9934E /* 2.png in Resources */,
-				59F228061A235E8B00AFF494 /* Images.xcassets in Resources */,
 				595DA3921AA2B304002FA051 /* thing03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1691,7 +1699,7 @@
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
-				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
 				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-back.png",
 				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-help.html",
 				"${PODS_ROOT}/../LocalCocoaPod/ZBar/iphone/res/zbar-helpicons.png",
@@ -1758,7 +1766,6 @@
 				590BC8831BD8DDDE00DF0F9F /* PTRefreshControl.m in Sources */,
 				595733521AFB457A006474CB /* PTPagerTabStripButtonBarViewCell.m in Sources */,
 				596F4E2D1C2256620010CB55 /* PTButton.m in Sources */,
-				59F3A6111B131232002E2241 /* PTReactiveCocoaDemoViewController.m in Sources */,
 				59FA88461D2506F100B9006D /* PTTableView.m in Sources */,
 				5960BF0F1BEC880A00EABB11 /* PTViewController.m in Sources */,
 				59DABFA31AF0BDDE0090A5EB /* PTAMapDebugViewController.m in Sources */,
@@ -1819,7 +1826,6 @@
 				59310EBF1C336DB900D51812 /* PTMultiColorLoader.m in Sources */,
 				599A9B221A84947E00AA302C /* PTNavigationBar.m in Sources */,
 				5903E44A1A3EC987007ADC7D /* PTCollectionViewLayoutAttributes.m in Sources */,
-				59169E561BD9E1F900702186 /* PTCodeScanViewController.m in Sources */,
 				59F227FE1A235E8B00AFF494 /* AppDelegate.m in Sources */,
 				59D7457D1A411EF40058016D /* PTType11BoxGroup.m in Sources */,
 				59FFC7EF1BAFE609006F8289 /* UIControl+Extents.m in Sources */,
@@ -2036,7 +2042,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2072,7 +2078,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -2084,7 +2090,6 @@
 			baseConfigurationReference = 29BBB9589E1097EE002AE6AD /* Pods-PTKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2106,7 +2111,6 @@
 			baseConfigurationReference = 569B109F2E9A669103EC65D6 /* Pods-PTKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
